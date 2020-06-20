@@ -46,22 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Ave.cs" />
+    <Compile Include="ANIMAIS\Baleia.cs" />
+    <Compile Include="ANIMAIS\Cachorro.cs" />
+    <Compile Include="ANIMAIS\Coruja.cs" />
+    <Compile Include="ANIMAIS\Elefante.cs" />
+    <Compile Include="ANIMAIS\Galinha.cs" />
+    <Compile Include="ANIMAIS\Gaviao.cs" />
+    <Compile Include="ANIMAIS\Leao.cs" />
+    <Compile Include="ANIMAIS\Morcego.cs" />
+    <Compile Include="ANIMAIS\Ornitorrinco.cs" />
+    <Compile Include="ANIMAIS\Pato.cs" />
+    <Compile Include="ANIMAIS\Pinguim.cs" />
+    <Compile Include="ANIMAIS\Pombo.cs" />
+    <Compile Include="ANIMAIS\Tartaruga.cs" />
+    <Compile Include="CLASSES ANIMAIS\Animal.cs" />
+    <Compile Include="CLASSES ANIMAIS\Ave.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IAquatico.cs" />
-    <Compile Include="IOviparo.cs" />
-    <Compile Include="IPredador.cs" />
-    <Compile Include="IVoar.cs" />
-    <Compile Include="Mamifero.cs" />
+    <Compile Include="ANIMAIS\Gato.cs" />
+    <Compile Include="INTERFACES\IAquatico.cs" />
+    <Compile Include="INTERFACES\IOviparo.cs" />
+    <Compile Include="INTERFACES\IPredador.cs" />
+    <Compile Include="INTERFACES\IVoar.cs" />
+    <Compile Include="CLASSES ANIMAIS\Mamifero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reptil.cs" />
+    <Compile Include="CLASSES ANIMAIS\Reptil.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +227,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tartarugaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ESTRUTURA DADOS\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,6 +20,10 @@ namespace N2___Animais
 
         SortedDictionary<string, bool> selecionados = new SortedDictionary<string, bool>();
 
+        /// <summary>
+        /// Volta a imagem para seu modo original
+        /// </summary>
+        /// <param name="animalclicado"></param>
         public void VoltaImagem(string animalclicado)
         {
             foreach (Control botao in Controls)
