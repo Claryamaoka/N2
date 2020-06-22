@@ -14,6 +14,11 @@ namespace N2___Animais
         int qtdMamas;
         bool carnivoro = false, peconhento = false, pelos = false, rapina = false, escama = false, casco = false;
 
+        private void txtDataNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
         /// <summary>
         /// Validação de Espécie do Animal
         /// </summary>

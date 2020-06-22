@@ -14,7 +14,20 @@ namespace N2___Animais
         { get; set; }
 
         public string CorPena
-        { get; set; }
+        {
+            get
+            {
+                return CorPena;
+            }
+
+            set
+            {
+                if (CorPena == "")
+                    throw new Exception("Informe a cor de pena!");
+                else
+                    CorPena = value;
+            }
+        }
 
         #endregion
 

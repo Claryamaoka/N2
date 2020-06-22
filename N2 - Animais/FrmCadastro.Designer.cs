@@ -36,41 +36,41 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.grpMamifero = new System.Windows.Forms.GroupBox();
-            this.nmrQtdMamas = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rdbPelosSim = new System.Windows.Forms.RadioButton();
-            this.rdbPelosNao = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCorPelo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rdbPelosNao = new System.Windows.Forms.RadioButton();
+            this.rdbPelosSim = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nmrQtdMamas = new System.Windows.Forms.NumericUpDown();
             this.grpReptil = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rdbEscamaNao = new System.Windows.Forms.RadioButton();
-            this.rdbEscamaSim = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.rdbCascoNao = new System.Windows.Forms.RadioButton();
             this.rdbCascoSim = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.rdbEscamaNao = new System.Windows.Forms.RadioButton();
+            this.rdbEscamaSim = new System.Windows.Forms.RadioButton();
             this.grpAve = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCorPena = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.rdbRapinaNao = new System.Windows.Forms.RadioButton();
             this.rdbRapinaSim = new System.Windows.Forms.RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtCorPena = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.rdbCarnivoroSim = new System.Windows.Forms.RadioButton();
-            this.rdbCarnivoroNao = new System.Windows.Forms.RadioButton();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.rdbPeconhencoSim = new System.Windows.Forms.RadioButton();
             this.rdbPeconhencoNao = new System.Windows.Forms.RadioButton();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rdbCarnivoroSim = new System.Windows.Forms.RadioButton();
+            this.rdbCarnivoroNao = new System.Windows.Forms.RadioButton();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.grpMamifero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrQtdMamas)).BeginInit();
             this.grpReptil.SuspendLayout();
             this.grpAve.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbTipoAnimal
@@ -82,18 +82,20 @@
             "Mamífero",
             "Ave",
             "Réptil"});
-            this.cmbTipoAnimal.Location = new System.Drawing.Point(89, 123);
+            this.cmbTipoAnimal.Location = new System.Drawing.Point(119, 151);
+            this.cmbTipoAnimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbTipoAnimal.Name = "cmbTipoAnimal";
-            this.cmbTipoAnimal.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoAnimal.Size = new System.Drawing.Size(160, 24);
             this.cmbTipoAnimal.TabIndex = 23;
             this.cmbTipoAnimal.SelectedIndexChanged += new System.EventHandler(this.cmbTipoAnimal_SelectedIndexChanged);
             // 
             // rdbFem
             // 
             this.rdbFem.AutoSize = true;
-            this.rdbFem.Location = new System.Drawing.Point(134, 87);
+            this.rdbFem.Location = new System.Drawing.Point(179, 107);
+            this.rdbFem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbFem.Name = "rdbFem";
-            this.rdbFem.Size = new System.Drawing.Size(70, 17);
+            this.rdbFem.Size = new System.Drawing.Size(90, 21);
             this.rdbFem.TabIndex = 22;
             this.rdbFem.TabStop = true;
             this.rdbFem.Text = "Feminino ";
@@ -102,9 +104,10 @@
             // rdbMasc
             // 
             this.rdbMasc.AutoSize = true;
-            this.rdbMasc.Location = new System.Drawing.Point(43, 87);
+            this.rdbMasc.Location = new System.Drawing.Point(57, 107);
+            this.rdbMasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbMasc.Name = "rdbMasc";
-            this.rdbMasc.Size = new System.Drawing.Size(76, 17);
+            this.rdbMasc.Size = new System.Drawing.Size(96, 21);
             this.rdbMasc.TabIndex = 21;
             this.rdbMasc.TabStop = true;
             this.rdbMasc.Text = "Masculino ";
@@ -113,35 +116,40 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 49);
+            this.label3.Location = new System.Drawing.Point(53, 60);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 13);
+            this.label3.Size = new System.Drawing.Size(140, 17);
             this.label3.TabIndex = 20;
             this.label3.Text = "Data de Nascimento:";
             // 
             // txtDataNascimento
             // 
-            this.txtDataNascimento.Location = new System.Drawing.Point(155, 46);
+            this.txtDataNascimento.Location = new System.Drawing.Point(207, 57);
+            this.txtDataNascimento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDataNascimento.Mask = "00/00/0000";
             this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(71, 20);
+            this.txtDataNascimento.Size = new System.Drawing.Size(93, 22);
             this.txtDataNascimento.TabIndex = 19;
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
+            this.txtDataNascimento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtDataNascimento_MaskInputRejected);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 22);
+            this.label4.Location = new System.Drawing.Point(53, 27);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(49, 17);
             this.label4.TabIndex = 18;
             this.label4.Text = "Nome:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 19);
+            this.textBox1.Location = new System.Drawing.Point(112, 23);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 20);
+            this.textBox1.Size = new System.Drawing.Size(188, 22);
             this.textBox1.TabIndex = 17;
             // 
             // grpMamifero
@@ -154,75 +162,84 @@
             this.grpMamifero.Controls.Add(this.label1);
             this.grpMamifero.Controls.Add(this.nmrQtdMamas);
             this.grpMamifero.Enabled = false;
-            this.grpMamifero.Location = new System.Drawing.Point(15, 307);
+            this.grpMamifero.Location = new System.Drawing.Point(20, 378);
+            this.grpMamifero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpMamifero.Name = "grpMamifero";
-            this.grpMamifero.Size = new System.Drawing.Size(267, 100);
+            this.grpMamifero.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpMamifero.Size = new System.Drawing.Size(356, 123);
             this.grpMamifero.TabIndex = 24;
             this.grpMamifero.TabStop = false;
             this.grpMamifero.Text = "Mamífero";
             // 
-            // nmrQtdMamas
-            // 
-            this.nmrQtdMamas.Location = new System.Drawing.Point(129, 19);
-            this.nmrQtdMamas.Name = "nmrQtdMamas";
-            this.nmrQtdMamas.Size = new System.Drawing.Size(120, 20);
-            this.nmrQtdMamas.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 13);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Quantidade de Mamas:";
-            // 
-            // rdbPelosSim
-            // 
-            this.rdbPelosSim.AutoSize = true;
-            this.rdbPelosSim.Location = new System.Drawing.Point(129, 46);
-            this.rdbPelosSim.Name = "rdbPelosSim";
-            this.rdbPelosSim.Size = new System.Drawing.Size(42, 17);
-            this.rdbPelosSim.TabIndex = 20;
-            this.rdbPelosSim.TabStop = true;
-            this.rdbPelosSim.Text = "Sim";
-            this.rdbPelosSim.UseVisualStyleBackColor = true;
-            // 
-            // rdbPelosNao
-            // 
-            this.rdbPelosNao.AutoSize = true;
-            this.rdbPelosNao.Location = new System.Drawing.Point(204, 46);
-            this.rdbPelosNao.Name = "rdbPelosNao";
-            this.rdbPelosNao.Size = new System.Drawing.Size(45, 17);
-            this.rdbPelosNao.TabIndex = 21;
-            this.rdbPelosNao.TabStop = true;
-            this.rdbPelosNao.Text = "Não";
-            this.rdbPelosNao.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Possui Pelos?";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 68);
+            this.label5.Location = new System.Drawing.Point(8, 84);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(86, 17);
             this.label5.TabIndex = 24;
             this.label5.Text = "Cor do Pelo:";
             // 
             // txtCorPelo
             // 
-            this.txtCorPelo.Location = new System.Drawing.Point(129, 65);
+            this.txtCorPelo.Location = new System.Drawing.Point(172, 80);
+            this.txtCorPelo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCorPelo.Name = "txtCorPelo";
-            this.txtCorPelo.Size = new System.Drawing.Size(120, 20);
+            this.txtCorPelo.Size = new System.Drawing.Size(159, 22);
             this.txtCorPelo.TabIndex = 23;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 59);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 17);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Possui Pelos?";
+            // 
+            // rdbPelosNao
+            // 
+            this.rdbPelosNao.AutoSize = true;
+            this.rdbPelosNao.Location = new System.Drawing.Point(272, 57);
+            this.rdbPelosNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbPelosNao.Name = "rdbPelosNao";
+            this.rdbPelosNao.Size = new System.Drawing.Size(55, 21);
+            this.rdbPelosNao.TabIndex = 21;
+            this.rdbPelosNao.TabStop = true;
+            this.rdbPelosNao.Text = "Não";
+            this.rdbPelosNao.UseVisualStyleBackColor = true;
+            // 
+            // rdbPelosSim
+            // 
+            this.rdbPelosSim.AutoSize = true;
+            this.rdbPelosSim.Location = new System.Drawing.Point(172, 57);
+            this.rdbPelosSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbPelosSim.Name = "rdbPelosSim";
+            this.rdbPelosSim.Size = new System.Drawing.Size(52, 21);
+            this.rdbPelosSim.TabIndex = 20;
+            this.rdbPelosSim.TabStop = true;
+            this.rdbPelosSim.Text = "Sim";
+            this.rdbPelosSim.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(8, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Quantidade de Mamas:";
+            // 
+            // nmrQtdMamas
+            // 
+            this.nmrQtdMamas.Location = new System.Drawing.Point(172, 23);
+            this.nmrQtdMamas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrQtdMamas.Name = "nmrQtdMamas";
+            this.nmrQtdMamas.Size = new System.Drawing.Size(160, 22);
+            this.nmrQtdMamas.TabIndex = 0;
             // 
             // grpReptil
             // 
@@ -233,59 +250,32 @@
             this.grpReptil.Controls.Add(this.rdbEscamaNao);
             this.grpReptil.Controls.Add(this.rdbEscamaSim);
             this.grpReptil.Enabled = false;
-            this.grpReptil.Location = new System.Drawing.Point(15, 532);
+            this.grpReptil.Location = new System.Drawing.Point(20, 655);
+            this.grpReptil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpReptil.Name = "grpReptil";
-            this.grpReptil.Size = new System.Drawing.Size(267, 99);
+            this.grpReptil.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpReptil.Size = new System.Drawing.Size(356, 122);
             this.grpReptil.TabIndex = 25;
             this.grpReptil.TabStop = false;
             this.grpReptil.Text = "Réptil";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 13);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Possui Escamas?";
-            // 
-            // rdbEscamaNao
-            // 
-            this.rdbEscamaNao.AutoSize = true;
-            this.rdbEscamaNao.Location = new System.Drawing.Point(204, 19);
-            this.rdbEscamaNao.Name = "rdbEscamaNao";
-            this.rdbEscamaNao.Size = new System.Drawing.Size(45, 17);
-            this.rdbEscamaNao.TabIndex = 21;
-            this.rdbEscamaNao.TabStop = true;
-            this.rdbEscamaNao.Text = "Não";
-            this.rdbEscamaNao.UseVisualStyleBackColor = true;
-            // 
-            // rdbEscamaSim
-            // 
-            this.rdbEscamaSim.AutoSize = true;
-            this.rdbEscamaSim.Location = new System.Drawing.Point(129, 19);
-            this.rdbEscamaSim.Name = "rdbEscamaSim";
-            this.rdbEscamaSim.Size = new System.Drawing.Size(42, 17);
-            this.rdbEscamaSim.TabIndex = 20;
-            this.rdbEscamaSim.TabStop = true;
-            this.rdbEscamaSim.Text = "Sim";
-            this.rdbEscamaSim.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 45);
+            this.label6.Location = new System.Drawing.Point(8, 55);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.Size = new System.Drawing.Size(101, 17);
             this.label6.TabIndex = 25;
             this.label6.Text = "Possui Casco?";
             // 
             // rdbCascoNao
             // 
             this.rdbCascoNao.AutoSize = true;
-            this.rdbCascoNao.Location = new System.Drawing.Point(204, 43);
+            this.rdbCascoNao.Location = new System.Drawing.Point(272, 53);
+            this.rdbCascoNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbCascoNao.Name = "rdbCascoNao";
-            this.rdbCascoNao.Size = new System.Drawing.Size(45, 17);
+            this.rdbCascoNao.Size = new System.Drawing.Size(55, 21);
             this.rdbCascoNao.TabIndex = 24;
             this.rdbCascoNao.TabStop = true;
             this.rdbCascoNao.Text = "Não";
@@ -294,13 +284,48 @@
             // rdbCascoSim
             // 
             this.rdbCascoSim.AutoSize = true;
-            this.rdbCascoSim.Location = new System.Drawing.Point(129, 43);
+            this.rdbCascoSim.Location = new System.Drawing.Point(172, 53);
+            this.rdbCascoSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbCascoSim.Name = "rdbCascoSim";
-            this.rdbCascoSim.Size = new System.Drawing.Size(42, 17);
+            this.rdbCascoSim.Size = new System.Drawing.Size(52, 21);
             this.rdbCascoSim.TabIndex = 23;
             this.rdbCascoSim.TabStop = true;
             this.rdbCascoSim.Text = "Sim";
             this.rdbCascoSim.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 26);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(119, 17);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Possui Escamas?";
+            // 
+            // rdbEscamaNao
+            // 
+            this.rdbEscamaNao.AutoSize = true;
+            this.rdbEscamaNao.Location = new System.Drawing.Point(272, 23);
+            this.rdbEscamaNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbEscamaNao.Name = "rdbEscamaNao";
+            this.rdbEscamaNao.Size = new System.Drawing.Size(55, 21);
+            this.rdbEscamaNao.TabIndex = 21;
+            this.rdbEscamaNao.TabStop = true;
+            this.rdbEscamaNao.Text = "Não";
+            this.rdbEscamaNao.UseVisualStyleBackColor = true;
+            // 
+            // rdbEscamaSim
+            // 
+            this.rdbEscamaSim.AutoSize = true;
+            this.rdbEscamaSim.Location = new System.Drawing.Point(172, 23);
+            this.rdbEscamaSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbEscamaSim.Name = "rdbEscamaSim";
+            this.rdbEscamaSim.Size = new System.Drawing.Size(52, 21);
+            this.rdbEscamaSim.TabIndex = 20;
+            this.rdbEscamaSim.TabStop = true;
+            this.rdbEscamaSim.Text = "Sim";
+            this.rdbEscamaSim.UseVisualStyleBackColor = true;
             // 
             // grpAve
             // 
@@ -310,28 +335,50 @@
             this.grpAve.Controls.Add(this.rdbRapinaNao);
             this.grpAve.Controls.Add(this.rdbRapinaSim);
             this.grpAve.Enabled = false;
-            this.grpAve.Location = new System.Drawing.Point(15, 420);
+            this.grpAve.Location = new System.Drawing.Point(20, 517);
+            this.grpAve.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.grpAve.Name = "grpAve";
-            this.grpAve.Size = new System.Drawing.Size(267, 99);
+            this.grpAve.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpAve.Size = new System.Drawing.Size(356, 122);
             this.grpAve.TabIndex = 26;
             this.grpAve.TabStop = false;
             this.grpAve.Text = "Ave";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(8, 55);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 17);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Cor do Pena:";
+            // 
+            // txtCorPena
+            // 
+            this.txtCorPena.Location = new System.Drawing.Point(172, 52);
+            this.txtCorPena.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorPena.Name = "txtCorPena";
+            this.txtCorPena.Size = new System.Drawing.Size(159, 22);
+            this.txtCorPena.TabIndex = 26;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 21);
+            this.label9.Location = new System.Drawing.Point(8, 26);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.Size = new System.Drawing.Size(89, 17);
             this.label9.TabIndex = 22;
             this.label9.Text = "É de rapina?";
             // 
             // rdbRapinaNao
             // 
             this.rdbRapinaNao.AutoSize = true;
-            this.rdbRapinaNao.Location = new System.Drawing.Point(204, 19);
+            this.rdbRapinaNao.Location = new System.Drawing.Point(272, 23);
+            this.rdbRapinaNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbRapinaNao.Name = "rdbRapinaNao";
-            this.rdbRapinaNao.Size = new System.Drawing.Size(45, 17);
+            this.rdbRapinaNao.Size = new System.Drawing.Size(55, 21);
             this.rdbRapinaNao.TabIndex = 21;
             this.rdbRapinaNao.TabStop = true;
             this.rdbRapinaNao.Text = "Não";
@@ -340,29 +387,14 @@
             // rdbRapinaSim
             // 
             this.rdbRapinaSim.AutoSize = true;
-            this.rdbRapinaSim.Location = new System.Drawing.Point(129, 19);
+            this.rdbRapinaSim.Location = new System.Drawing.Point(172, 23);
+            this.rdbRapinaSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbRapinaSim.Name = "rdbRapinaSim";
-            this.rdbRapinaSim.Size = new System.Drawing.Size(42, 17);
+            this.rdbRapinaSim.Size = new System.Drawing.Size(52, 21);
             this.rdbRapinaSim.TabIndex = 20;
             this.rdbRapinaSim.TabStop = true;
             this.rdbRapinaSim.Text = "Sim";
             this.rdbRapinaSim.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 45);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 13);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Cor do Pena:";
-            // 
-            // txtCorPena
-            // 
-            this.txtCorPena.Location = new System.Drawing.Point(129, 42);
-            this.txtCorPena.Name = "txtCorPena";
-            this.txtCorPena.Size = new System.Drawing.Size(120, 20);
-            this.txtCorPena.TabIndex = 26;
             // 
             // groupBox4
             // 
@@ -375,53 +407,24 @@
             this.groupBox4.Controls.Add(this.cmbTipoAnimal);
             this.groupBox4.Controls.Add(this.rdbMasc);
             this.groupBox4.Controls.Add(this.rdbFem);
-            this.groupBox4.Location = new System.Drawing.Point(15, 12);
+            this.groupBox4.Location = new System.Drawing.Point(20, 15);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(267, 282);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(356, 347);
             this.groupBox4.TabIndex = 27;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Informações Básicas";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.rdbCarnivoroSim);
-            this.groupBox5.Controls.Add(this.rdbCarnivoroNao);
-            this.groupBox5.Location = new System.Drawing.Point(22, 150);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(222, 47);
-            this.groupBox5.TabIndex = 24;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Carnívoro";
-            // 
-            // rdbCarnivoroSim
-            // 
-            this.rdbCarnivoroSim.AutoSize = true;
-            this.rdbCarnivoroSim.Location = new System.Drawing.Point(37, 19);
-            this.rdbCarnivoroSim.Name = "rdbCarnivoroSim";
-            this.rdbCarnivoroSim.Size = new System.Drawing.Size(42, 17);
-            this.rdbCarnivoroSim.TabIndex = 23;
-            this.rdbCarnivoroSim.TabStop = true;
-            this.rdbCarnivoroSim.Text = "Sim";
-            this.rdbCarnivoroSim.UseVisualStyleBackColor = true;
-            // 
-            // rdbCarnivoroNao
-            // 
-            this.rdbCarnivoroNao.AutoSize = true;
-            this.rdbCarnivoroNao.Location = new System.Drawing.Point(128, 19);
-            this.rdbCarnivoroNao.Name = "rdbCarnivoroNao";
-            this.rdbCarnivoroNao.Size = new System.Drawing.Size(45, 17);
-            this.rdbCarnivoroNao.TabIndex = 24;
-            this.rdbCarnivoroNao.TabStop = true;
-            this.rdbCarnivoroNao.Text = "Não";
-            this.rdbCarnivoroNao.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.rdbPeconhencoSim);
             this.groupBox6.Controls.Add(this.rdbPeconhencoNao);
-            this.groupBox6.Location = new System.Drawing.Point(22, 218);
+            this.groupBox6.Location = new System.Drawing.Point(29, 268);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(222, 47);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(296, 58);
             this.groupBox6.TabIndex = 25;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Peçonhento";
@@ -429,9 +432,10 @@
             // rdbPeconhencoSim
             // 
             this.rdbPeconhencoSim.AutoSize = true;
-            this.rdbPeconhencoSim.Location = new System.Drawing.Point(37, 19);
+            this.rdbPeconhencoSim.Location = new System.Drawing.Point(49, 23);
+            this.rdbPeconhencoSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbPeconhencoSim.Name = "rdbPeconhencoSim";
-            this.rdbPeconhencoSim.Size = new System.Drawing.Size(42, 17);
+            this.rdbPeconhencoSim.Size = new System.Drawing.Size(52, 21);
             this.rdbPeconhencoSim.TabIndex = 23;
             this.rdbPeconhencoSim.TabStop = true;
             this.rdbPeconhencoSim.Text = "Sim";
@@ -440,20 +444,59 @@
             // rdbPeconhencoNao
             // 
             this.rdbPeconhencoNao.AutoSize = true;
-            this.rdbPeconhencoNao.Location = new System.Drawing.Point(128, 19);
+            this.rdbPeconhencoNao.Location = new System.Drawing.Point(171, 23);
+            this.rdbPeconhencoNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbPeconhencoNao.Name = "rdbPeconhencoNao";
-            this.rdbPeconhencoNao.Size = new System.Drawing.Size(45, 17);
+            this.rdbPeconhencoNao.Size = new System.Drawing.Size(55, 21);
             this.rdbPeconhencoNao.TabIndex = 24;
             this.rdbPeconhencoNao.TabStop = true;
             this.rdbPeconhencoNao.Text = "Não";
             this.rdbPeconhencoNao.UseVisualStyleBackColor = true;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.rdbCarnivoroSim);
+            this.groupBox5.Controls.Add(this.rdbCarnivoroNao);
+            this.groupBox5.Location = new System.Drawing.Point(29, 185);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(296, 58);
+            this.groupBox5.TabIndex = 24;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Carnívoro";
+            // 
+            // rdbCarnivoroSim
+            // 
+            this.rdbCarnivoroSim.AutoSize = true;
+            this.rdbCarnivoroSim.Location = new System.Drawing.Point(49, 23);
+            this.rdbCarnivoroSim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbCarnivoroSim.Name = "rdbCarnivoroSim";
+            this.rdbCarnivoroSim.Size = new System.Drawing.Size(52, 21);
+            this.rdbCarnivoroSim.TabIndex = 23;
+            this.rdbCarnivoroSim.TabStop = true;
+            this.rdbCarnivoroSim.Text = "Sim";
+            this.rdbCarnivoroSim.UseVisualStyleBackColor = true;
+            // 
+            // rdbCarnivoroNao
+            // 
+            this.rdbCarnivoroNao.AutoSize = true;
+            this.rdbCarnivoroNao.Location = new System.Drawing.Point(171, 23);
+            this.rdbCarnivoroNao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rdbCarnivoroNao.Name = "rdbCarnivoroNao";
+            this.rdbCarnivoroNao.Size = new System.Drawing.Size(55, 21);
+            this.rdbCarnivoroNao.TabIndex = 24;
+            this.rdbCarnivoroNao.TabStop = true;
+            this.rdbCarnivoroNao.Text = "Não";
+            this.rdbCarnivoroNao.UseVisualStyleBackColor = true;
+            // 
             // btnCadastrar
             // 
             this.btnCadastrar.Enabled = false;
-            this.btnCadastrar.Location = new System.Drawing.Point(97, 637);
+            this.btnCadastrar.Location = new System.Drawing.Point(129, 784);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(101, 29);
+            this.btnCadastrar.Size = new System.Drawing.Size(135, 36);
             this.btnCadastrar.TabIndex = 28;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -461,14 +504,15 @@
             // 
             // FrmCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 678);
+            this.ClientSize = new System.Drawing.Size(393, 834);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.grpAve);
             this.Controls.Add(this.grpReptil);
             this.Controls.Add(this.grpMamifero);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmCadastro";
             this.Text = "FrmCadastro";
             this.grpMamifero.ResumeLayout(false);
@@ -480,10 +524,10 @@
             this.grpAve.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }

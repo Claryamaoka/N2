@@ -10,16 +10,70 @@ namespace N2___Animais
     {
         #region ...PROPRIEDADES...
         public string Nome
-        { get; set; }
+        {
+            get
+            {
+                return Nome;
+            }
+
+            set
+            {
+                if (Nome != "")
+                    Nome = value;
+                else
+                    throw new Exception("Atribua um nome ao animal!");
+            }
+
+        }
+
 
         public DateTime DataNascimento
-        { get; set; }
+        {
+            get
+            {
+                return DataNascimento;
+            }
+
+            set
+            {
+                if (DataNascimento < DateTime.Now)
+                    DataNascimento = value;
+                else
+                    throw new Exception("A data de nascimento nao pode ser futura!");
+            }
+        }
 
         public char Sexo
-        { get; set; }
+        {
+            get
+            {
+                return Sexo;
+            }
+
+            set
+            {
+                if (Sexo == 'M' || Sexo == 'F')
+                    Sexo = value;
+                else
+                    throw new Exception("Atribua um sexo ao animal!");
+            }
+        }
 
         public int Idade
-        { get; set; }
+        {
+            get
+            {
+                return Idade;
+            }
+
+            set
+            {
+                if (Idade >= 0)
+                    Idade = value;
+                else
+                    throw new Exception("A idade deve ser maior ou igual a zero!");
+            }
+        }
 
         public bool Carnivoro
         { get; set; }

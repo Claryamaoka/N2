@@ -10,13 +10,40 @@ namespace N2___Animais
     {
         #region ...PROPRIEDADES...
         public int QtdeMamas
-        { get; set; }
+        {
+            get
+            {
+                return QtdeMamas;
+            }
+
+            set
+            {
+                if (QtdeMamas < 0)
+                    throw new Exception("A quantidade de mamas deve ser maior ou igual a 0!");
+                else
+                    QtdeMamas = value;
+            }
+        }
 
         public bool Pelos
         { get; set; }
 
         public string CorPelo
-        { get; set; }
+        {
+            get
+            {
+                return CorPelo;
+            }
+
+            set
+            {
+                if (CorPelo == "")
+                    throw new Exception("Informe a cor de pelo!");
+                else
+                    CorPelo = value;
+            }
+        }
+
         #endregion
 
         /// <summary>
