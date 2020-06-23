@@ -193,6 +193,16 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fundo_form {
+            get {
+                object obj = ResourceManager.GetObject("Fundo form", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap galinhaapagada {
             get {
                 object obj = ResourceManager.GetObject("galinhaapagada", resourceCulture);

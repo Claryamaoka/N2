@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 678);
+            this.ClientSize = new System.Drawing.Size(324, 681);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.grpInfo);
