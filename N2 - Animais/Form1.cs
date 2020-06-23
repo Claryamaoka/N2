@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace N2___Animais
@@ -32,6 +33,7 @@ namespace N2___Animais
                                 break;
                             selecionados["baleia"] = false;
                             botao.BackgroundImage = Properties.Resources.baleiaapagada;
+                            btnBaleia.BackColor = Color.LightYellow;
                             break;
 
                         case "cachorro":
@@ -39,6 +41,7 @@ namespace N2___Animais
                                 break;
                             selecionados["cachorro"] = false;
                             botao.BackgroundImage = Properties.Resources.cachorroapagado;
+                            btnCachorro.BackColor = Color.LightYellow;
                             break;
 
                         case "coruja":
@@ -46,6 +49,7 @@ namespace N2___Animais
                                 break;
                             selecionados["coruja"] = false;
                             botao.BackgroundImage = Properties.Resources.corujaapagada;
+                            btnCoruja.BackColor = Color.LightYellow;
                             break;
 
                         case "elefante":
@@ -53,6 +57,7 @@ namespace N2___Animais
                                 break;
                             selecionados["elefante"] = false;
                             botao.BackgroundImage = Properties.Resources.elefanteapagado;
+                            btnElefante.BackColor = Color.LightYellow;
                             break;
 
                         case "galinha":
@@ -60,6 +65,7 @@ namespace N2___Animais
                                 break;
                             selecionados["galinha"] = false;
                             botao.BackgroundImage = Properties.Resources.galinhaapagada;
+                            btnGalinha.BackColor = Color.LightYellow;
                             break;
 
                         case "gato":
@@ -67,13 +73,15 @@ namespace N2___Animais
                                 break;
                             selecionados["gato"] = false;
                             botao.BackgroundImage = Properties.Resources.gatoapagado;
+                            btnGato.BackColor = Color.LightYellow;
                             break;
 
                         case "gaviao":
                             if (animal == animalclicado)
                                 break;
-                            selecionados["gavio"] = false;
+                            selecionados["gaviao"] = false;
                             botao.BackgroundImage = Properties.Resources.gaviaoapagado;
+                            btnGaviao.BackColor = Color.LightYellow;
                             break;
 
                         case "leao":
@@ -81,6 +89,7 @@ namespace N2___Animais
                                 break;
                             selecionados["leao"] = false;
                             botao.BackgroundImage = Properties.Resources.leaoapagado;
+                            btnLeao.BackColor = Color.LightYellow;
                             break;
 
 
@@ -89,6 +98,7 @@ namespace N2___Animais
                                 break;
                             selecionados["morcego"] = false;
                             botao.BackgroundImage = Properties.Resources.morcegoapagado;
+                            btnMorcego.BackColor = Color.LightYellow;
                             break;
 
                         case "ornitorrinco":
@@ -96,6 +106,7 @@ namespace N2___Animais
                                 break;
                             selecionados["ornitorrinco"] = false;
                             botao.BackgroundImage = Properties.Resources.ornitorrincoapagado;
+                            btnOrnitorrinco.BackColor = Color.LightYellow;
                             break;
 
                         case "pato":
@@ -103,6 +114,7 @@ namespace N2___Animais
                                 break;
                             selecionados["pato"] = false;
                             botao.BackgroundImage = Properties.Resources.patoapagado;
+                            btnPato.BackColor = Color.LightYellow;
                             break;
 
                         case "pinguim":
@@ -110,6 +122,7 @@ namespace N2___Animais
                                 break;
                             selecionados["pinguim"] = false;
                             botao.BackgroundImage = Properties.Resources.pinguimapagado;
+                            btnPinguim.BackColor = Color.LightYellow;
                             break;
 
                         case "pombo":
@@ -117,6 +130,7 @@ namespace N2___Animais
                                 break;
                             selecionados["pombo"] = false;
                             botao.BackgroundImage = Properties.Resources.pomboapagado;
+                            btnPombo.BackColor = Color.LightYellow;
                             break;
 
                         case "tartaruga":
@@ -124,6 +138,7 @@ namespace N2___Animais
                                 break;
                             selecionados["tartaruga"] = false;
                             botao.BackgroundImage = Properties.Resources.tartarugaapagada;
+                            btnTartaruga.BackColor = Color.LightYellow;
                             break;
                     }
                 }
@@ -167,84 +182,98 @@ namespace N2___Animais
         {
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
             btnBaleia.BackgroundImage = Properties.Resources.baleialaranja;
+            btnBaleia.BackColor = Color.Orange;
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
         {
             EventoClique(btnCachorro.Tag.ToString(), btnCachorro);
             btnCachorro.BackgroundImage = Properties.Resources.cachorrolaranja;
+            btnCachorro.BackColor = Color.Orange;
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
         {
             EventoClique(btnCoruja.Tag.ToString(), btnCoruja);
             btnCoruja.BackgroundImage = Properties.Resources.corujalaranja;
+            btnCoruja.BackColor = Color.Orange;
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
         {
             EventoClique(btnElefante.Tag.ToString(), btnElefante);
             btnElefante.BackgroundImage = Properties.Resources.elefantelaranja;
+            btnElefante.BackColor = Color.Orange;
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
         {
             EventoClique(btnGalinha.Tag.ToString(), btnGalinha);
             btnGalinha.BackgroundImage = Properties.Resources.galinhalaranja;
+            btnGalinha.BackColor = Color.Orange;
         }
 
         private void btnGato_Click(object sender, EventArgs e)
         {
             EventoClique(btnGato.Tag.ToString(), btnGato);
             btnGato.BackgroundImage = Properties.Resources.gatolaranja;
+            btnGato.BackColor = Color.Orange;
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
         {
             EventoClique(btnGaviao.Tag.ToString(), btnGaviao);
             btnGaviao.BackgroundImage = Properties.Resources.gaviaolarajna;
+            btnGaviao.BackColor = Color.Orange;
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
         {
             EventoClique(btnLeao.Tag.ToString(), btnLeao);
             btnLeao.BackgroundImage = Properties.Resources.leaolaranja;
+            btnLeao.BackColor = Color.Orange;
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
         {
             EventoClique(btnMorcego.Tag.ToString(), btnMorcego);
             btnMorcego.BackgroundImage = Properties.Resources.morcegolaranja;
+            btnMorcego.BackColor = Color.Orange;
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
         {
             EventoClique(btnOrnitorrinco.Tag.ToString(), btnOrnitorrinco);
             btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincolaranja;
+            btnOrnitorrinco.BackColor = Color.Orange;
         }
 
         private void btnPato_Click(object sender, EventArgs e)
         {
             EventoClique(btnPato.Tag.ToString(), btnPato);
             btnPato.BackgroundImage = Properties.Resources.patolaranja;
+         btnPato.BackColor = Color.Orange;
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
         {
             EventoClique(btnPinguim.Tag.ToString(), btnPinguim);
             btnPinguim.BackgroundImage = Properties.Resources.pinguimlaranja;
+            btnPinguim.BackColor = Color.Orange;
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
         {
             EventoClique(btnPombo.Tag.ToString(), btnPombo);
             btnPombo.BackgroundImage = Properties.Resources.pombolaranja;
+            btnPombo.BackColor = Color.Orange;
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
         {
             EventoClique(btnTartaruga.Tag.ToString(), btnTartaruga);
             btnTartaruga.BackgroundImage = Properties.Resources.tartarugalarajna;
+            btnTartaruga.BackColor = Color.Orange;
         }
         #endregion Eventos
 
