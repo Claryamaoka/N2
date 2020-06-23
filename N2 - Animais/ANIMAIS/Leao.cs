@@ -14,9 +14,9 @@ namespace N2___Animais.ANIMAIS
         /// <param name="carn"></param>
         /// <param name="peconhento"></param>
         /// <param name="pelo"></param>
-        public Leao(bool carn, bool peconhento, bool pelo)
+        public Leao(bool carne, bool peconhento, bool pelo)
         {
-            Carnivoro = carn;
+            Carnivoro = carne;
             Peconhento = peconhento;
             Pelos = pelo;
         }

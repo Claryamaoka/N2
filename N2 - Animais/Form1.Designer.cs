@@ -43,33 +43,16 @@
             this.btnCoruja = new System.Windows.Forms.Button();
             this.btnCachorro = new System.Windows.Forms.Button();
             this.btnBaleia = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.rdbElefante = new System.Windows.Forms.RadioButton();
-            this.rdbLeao = new System.Windows.Forms.RadioButton();
-            this.rdbBaleia = new System.Windows.Forms.RadioButton();
-            this.rdbOrnitorrinco = new System.Windows.Forms.RadioButton();
-            this.rdbCachorro = new System.Windows.Forms.RadioButton();
-            this.rdbGato = new System.Windows.Forms.RadioButton();
-            this.rdbCoruja = new System.Windows.Forms.RadioButton();
-            this.rdbGalinha = new System.Windows.Forms.RadioButton();
-            this.rdbGaviao = new System.Windows.Forms.RadioButton();
-            this.rdbMorcego = new System.Windows.Forms.RadioButton();
-            this.rdbPato = new System.Windows.Forms.RadioButton();
-            this.rdbPinguim = new System.Windows.Forms.RadioButton();
-            this.rdbPombo = new System.Windows.Forms.RadioButton();
-            this.rdbTartaruga = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
+            this.btnCadastro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
-            this.panel1.Location = new System.Drawing.Point(348, 27);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(261, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(956, 620);
+            this.panel1.Size = new System.Drawing.Size(717, 504);
             this.panel1.TabIndex = 14;
             // 
             // btnTartaruga
@@ -77,10 +60,10 @@
             this.btnTartaruga.BackgroundImage = global::N2___Animais.Properties.Resources.tartarugaapagada;
             this.btnTartaruga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTartaruga.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTartaruga.Location = new System.Drawing.Point(1164, 785);
-            this.btnTartaruga.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTartaruga.Location = new System.Drawing.Point(873, 625);
+            this.btnTartaruga.Margin = new System.Windows.Forms.Padding(2);
             this.btnTartaruga.Name = "btnTartaruga";
-            this.btnTartaruga.Size = new System.Drawing.Size(140, 98);
+            this.btnTartaruga.Size = new System.Drawing.Size(105, 80);
             this.btnTartaruga.TabIndex = 13;
             this.btnTartaruga.Tag = "tartaruga";
             this.btnTartaruga.UseVisualStyleBackColor = true;
@@ -93,10 +76,10 @@
             this.btnPombo.BackgroundImage = global::N2___Animais.Properties.Resources.pomboapagado;
             this.btnPombo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPombo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPombo.Location = new System.Drawing.Point(1028, 785);
-            this.btnPombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPombo.Location = new System.Drawing.Point(771, 625);
+            this.btnPombo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPombo.Name = "btnPombo";
-            this.btnPombo.Size = new System.Drawing.Size(140, 98);
+            this.btnPombo.Size = new System.Drawing.Size(105, 80);
             this.btnPombo.TabIndex = 12;
             this.btnPombo.Tag = "pombo";
             this.btnPombo.UseVisualStyleBackColor = true;
@@ -109,10 +92,10 @@
             this.btnPinguim.BackgroundImage = global::N2___Animais.Properties.Resources.pinguimapagado;
             this.btnPinguim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPinguim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPinguim.Location = new System.Drawing.Point(892, 785);
-            this.btnPinguim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPinguim.Location = new System.Drawing.Point(669, 625);
+            this.btnPinguim.Margin = new System.Windows.Forms.Padding(2);
             this.btnPinguim.Name = "btnPinguim";
-            this.btnPinguim.Size = new System.Drawing.Size(140, 98);
+            this.btnPinguim.Size = new System.Drawing.Size(105, 80);
             this.btnPinguim.TabIndex = 11;
             this.btnPinguim.Tag = "pinguim";
             this.btnPinguim.UseVisualStyleBackColor = true;
@@ -125,10 +108,10 @@
             this.btnPato.BackgroundImage = global::N2___Animais.Properties.Resources.patoapagado;
             this.btnPato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPato.Location = new System.Drawing.Point(756, 785);
-            this.btnPato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPato.Location = new System.Drawing.Point(567, 625);
+            this.btnPato.Margin = new System.Windows.Forms.Padding(2);
             this.btnPato.Name = "btnPato";
-            this.btnPato.Size = new System.Drawing.Size(140, 98);
+            this.btnPato.Size = new System.Drawing.Size(105, 80);
             this.btnPato.TabIndex = 10;
             this.btnPato.Tag = "pato";
             this.btnPato.UseVisualStyleBackColor = true;
@@ -141,10 +124,10 @@
             this.btnOrnitorrinco.BackgroundImage = global::N2___Animais.Properties.Resources.ornitorrincoapagado;
             this.btnOrnitorrinco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOrnitorrinco.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOrnitorrinco.Location = new System.Drawing.Point(620, 784);
-            this.btnOrnitorrinco.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOrnitorrinco.Location = new System.Drawing.Point(465, 625);
+            this.btnOrnitorrinco.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrnitorrinco.Name = "btnOrnitorrinco";
-            this.btnOrnitorrinco.Size = new System.Drawing.Size(140, 98);
+            this.btnOrnitorrinco.Size = new System.Drawing.Size(105, 80);
             this.btnOrnitorrinco.TabIndex = 9;
             this.btnOrnitorrinco.Tag = "ornitorrinco";
             this.btnOrnitorrinco.UseVisualStyleBackColor = true;
@@ -157,10 +140,10 @@
             this.btnMorcego.BackgroundImage = global::N2___Animais.Properties.Resources.morcegoapagado;
             this.btnMorcego.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMorcego.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMorcego.Location = new System.Drawing.Point(484, 784);
-            this.btnMorcego.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMorcego.Location = new System.Drawing.Point(363, 625);
+            this.btnMorcego.Margin = new System.Windows.Forms.Padding(2);
             this.btnMorcego.Name = "btnMorcego";
-            this.btnMorcego.Size = new System.Drawing.Size(140, 98);
+            this.btnMorcego.Size = new System.Drawing.Size(105, 80);
             this.btnMorcego.TabIndex = 8;
             this.btnMorcego.Tag = "morcego";
             this.btnMorcego.UseVisualStyleBackColor = true;
@@ -173,10 +156,10 @@
             this.btnLeao.BackgroundImage = global::N2___Animais.Properties.Resources.leaoapagado;
             this.btnLeao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLeao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLeao.Location = new System.Drawing.Point(348, 784);
-            this.btnLeao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLeao.Location = new System.Drawing.Point(261, 625);
+            this.btnLeao.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeao.Name = "btnLeao";
-            this.btnLeao.Size = new System.Drawing.Size(140, 98);
+            this.btnLeao.Size = new System.Drawing.Size(105, 80);
             this.btnLeao.TabIndex = 7;
             this.btnLeao.Tag = "leao";
             this.btnLeao.UseVisualStyleBackColor = true;
@@ -189,10 +172,10 @@
             this.btnGaviao.BackgroundImage = global::N2___Animais.Properties.Resources.gaviaoapagado;
             this.btnGaviao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGaviao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGaviao.Location = new System.Drawing.Point(1164, 681);
-            this.btnGaviao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGaviao.Location = new System.Drawing.Point(873, 540);
+            this.btnGaviao.Margin = new System.Windows.Forms.Padding(2);
             this.btnGaviao.Name = "btnGaviao";
-            this.btnGaviao.Size = new System.Drawing.Size(140, 98);
+            this.btnGaviao.Size = new System.Drawing.Size(105, 80);
             this.btnGaviao.TabIndex = 6;
             this.btnGaviao.Tag = "gaviao";
             this.btnGaviao.UseVisualStyleBackColor = true;
@@ -205,10 +188,10 @@
             this.btnGato.BackgroundImage = global::N2___Animais.Properties.Resources.gatoapagado;
             this.btnGato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGato.Location = new System.Drawing.Point(1028, 681);
-            this.btnGato.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGato.Location = new System.Drawing.Point(771, 540);
+            this.btnGato.Margin = new System.Windows.Forms.Padding(2);
             this.btnGato.Name = "btnGato";
-            this.btnGato.Size = new System.Drawing.Size(140, 98);
+            this.btnGato.Size = new System.Drawing.Size(105, 80);
             this.btnGato.TabIndex = 5;
             this.btnGato.Tag = "gato";
             this.btnGato.UseVisualStyleBackColor = true;
@@ -221,10 +204,10 @@
             this.btnGalinha.BackgroundImage = global::N2___Animais.Properties.Resources.galinhaapagada;
             this.btnGalinha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGalinha.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGalinha.Location = new System.Drawing.Point(892, 681);
-            this.btnGalinha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGalinha.Location = new System.Drawing.Point(669, 540);
+            this.btnGalinha.Margin = new System.Windows.Forms.Padding(2);
             this.btnGalinha.Name = "btnGalinha";
-            this.btnGalinha.Size = new System.Drawing.Size(140, 98);
+            this.btnGalinha.Size = new System.Drawing.Size(105, 80);
             this.btnGalinha.TabIndex = 4;
             this.btnGalinha.Tag = "galinha";
             this.btnGalinha.UseVisualStyleBackColor = true;
@@ -237,10 +220,10 @@
             this.btnElefante.BackgroundImage = global::N2___Animais.Properties.Resources.elefanteapagado;
             this.btnElefante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnElefante.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnElefante.Location = new System.Drawing.Point(756, 681);
-            this.btnElefante.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnElefante.Location = new System.Drawing.Point(567, 540);
+            this.btnElefante.Margin = new System.Windows.Forms.Padding(2);
             this.btnElefante.Name = "btnElefante";
-            this.btnElefante.Size = new System.Drawing.Size(140, 98);
+            this.btnElefante.Size = new System.Drawing.Size(105, 80);
             this.btnElefante.TabIndex = 3;
             this.btnElefante.Tag = "elefante";
             this.btnElefante.UseVisualStyleBackColor = true;
@@ -253,10 +236,10 @@
             this.btnCoruja.BackgroundImage = global::N2___Animais.Properties.Resources.corujaapagada;
             this.btnCoruja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCoruja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCoruja.Location = new System.Drawing.Point(620, 681);
-            this.btnCoruja.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCoruja.Location = new System.Drawing.Point(465, 540);
+            this.btnCoruja.Margin = new System.Windows.Forms.Padding(2);
             this.btnCoruja.Name = "btnCoruja";
-            this.btnCoruja.Size = new System.Drawing.Size(140, 98);
+            this.btnCoruja.Size = new System.Drawing.Size(105, 80);
             this.btnCoruja.TabIndex = 2;
             this.btnCoruja.Tag = "coruja";
             this.btnCoruja.UseVisualStyleBackColor = true;
@@ -269,10 +252,10 @@
             this.btnCachorro.BackgroundImage = global::N2___Animais.Properties.Resources.cachorroapagado;
             this.btnCachorro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCachorro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCachorro.Location = new System.Drawing.Point(484, 681);
-            this.btnCachorro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCachorro.Location = new System.Drawing.Point(363, 540);
+            this.btnCachorro.Margin = new System.Windows.Forms.Padding(2);
             this.btnCachorro.Name = "btnCachorro";
-            this.btnCachorro.Size = new System.Drawing.Size(140, 98);
+            this.btnCachorro.Size = new System.Drawing.Size(105, 80);
             this.btnCachorro.TabIndex = 1;
             this.btnCachorro.Tag = "cachorro";
             this.btnCachorro.UseVisualStyleBackColor = true;
@@ -285,10 +268,10 @@
             this.btnBaleia.BackgroundImage = global::N2___Animais.Properties.Resources.baleiaapagada;
             this.btnBaleia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBaleia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBaleia.Location = new System.Drawing.Point(348, 681);
-            this.btnBaleia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBaleia.Location = new System.Drawing.Point(261, 540);
+            this.btnBaleia.Margin = new System.Windows.Forms.Padding(2);
             this.btnBaleia.Name = "btnBaleia";
-            this.btnBaleia.Size = new System.Drawing.Size(140, 98);
+            this.btnBaleia.Size = new System.Drawing.Size(105, 80);
             this.btnBaleia.TabIndex = 0;
             this.btnBaleia.Tag = "baleia";
             this.btnBaleia.UseVisualStyleBackColor = true;
@@ -296,202 +279,24 @@
             this.btnBaleia.MouseEnter += new System.EventHandler(this.btnBaleia_MouseEnter);
             this.btnBaleia.MouseLeave += new System.EventHandler(this.btnBaleia_MouseLeave);
             // 
-            // button1
+            // btnCadastro
             // 
-            this.button1.Location = new System.Drawing.Point(103, 785);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 59);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // rdbElefante
-            // 
-            this.rdbElefante.AutoSize = true;
-            this.rdbElefante.Location = new System.Drawing.Point(19, 206);
-            this.rdbElefante.Name = "rdbElefante";
-            this.rdbElefante.Size = new System.Drawing.Size(81, 21);
-            this.rdbElefante.TabIndex = 36;
-            this.rdbElefante.TabStop = true;
-            this.rdbElefante.Text = "Elefante";
-            this.rdbElefante.UseVisualStyleBackColor = true;
-            // 
-            // rdbLeao
-            // 
-            this.rdbLeao.AutoSize = true;
-            this.rdbLeao.Location = new System.Drawing.Point(19, 172);
-            this.rdbLeao.Name = "rdbLeao";
-            this.rdbLeao.Size = new System.Drawing.Size(61, 21);
-            this.rdbLeao.TabIndex = 35;
-            this.rdbLeao.TabStop = true;
-            this.rdbLeao.Text = "Leão";
-            this.rdbLeao.UseVisualStyleBackColor = true;
-            // 
-            // rdbBaleia
-            // 
-            this.rdbBaleia.AutoSize = true;
-            this.rdbBaleia.Location = new System.Drawing.Point(19, 138);
-            this.rdbBaleia.Name = "rdbBaleia";
-            this.rdbBaleia.Size = new System.Drawing.Size(68, 21);
-            this.rdbBaleia.TabIndex = 34;
-            this.rdbBaleia.TabStop = true;
-            this.rdbBaleia.Text = "Baleia";
-            this.rdbBaleia.UseVisualStyleBackColor = true;
-            // 
-            // rdbOrnitorrinco
-            // 
-            this.rdbOrnitorrinco.AutoSize = true;
-            this.rdbOrnitorrinco.Location = new System.Drawing.Point(19, 104);
-            this.rdbOrnitorrinco.Name = "rdbOrnitorrinco";
-            this.rdbOrnitorrinco.Size = new System.Drawing.Size(104, 21);
-            this.rdbOrnitorrinco.TabIndex = 33;
-            this.rdbOrnitorrinco.TabStop = true;
-            this.rdbOrnitorrinco.Text = "Ornitorrinco";
-            this.rdbOrnitorrinco.UseVisualStyleBackColor = true;
-            // 
-            // rdbCachorro
-            // 
-            this.rdbCachorro.AutoSize = true;
-            this.rdbCachorro.Location = new System.Drawing.Point(19, 70);
-            this.rdbCachorro.Name = "rdbCachorro";
-            this.rdbCachorro.Size = new System.Drawing.Size(91, 21);
-            this.rdbCachorro.TabIndex = 32;
-            this.rdbCachorro.TabStop = true;
-            this.rdbCachorro.Text = "Cachorro ";
-            this.rdbCachorro.UseVisualStyleBackColor = true;
-            // 
-            // rdbGato
-            // 
-            this.rdbGato.AutoSize = true;
-            this.rdbGato.Location = new System.Drawing.Point(19, 36);
-            this.rdbGato.Name = "rdbGato";
-            this.rdbGato.Size = new System.Drawing.Size(60, 21);
-            this.rdbGato.TabIndex = 31;
-            this.rdbGato.TabStop = true;
-            this.rdbGato.Text = "Gato";
-            this.rdbGato.UseVisualStyleBackColor = true;
-            // 
-            // rdbCoruja
-            // 
-            this.rdbCoruja.AutoSize = true;
-            this.rdbCoruja.Location = new System.Drawing.Point(19, 233);
-            this.rdbCoruja.Name = "rdbCoruja";
-            this.rdbCoruja.Size = new System.Drawing.Size(70, 21);
-            this.rdbCoruja.TabIndex = 37;
-            this.rdbCoruja.TabStop = true;
-            this.rdbCoruja.Text = "Coruja";
-            this.rdbCoruja.UseVisualStyleBackColor = true;
-            // 
-            // rdbGalinha
-            // 
-            this.rdbGalinha.AutoSize = true;
-            this.rdbGalinha.Location = new System.Drawing.Point(19, 260);
-            this.rdbGalinha.Name = "rdbGalinha";
-            this.rdbGalinha.Size = new System.Drawing.Size(78, 21);
-            this.rdbGalinha.TabIndex = 38;
-            this.rdbGalinha.TabStop = true;
-            this.rdbGalinha.Text = "Galinha";
-            this.rdbGalinha.UseVisualStyleBackColor = true;
-            // 
-            // rdbGaviao
-            // 
-            this.rdbGaviao.AutoSize = true;
-            this.rdbGaviao.Location = new System.Drawing.Point(19, 287);
-            this.rdbGaviao.Name = "rdbGaviao";
-            this.rdbGaviao.Size = new System.Drawing.Size(74, 21);
-            this.rdbGaviao.TabIndex = 39;
-            this.rdbGaviao.TabStop = true;
-            this.rdbGaviao.Text = "Gavião";
-            this.rdbGaviao.UseVisualStyleBackColor = true;
-            // 
-            // rdbMorcego
-            // 
-            this.rdbMorcego.AutoSize = true;
-            this.rdbMorcego.Location = new System.Drawing.Point(19, 314);
-            this.rdbMorcego.Name = "rdbMorcego";
-            this.rdbMorcego.Size = new System.Drawing.Size(84, 21);
-            this.rdbMorcego.TabIndex = 40;
-            this.rdbMorcego.TabStop = true;
-            this.rdbMorcego.Text = "Morcego";
-            this.rdbMorcego.UseVisualStyleBackColor = true;
-            // 
-            // rdbPato
-            // 
-            this.rdbPato.AutoSize = true;
-            this.rdbPato.Location = new System.Drawing.Point(19, 341);
-            this.rdbPato.Name = "rdbPato";
-            this.rdbPato.Size = new System.Drawing.Size(58, 21);
-            this.rdbPato.TabIndex = 41;
-            this.rdbPato.TabStop = true;
-            this.rdbPato.Text = "Pato";
-            this.rdbPato.UseVisualStyleBackColor = true;
-            // 
-            // rdbPinguim
-            // 
-            this.rdbPinguim.AutoSize = true;
-            this.rdbPinguim.Location = new System.Drawing.Point(19, 368);
-            this.rdbPinguim.Name = "rdbPinguim";
-            this.rdbPinguim.Size = new System.Drawing.Size(79, 21);
-            this.rdbPinguim.TabIndex = 42;
-            this.rdbPinguim.TabStop = true;
-            this.rdbPinguim.Text = "Pinguim";
-            this.rdbPinguim.UseVisualStyleBackColor = true;
-            // 
-            // rdbPombo
-            // 
-            this.rdbPombo.AutoSize = true;
-            this.rdbPombo.Location = new System.Drawing.Point(19, 395);
-            this.rdbPombo.Name = "rdbPombo";
-            this.rdbPombo.Size = new System.Drawing.Size(73, 21);
-            this.rdbPombo.TabIndex = 43;
-            this.rdbPombo.TabStop = true;
-            this.rdbPombo.Text = "Pombo";
-            this.rdbPombo.UseVisualStyleBackColor = true;
-            // 
-            // rdbTartaruga
-            // 
-            this.rdbTartaruga.AutoSize = true;
-            this.rdbTartaruga.Location = new System.Drawing.Point(19, 432);
-            this.rdbTartaruga.Name = "rdbTartaruga";
-            this.rdbTartaruga.Size = new System.Drawing.Size(92, 21);
-            this.rdbTartaruga.TabIndex = 44;
-            this.rdbTartaruga.TabStop = true;
-            this.rdbTartaruga.Tag = "rbtartaruga";
-            this.rdbTartaruga.Text = "Tartaruga";
-            this.rdbTartaruga.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rdbTartaruga);
-            this.groupBox1.Controls.Add(this.rdbGato);
-            this.groupBox1.Controls.Add(this.rdbPombo);
-            this.groupBox1.Controls.Add(this.rdbCachorro);
-            this.groupBox1.Controls.Add(this.rdbPinguim);
-            this.groupBox1.Controls.Add(this.rdbOrnitorrinco);
-            this.groupBox1.Controls.Add(this.rdbPato);
-            this.groupBox1.Controls.Add(this.rdbBaleia);
-            this.groupBox1.Controls.Add(this.rdbMorcego);
-            this.groupBox1.Controls.Add(this.rdbLeao);
-            this.groupBox1.Controls.Add(this.rdbGaviao);
-            this.groupBox1.Controls.Add(this.rdbElefante);
-            this.groupBox1.Controls.Add(this.rdbGalinha);
-            this.groupBox1.Controls.Add(this.rdbCoruja);
-            this.groupBox1.Location = new System.Drawing.Point(63, 73);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 489);
-            this.groupBox1.TabIndex = 45;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.btnCadastro.Location = new System.Drawing.Point(54, 667);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(106, 38);
+            this.btnCadastro.TabIndex = 15;
+            this.btnCadastro.Text = "Cadastrar";
+            this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1344, 897);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1008, 716);
+            this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTartaruga);
             this.Controls.Add(this.btnPombo);
@@ -507,11 +312,10 @@
             this.Controls.Add(this.btnCoruja);
             this.Controls.Add(this.btnCachorro);
             this.Controls.Add(this.btnBaleia);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANIMAL KINGDOM";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -533,22 +337,7 @@
         private System.Windows.Forms.Button btnPombo;
         private System.Windows.Forms.Button btnTartaruga;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton rdbElefante;
-        private System.Windows.Forms.RadioButton rdbLeao;
-        private System.Windows.Forms.RadioButton rdbBaleia;
-        private System.Windows.Forms.RadioButton rdbOrnitorrinco;
-        private System.Windows.Forms.RadioButton rdbCachorro;
-        private System.Windows.Forms.RadioButton rdbGato;
-        private System.Windows.Forms.RadioButton rdbCoruja;
-        private System.Windows.Forms.RadioButton rdbGalinha;
-        private System.Windows.Forms.RadioButton rdbGaviao;
-        private System.Windows.Forms.RadioButton rdbMorcego;
-        private System.Windows.Forms.RadioButton rdbPato;
-        private System.Windows.Forms.RadioButton rdbPinguim;
-        private System.Windows.Forms.RadioButton rdbPombo;
-        private System.Windows.Forms.RadioButton rdbTartaruga;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnCadastro;
     }
 }
 

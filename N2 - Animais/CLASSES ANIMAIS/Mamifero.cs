@@ -8,20 +8,23 @@ namespace N2___Animais
 {
     class Mamifero:Animal
     {
+        int qtdeMamas;
+        string corPelo;
         #region ...PROPRIEDADES...
+
         public int QtdeMamas
         {
             get
             {
-                return QtdeMamas;
+                return qtdeMamas;
             }
 
             set
             {
-                if (QtdeMamas < 0)
+                if (value < 0)
                     throw new Exception("A quantidade de mamas deve ser maior ou igual a 0!");
                 else
-                    QtdeMamas = value;
+                    qtdeMamas = value;
             }
         }
 
@@ -32,15 +35,15 @@ namespace N2___Animais
         {
             get
             {
-                return CorPelo;
+                return corPelo;
             }
 
             set
             {
-                if (CorPelo == "")
+                if (value == "")
                     throw new Exception("Informe a cor de pelo!");
                 else
-                    CorPelo = value;
+                    corPelo = value;
             }
         }
 

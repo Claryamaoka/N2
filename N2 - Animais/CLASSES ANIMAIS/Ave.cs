@@ -8,6 +8,7 @@ namespace N2___Animais
 {
     class Ave:Animal
     {
+        string corpena;
         #region ... PROPRIEDADES ...
 
         public bool Rapina
@@ -17,15 +18,15 @@ namespace N2___Animais
         {
             get
             {
-                return CorPena;
+                return corpena;
             }
 
             set
             {
-                if (CorPena == "")
+                if (value == "")
                     throw new Exception("Informe a cor de pena!");
                 else
-                    CorPena = value;
+                    corpena = value;
             }
         }
 

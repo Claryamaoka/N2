@@ -1,25 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace N2___Animais
 {
     class Animal
     {
+        string nome;
+        DateTime dataNascimento;
+        char sexo;
+        int idade;
         #region ...PROPRIEDADES...
         public string Nome
         {
             get
             {
-                return Nome;
+                return nome;
             }
 
             set
             {
-                if (Nome != "")
-                    Nome = value;
+                if (value != "")
+                    nome = value;
                 else
                     throw new Exception("Atribua um nome ao animal!");
             }
@@ -31,13 +31,13 @@ namespace N2___Animais
         {
             get
             {
-                return DataNascimento;
+                return dataNascimento;
             }
 
             set
             {
-                if (DataNascimento < DateTime.Now)
-                    DataNascimento = value;
+                if (dataNascimento < DateTime.Now)
+                    dataNascimento = value;
                 else
                     throw new Exception("A data de nascimento nao pode ser futura!");
             }
@@ -47,13 +47,13 @@ namespace N2___Animais
         {
             get
             {
-                return Sexo;
+                return sexo;
             }
 
             set
             {
-                if (Sexo == 'M' || Sexo == 'F')
-                    Sexo = value;
+                if (value == 'M' || value == 'F')
+                    sexo = value;
                 else
                     throw new Exception("Atribua um sexo ao animal!");
             }
@@ -61,20 +61,9 @@ namespace N2___Animais
 
         public int Idade
         {
-            get
-            {
-                return Idade;
-            }
-
-            set
-            {
-                if (Idade >= 0)
-                    Idade = value;
-                else
-                    throw new Exception("A idade deve ser maior ou igual a zero!");
-            }
+            get => idade;
+            set => idade = 2020 - dataNascimento.Year;
         }
-
         public bool Carnivoro
         { get; set; }
 

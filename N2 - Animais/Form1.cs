@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace N2___Animais
@@ -19,7 +13,6 @@ namespace N2___Animais
         }
 
         SortedDictionary<string, bool> selecionados = new SortedDictionary<string, bool>();
-        public string animalselecionado;
 
         /// <summary>
         /// Volta a imagem para seu modo original
@@ -137,6 +130,9 @@ namespace N2___Animais
             }
         }
 
+        /// <summary>
+        /// Adicionar os animais no dicíonário para seleção
+        /// </summary>
         public void DicionarioBotoes()
         {
             selecionados.Add("baleia", false);
@@ -155,111 +151,100 @@ namespace N2___Animais
             selecionados.Add("tartaruga", false);
         }
 
+        /// <summary>
+        /// Método usado quando seleciona um animal
+        /// </summary>
+        /// <param name="tag"></param>
+        /// <param name="botao"></param>
         public void EventoClique(string tag, Control botao)
         {
             selecionados[tag] = true;
             VoltaImagem(botao.Tag.ToString());
         }
 
-
         #region"Eventos cliques dos botoes"
         private void btnBaleia_Click(object sender, EventArgs e)
         {
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
             btnBaleia.BackgroundImage = Properties.Resources.baleialaranja;
-            rdbBaleia.Checked = true;
-          
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
         {
             EventoClique(btnCachorro.Tag.ToString(), btnCachorro);
             btnCachorro.BackgroundImage = Properties.Resources.cachorrolaranja;
-            rdbCachorro.Checked = true;
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
         {
             EventoClique(btnCoruja.Tag.ToString(), btnCoruja);
             btnCoruja.BackgroundImage = Properties.Resources.corujalaranja;
-            rdbCoruja.Checked = true;
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
         {
             EventoClique(btnElefante.Tag.ToString(), btnElefante);
             btnElefante.BackgroundImage = Properties.Resources.elefantelaranja;
-            rdbElefante.Checked = true;
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
         {
             EventoClique(btnGalinha.Tag.ToString(), btnGalinha);
             btnGalinha.BackgroundImage = Properties.Resources.galinhalaranja;
-            rdbGalinha.Checked = true;
         }
 
         private void btnGato_Click(object sender, EventArgs e)
         {
             EventoClique(btnGato.Tag.ToString(), btnGato);
             btnGato.BackgroundImage = Properties.Resources.gatolaranja;
-            rdbGato.Checked = true;
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
         {
             EventoClique(btnGaviao.Tag.ToString(), btnGaviao);
             btnGaviao.BackgroundImage = Properties.Resources.gaviaolarajna;
-            rdbGaviao.Checked = true;
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
         {
             EventoClique(btnLeao.Tag.ToString(), btnLeao);
             btnLeao.BackgroundImage = Properties.Resources.leaolaranja;
-            rdbLeao.Checked = true;
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
         {
             EventoClique(btnMorcego.Tag.ToString(), btnMorcego);
             btnMorcego.BackgroundImage = Properties.Resources.morcegolaranja;
-            rdbMorcego.Checked = true;
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
         {
             EventoClique(btnOrnitorrinco.Tag.ToString(), btnOrnitorrinco);
             btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincolaranja;
-            rdbOrnitorrinco.Checked = true;
         }
 
         private void btnPato_Click(object sender, EventArgs e)
         {
             EventoClique(btnPato.Tag.ToString(), btnPato);
             btnPato.BackgroundImage = Properties.Resources.patolaranja;
-            rdbPato.Checked = true;
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
         {
             EventoClique(btnPinguim.Tag.ToString(), btnPinguim);
             btnPinguim.BackgroundImage = Properties.Resources.pinguimlaranja;
-            rdbPinguim.Checked = true;
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
         {
             EventoClique(btnPombo.Tag.ToString(), btnPombo);
             btnPombo.BackgroundImage = Properties.Resources.pombolaranja;
-            rdbPombo.Checked = true;
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
         {
             EventoClique(btnTartaruga.Tag.ToString(), btnTartaruga);
             btnTartaruga.BackgroundImage = Properties.Resources.tartarugalarajna;
-            rdbTartaruga.Checked = true;
         }
         #endregion Eventos
 
@@ -490,24 +475,27 @@ namespace N2___Animais
         }
         #endregion
 
-
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Chama o form de cadastro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCadastro_Click(object sender, EventArgs e)
         {
             FrmCadastro Cadastro = new FrmCadastro();
-            
-            foreach (Control rdb in groupBox1.Controls)
+            foreach (var animal in selecionados)
             {
-                if (rdb is RadioButton && (rdb as RadioButton).Checked)
+                if (animal.Value)
                 {
-                    animalselecionado = rdb.Text;
-                    break;
+                    Cadastro.PegaAnimalSelecionado = animal.Key;
+                    Cadastro.ShowDialog();
+                    return;
                 }
             }
-            // fazer a alteração utilizando a tag (nao esquecer)
-            Cadastro.PegaAnimalSelecionado = animalselecionado;
-            Cadastro.ShowDialog();
+            MessageBox.Show("Selecione um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+
 
         }
-
     }
 }
