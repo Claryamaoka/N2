@@ -33,17 +33,37 @@ namespace N2___Animais.ANIMAIS
         private int alturaMaxima;
         private double velocidadeVoo;
 
-        //falta validar altura e velocidade
         public int AlturaMaximaM
         {
-            get => alturaMaxima;
-            set => alturaMaxima = value;
+            get
+            {
+                return alturaMaxima;
+            }
+
+            set
+            {
+                if (value > 0 || value < 12000)
+                    alturaMaxima = value;
+                else
+                    throw new Exception("A altura máxima em que um pássaro pode voar deve variar de 1m a 12000m!");
+            }
         }
         public double VelocidadeVoo
         {
-            get => velocidadeVoo;
-            set => velocidadeVoo = value;
+            get
+            {
+                return velocidadeVoo;
+            }
+
+            set
+            {
+                if (value > 0 || value < 350)
+                    velocidadeVoo = value;
+                else
+                    throw new Exception("A velocidade máxima em que um pássaro pode voar deve variar de 1km/h a 350km/h!");
+            }
         }
+
         private bool viveTerra, mergulha, aguaDoce;
 
         public bool ViveEmTerra

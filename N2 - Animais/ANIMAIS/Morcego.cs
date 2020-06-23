@@ -27,13 +27,33 @@ namespace N2___Animais.ANIMAIS
         //Falta validar
         public int AlturaMaximaM
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get
+            {
+                return alturaMaxima;
+            }
+
+            set
+            {
+                if (value > 0 || value < 12000)
+                    alturaMaxima = value;
+                else
+                    throw new Exception("A altura máxima em que uma ave pode voar deve variar de 1m a 12000m!");
+            }
         }
         public double VelocidadeVoo
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get
+            {
+                return velocidadeVoo;
+            }
+
+            set
+            {
+                if (value > 0 || value < 350)
+                    velocidadeVoo = value;
+                else
+                    throw new Exception("A velocidade máxima em que uma ave pode voar deve variar de 1km/h a 350km/h!");
+            }
         }
         #endregion
 
