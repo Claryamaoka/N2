@@ -8,26 +8,45 @@ namespace N2___Animais.ANIMAIS
 {
     class Baleia : Mamifero, IAquatico
     {
-        public Baleia(bool terra, bool mergulho, bool agua, bool peconhento, bool carne)
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="terra"></param>
+        /// <param name="mergulho"></param>
+        /// <param name="agua"></param>
+        /// <param name="peconhento"></param>
+        /// <param name="carne"></param>
+        /// <param name="pelo"></param>
+        public Baleia(bool terra, bool mergulho, bool agua, bool peconhento, bool carne, bool pelo)
         {
-            //ViveEmTerra = terra;
+            ViveEmTerra = terra;
+            Mergulha = mergulho;
+            AguaDoce = agua;
             Peconhento = peconhento;
             Carnivoro = carne;
+            Pelos = pelo;
 
         }
-        public bool AguaDoce()
-        {
-            throw new NotImplementedException();
-        }
 
-        public bool Mergulha()
-        {
-            throw new NotImplementedException();
-        }
+        private bool viveTerra, mergulha, aguaDoce;
 
-        public bool ViveEmTerra()
+        #region PARÂMETROS
+        public bool ViveEmTerra
         {
-            throw new NotImplementedException();
+            get => viveTerra;
+            set => viveTerra = value;
         }
+        public bool Mergulha
+        {
+            get => mergulha;
+            set => mergulha = value;
+        }
+        public bool AguaDoce
+        {
+            get => aguaDoce;
+            set => aguaDoce = value;
+        }
+        #endregion
+
     }
 }

@@ -8,10 +8,17 @@ namespace N2___Animais.ANIMAIS
 {
     class Cachorro: Mamifero
     {
-        public Cachorro(bool carne, bool peconhento)
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
+        /// <param name="pelo"></param>
+        public Cachorro(bool carne, bool peconhento,bool pelo)
         {
             Carnivoro = carne;
             Peconhento = peconhento;
+            Pelos = pelo;
         }
     }
 }

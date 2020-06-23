@@ -8,8 +8,15 @@ namespace N2___Animais
 {
     class Gato : Mamifero
     {
-        public Gato(bool carne, bool peconhento)
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
+        /// <param name="pelo"></param>
+        public Gato(bool carne, bool peconhento,bool pelo)
         {
+            Pelos = pelo;
             Carnivoro = carne;
             Peconhento = peconhento;
         }

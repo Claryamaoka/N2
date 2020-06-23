@@ -6,19 +6,39 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ANIMAIS
 {
-    class Gaviao : Ave, IOviparo, IVoar,IPredador
+    class Gaviao : Ave, IOviparo, IVoar, IPredador
     {
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="deRapina"></param>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
         public Gaviao(bool deRapina, bool carne, bool peconhento)
         {
             Rapina = deRapina;
             Carnivoro = carne;
             Peconhento = peconhento;
         }
-        public int AlturaMaximaM()
+        #region PARÂMETROS
+        private int alturaMaxima;
+        private double velocidadeVoo;
+
+        //falta validar altura e velocidade
+        public int AlturaMaximaM
         {
-            throw new NotImplementedException();
+            get => alturaMaxima;
+            set => alturaMaxima = value;
+        }
+        public double VelocidadeVoo
+        {
+            get => velocidadeVoo;
+            set => velocidadeVoo = value;
         }
 
+        #endregion
+
+        #region MÉTODOS
         public void Ataque()
         {
             throw new NotImplementedException();
@@ -34,14 +54,10 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
 
-        public double VelocidadeVoo()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Voar()
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

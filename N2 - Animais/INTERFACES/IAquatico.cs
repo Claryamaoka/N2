@@ -8,10 +8,13 @@ namespace N2___Animais
 {
     interface IAquatico
     {
-        bool ViveEmTerra();
+        bool ViveEmTerra
+        { get; set; }
 
-        bool Mergulha();
+        bool Mergulha
+        { get; set; }
 
-        bool AguaDoce();
+        bool AguaDoce
+        { get; set; }
     }
 }

@@ -8,6 +8,12 @@ namespace N2___Animais.ANIMAIS
 {
     class Galinha : Ave, IOviparo
     {
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="deRapina"></param>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
         public Galinha(bool deRapina,bool carne, bool peconhento)
         {
             Rapina = deRapina;
@@ -15,6 +21,7 @@ namespace N2___Animais.ANIMAIS
             Peconhento = peconhento;
         }
 
+        #region MÉTODOS
         public void Botar()
         {
             throw new NotImplementedException();
@@ -24,5 +31,6 @@ namespace N2___Animais.ANIMAIS
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

@@ -8,16 +8,62 @@ namespace N2___Animais.ANIMAIS
 {
     class Pato : Ave, IOviparo, IAquatico, IVoar
     {
-        public bool AguaDoce()
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
+        /// <param name="rapina"></param>
+        /// <param name="terra"></param>
+        /// <param name="mergulho"></param>
+        /// <param name="agua"></param>
+        public Pato(bool carne, bool peconhento, bool rapina,
+            bool terra, bool mergulho, bool agua)
         {
-            throw new NotImplementedException();
+            Carnivoro = carne;
+            Peconhento = peconhento;
+            Rapina = rapina;
+            ViveEmTerra = terra;
+            Mergulha = mergulho;
+            AguaDoce = agua;
         }
 
-        public int AlturaMaximaM()
-        {
-            throw new NotImplementedException();
-        }
+        #region PARÂMETROS
 
+        private int alturaMaxima;
+        private double velocidadeVoo;
+
+        //falta validar altura e velocidade
+        public int AlturaMaximaM
+        {
+            get => alturaMaxima;
+            set => alturaMaxima = value;
+        }
+        public double VelocidadeVoo
+        {
+            get => velocidadeVoo;
+            set => velocidadeVoo = value;
+        }
+        private bool viveTerra, mergulha, aguaDoce;
+
+        public bool ViveEmTerra
+        {
+            get => viveTerra;
+            set => viveTerra = value;
+        }
+        public bool Mergulha
+        {
+            get => mergulha;
+            set => mergulha = value;
+        }
+        public bool AguaDoce
+        {
+            get => aguaDoce;
+            set => aguaDoce = value;
+        }
+        #endregion
+
+        #region MÉTODOS
         public void Botar()
         {
             throw new NotImplementedException();
@@ -28,24 +74,11 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
 
-        public bool Mergulha()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double VelocidadeVoo()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool ViveEmTerra()
-        {
-            throw new NotImplementedException();
-        }
-
+       
         public void Voar()
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

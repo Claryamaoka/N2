@@ -8,10 +8,37 @@ namespace N2___Animais.ANIMAIS
 {
     class Pombo : Ave, IOviparo, IVoar
     {
-        public int AlturaMaximaM()
+        /// <summary>
+        /// Construtor Personalizado
+        /// </summary>
+        /// <param name="carne"></param>
+        /// <param name="peconhento"></param>
+        /// <param name="rapina"></param>
+        public Pombo(bool carne, bool peconhento, bool rapina)
         {
-            throw new NotImplementedException();
+            Carnivoro = carne;
+            Peconhento = peconhento;
+            Rapina = rapina;
         }
+
+        #region PARÂMETRO
+        private int alturaMaxima;
+        private double velocidadeVoo;
+
+        //falta validar altura e velocidade
+        public int AlturaMaximaM
+        {
+            get => alturaMaxima;
+            set => alturaMaxima = value;
+        }
+        public double VelocidadeVoo
+        {
+            get => velocidadeVoo;
+            set => velocidadeVoo = value;
+        }
+        #endregion
+
+        #region MÉTODOS
 
         public void Botar()
         {
@@ -23,14 +50,10 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
 
-        public double VelocidadeVoo()
-        {
-            throw new NotImplementedException();
-        }
-
         public void Voar()
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

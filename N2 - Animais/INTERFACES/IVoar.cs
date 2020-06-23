@@ -9,10 +9,12 @@ namespace N2___Animais
     interface IVoar
     {
         //não é um método
-        int AlturaMaximaM();
+        int AlturaMaximaM
+        { get; set; }
 
         //não é um método
-        double VelocidadeVoo();
+        double VelocidadeVoo
+        { get; set; }
         
         void Voar();
     }
