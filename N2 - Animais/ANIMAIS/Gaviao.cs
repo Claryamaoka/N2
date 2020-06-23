@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ANIMAIS
 {
-    class Gaviao : Ave, IOviparo, IVoar
+    class Gaviao : Ave, IOviparo, IVoar,IPredador
     {
+        public Gaviao(bool deRapina, bool carne, bool peconhento)
+        {
+            Rapina = deRapina;
+            Carnivoro = carne;
+            Peconhento = peconhento;
+        }
         public int AlturaMaximaM()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Ataque()
         {
             throw new NotImplementedException();
         }

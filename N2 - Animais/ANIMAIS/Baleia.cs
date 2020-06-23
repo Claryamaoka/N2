@@ -8,6 +8,13 @@ namespace N2___Animais.ANIMAIS
 {
     class Baleia : Mamifero, IAquatico
     {
+        public Baleia(bool terra, bool mergulho, bool agua, bool peconhento, bool carne)
+        {
+            ViveEmTerra = terra;
+            Peconhento = peconhento;
+            Carnivoro = carne;
+
+        }
         public bool AguaDoce()
         {
             throw new NotImplementedException();

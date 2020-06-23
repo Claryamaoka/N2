@@ -8,5 +8,10 @@ namespace N2___Animais.ANIMAIS
 {
     class Cachorro: Mamifero
     {
+        public Cachorro(bool carne, bool peconhento)
+        {
+            Carnivoro = carne;
+            Peconhento = peconhento;
+        }
     }
 }

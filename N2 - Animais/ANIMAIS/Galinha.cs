@@ -8,6 +8,13 @@ namespace N2___Animais.ANIMAIS
 {
     class Galinha : Ave, IOviparo
     {
+        public Galinha(bool deRapina,bool carne, bool peconhento)
+        {
+            Rapina = deRapina;
+            Carnivoro = carne;
+            Peconhento = peconhento;
+        }
+
         public void Botar()
         {
             throw new NotImplementedException();
