@@ -10,7 +10,7 @@ namespace N2___Animais.ANIMAIS
     {
         public Baleia(bool terra, bool mergulho, bool agua, bool peconhento, bool carne)
         {
-            ViveEmTerra = terra;
+            //ViveEmTerra = terra;
             Peconhento = peconhento;
             Carnivoro = carne;
 

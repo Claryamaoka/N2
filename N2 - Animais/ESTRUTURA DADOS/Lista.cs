@@ -34,8 +34,8 @@ namespace N2___Animais.ESTRUTURA_DADOS
             }
             else
             {
-                novo.Proximo = anterior.Proximo;
-                anterior.Proximo = novo;
+                //novo.Proximo = anterior.Proximo;
+                //anterior.Proximo = novo;
             }
             qtde++;
         }
@@ -55,7 +55,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
                 while (aux.Proximo != null)
                     aux = aux.Proximo;
-                InserirNaPosicao(aux, valor);
+                //InserirNaPosicao(aux, valor);
             }
 
 
@@ -74,7 +74,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
                 for (int i = 1; i < posicao; i++)
                     aux = aux.Proximo;
 
-                InserirNaPosicao(aux, valor);
+               // InserirNaPosicao(aux, valor);
             }
         }
 
@@ -96,9 +96,11 @@ namespace N2___Animais.ESTRUTURA_DADOS
             qtde--;
         }
 
+        /*
         public Animal[] Listar
         {
 
         }
+        */
     }
 }

@@ -14,6 +14,11 @@ namespace N2___Animais
         int qtdMamas;
         bool carnivoro = false, peconhento = false, pelos = false, rapina = false, escama = false, casco = false;
 
+        private void FrmCadastro_Load(object sender, EventArgs e)
+        {
+            label8.Text = PegaAnimalSelecionado;
+        }
+
         private void txtDataNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
@@ -48,8 +53,9 @@ namespace N2___Animais
                 grpReptil.Enabled = true;
             }
         }
-
-
+        
+        
+        
         /// <summary>
         /// Validações para cadastrar o animal
         /// </summary>
@@ -57,6 +63,7 @@ namespace N2___Animais
         /// <param name="e"></param>
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Convert.ToDateTime(txtDataNascimento.Text);
@@ -134,5 +141,7 @@ namespace N2___Animais
                 MessageBox.Show("Preencha os campos corretamente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        public string PegaAnimalSelecionado { get; set; }
     }
 }

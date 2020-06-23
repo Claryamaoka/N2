@@ -19,6 +19,7 @@ namespace N2___Animais
         }
 
         SortedDictionary<string, bool> selecionados = new SortedDictionary<string, bool>();
+        public string animalselecionado;
 
         /// <summary>
         /// Volta a imagem para seu modo original
@@ -166,84 +167,99 @@ namespace N2___Animais
         {
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
             btnBaleia.BackgroundImage = Properties.Resources.baleialaranja;
+            rdbBaleia.Checked = true;
+          
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
         {
             EventoClique(btnCachorro.Tag.ToString(), btnCachorro);
             btnCachorro.BackgroundImage = Properties.Resources.cachorrolaranja;
+            rdbCachorro.Checked = true;
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
         {
             EventoClique(btnCoruja.Tag.ToString(), btnCoruja);
-            btnCoruja.BackgroundImage = Properties.Resources.corujalaranja; 
+            btnCoruja.BackgroundImage = Properties.Resources.corujalaranja;
+            rdbCoruja.Checked = true;
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
         {
             EventoClique(btnElefante.Tag.ToString(), btnElefante);
             btnElefante.BackgroundImage = Properties.Resources.elefantelaranja;
+            rdbElefante.Checked = true;
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
         {
             EventoClique(btnGalinha.Tag.ToString(), btnGalinha);
             btnGalinha.BackgroundImage = Properties.Resources.galinhalaranja;
+            rdbGalinha.Checked = true;
         }
 
         private void btnGato_Click(object sender, EventArgs e)
         {
             EventoClique(btnGato.Tag.ToString(), btnGato);
             btnGato.BackgroundImage = Properties.Resources.gatolaranja;
+            rdbGato.Checked = true;
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
         {
             EventoClique(btnGaviao.Tag.ToString(), btnGaviao);
             btnGaviao.BackgroundImage = Properties.Resources.gaviaolarajna;
+            rdbGaviao.Checked = true;
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
         {
             EventoClique(btnLeao.Tag.ToString(), btnLeao);
             btnLeao.BackgroundImage = Properties.Resources.leaolaranja;
+            rdbLeao.Checked = true;
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
         {
             EventoClique(btnMorcego.Tag.ToString(), btnMorcego);
             btnMorcego.BackgroundImage = Properties.Resources.morcegolaranja;
+            rdbMorcego.Checked = true;
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
         {
             EventoClique(btnOrnitorrinco.Tag.ToString(), btnOrnitorrinco);
             btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincolaranja;
+            rdbOrnitorrinco.Checked = true;
         }
 
         private void btnPato_Click(object sender, EventArgs e)
         {
             EventoClique(btnPato.Tag.ToString(), btnPato);
             btnPato.BackgroundImage = Properties.Resources.patolaranja;
+            rdbPato.Checked = true;
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
         {
             EventoClique(btnPinguim.Tag.ToString(), btnPinguim);
             btnPinguim.BackgroundImage = Properties.Resources.pinguimlaranja;
+            rdbPinguim.Checked = true;
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
         {
             EventoClique(btnPombo.Tag.ToString(), btnPombo);
             btnPombo.BackgroundImage = Properties.Resources.pombolaranja;
+            rdbPombo.Checked = true;
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
         {
             EventoClique(btnTartaruga.Tag.ToString(), btnTartaruga);
             btnTartaruga.BackgroundImage = Properties.Resources.tartarugalarajna;
+            rdbTartaruga.Checked = true;
         }
         #endregion Eventos
 
@@ -473,6 +489,25 @@ namespace N2___Animais
             btnTartaruga.BackgroundImage = Properties.Resources.tartarugaapagada;
         }
         #endregion
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmCadastro Cadastro = new FrmCadastro();
+            
+            foreach (Control rdb in groupBox1.Controls)
+            {
+                if (rdb is RadioButton && (rdb as RadioButton).Checked)
+                {
+                    animalselecionado = rdb.Text;
+                    break;
+                }
+            }
+            // fazer a alteração utilizando a tag (nao esquecer)
+            Cadastro.PegaAnimalSelecionado = animalselecionado;
+            Cadastro.ShowDialog();
+
+        }
 
     }
 }
