@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.btnCadastro = new System.Windows.Forms.Button();
             this.btnTartaruga = new System.Windows.Forms.Button();
             this.btnPombo = new System.Windows.Forms.Button();
             this.btnPinguim = new System.Windows.Forms.Button();
@@ -43,17 +44,32 @@
             this.btnCoruja = new System.Windows.Forms.Button();
             this.btnCachorro = new System.Windows.Forms.Button();
             this.btnBaleia = new System.Windows.Forms.Button();
-            this.btnCadastro = new System.Windows.Forms.Button();
+            this.pctCeu = new System.Windows.Forms.PictureBox();
+            this.pctAgua = new System.Windows.Forms.PictureBox();
+            this.pctArvore = new System.Windows.Forms.PictureBox();
+            this.pctChao = new System.Windows.Forms.PictureBox();
+            this.pnlFundoAcao = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctChao)).BeginInit();
+            this.pnlFundoAcao.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // btnCadastro
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
-            this.panel1.Location = new System.Drawing.Point(604, 18);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 514);
-            this.panel1.TabIndex = 14;
+            this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCadastro.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastro.ForeColor = System.Drawing.Color.White;
+            this.btnCadastro.Location = new System.Drawing.Point(52, 298);
+            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCadastro.Name = "btnCadastro";
+            this.btnCadastro.Size = new System.Drawing.Size(181, 104);
+            this.btnCadastro.TabIndex = 15;
+            this.btnCadastro.Text = "CADASTRAR";
+            this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnTartaruga
             // 
@@ -61,10 +77,10 @@
             this.btnTartaruga.BackgroundImage = global::N2___Animais.Properties.Resources.tartarugaapagada;
             this.btnTartaruga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTartaruga.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTartaruga.Location = new System.Drawing.Point(1279, 692);
+            this.btnTartaruga.Location = new System.Drawing.Point(1186, 672);
             this.btnTartaruga.Margin = new System.Windows.Forms.Padding(2);
             this.btnTartaruga.Name = "btnTartaruga";
-            this.btnTartaruga.Size = new System.Drawing.Size(105, 80);
+            this.btnTartaruga.Size = new System.Drawing.Size(84, 68);
             this.btnTartaruga.TabIndex = 13;
             this.btnTartaruga.Tag = "tartaruga";
             this.btnTartaruga.UseVisualStyleBackColor = false;
@@ -78,10 +94,10 @@
             this.btnPombo.BackgroundImage = global::N2___Animais.Properties.Resources.pomboapagado;
             this.btnPombo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPombo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPombo.Location = new System.Drawing.Point(1166, 691);
+            this.btnPombo.Location = new System.Drawing.Point(1080, 672);
             this.btnPombo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPombo.Name = "btnPombo";
-            this.btnPombo.Size = new System.Drawing.Size(105, 80);
+            this.btnPombo.Size = new System.Drawing.Size(84, 68);
             this.btnPombo.TabIndex = 12;
             this.btnPombo.Tag = "pombo";
             this.btnPombo.UseVisualStyleBackColor = false;
@@ -95,10 +111,10 @@
             this.btnPinguim.BackgroundImage = global::N2___Animais.Properties.Resources.pinguimapagado;
             this.btnPinguim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPinguim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPinguim.Location = new System.Drawing.Point(1053, 692);
+            this.btnPinguim.Location = new System.Drawing.Point(974, 672);
             this.btnPinguim.Margin = new System.Windows.Forms.Padding(2);
             this.btnPinguim.Name = "btnPinguim";
-            this.btnPinguim.Size = new System.Drawing.Size(105, 80);
+            this.btnPinguim.Size = new System.Drawing.Size(84, 68);
             this.btnPinguim.TabIndex = 11;
             this.btnPinguim.Tag = "pinguim";
             this.btnPinguim.UseVisualStyleBackColor = false;
@@ -112,10 +128,10 @@
             this.btnPato.BackgroundImage = global::N2___Animais.Properties.Resources.patoapagado;
             this.btnPato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPato.Location = new System.Drawing.Point(940, 692);
+            this.btnPato.Location = new System.Drawing.Point(868, 672);
             this.btnPato.Margin = new System.Windows.Forms.Padding(2);
             this.btnPato.Name = "btnPato";
-            this.btnPato.Size = new System.Drawing.Size(105, 80);
+            this.btnPato.Size = new System.Drawing.Size(84, 68);
             this.btnPato.TabIndex = 10;
             this.btnPato.Tag = "pato";
             this.btnPato.UseVisualStyleBackColor = false;
@@ -129,10 +145,10 @@
             this.btnOrnitorrinco.BackgroundImage = global::N2___Animais.Properties.Resources.ornitorrincoapagado;
             this.btnOrnitorrinco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOrnitorrinco.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOrnitorrinco.Location = new System.Drawing.Point(827, 692);
+            this.btnOrnitorrinco.Location = new System.Drawing.Point(762, 672);
             this.btnOrnitorrinco.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrnitorrinco.Name = "btnOrnitorrinco";
-            this.btnOrnitorrinco.Size = new System.Drawing.Size(105, 80);
+            this.btnOrnitorrinco.Size = new System.Drawing.Size(84, 68);
             this.btnOrnitorrinco.TabIndex = 9;
             this.btnOrnitorrinco.Tag = "ornitorrinco";
             this.btnOrnitorrinco.UseVisualStyleBackColor = false;
@@ -146,10 +162,10 @@
             this.btnMorcego.BackgroundImage = global::N2___Animais.Properties.Resources.morcegoapagado;
             this.btnMorcego.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMorcego.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMorcego.Location = new System.Drawing.Point(714, 692);
+            this.btnMorcego.Location = new System.Drawing.Point(656, 672);
             this.btnMorcego.Margin = new System.Windows.Forms.Padding(2);
             this.btnMorcego.Name = "btnMorcego";
-            this.btnMorcego.Size = new System.Drawing.Size(105, 80);
+            this.btnMorcego.Size = new System.Drawing.Size(84, 68);
             this.btnMorcego.TabIndex = 8;
             this.btnMorcego.Tag = "morcego";
             this.btnMorcego.UseVisualStyleBackColor = false;
@@ -163,10 +179,10 @@
             this.btnLeao.BackgroundImage = global::N2___Animais.Properties.Resources.leaoapagado;
             this.btnLeao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLeao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLeao.Location = new System.Drawing.Point(601, 692);
+            this.btnLeao.Location = new System.Drawing.Point(550, 672);
             this.btnLeao.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeao.Name = "btnLeao";
-            this.btnLeao.Size = new System.Drawing.Size(105, 80);
+            this.btnLeao.Size = new System.Drawing.Size(84, 68);
             this.btnLeao.TabIndex = 7;
             this.btnLeao.Tag = "leao";
             this.btnLeao.UseVisualStyleBackColor = false;
@@ -180,10 +196,10 @@
             this.btnGaviao.BackgroundImage = global::N2___Animais.Properties.Resources.gaviaoapagado;
             this.btnGaviao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGaviao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGaviao.Location = new System.Drawing.Point(1279, 607);
+            this.btnGaviao.Location = new System.Drawing.Point(1186, 587);
             this.btnGaviao.Margin = new System.Windows.Forms.Padding(2);
             this.btnGaviao.Name = "btnGaviao";
-            this.btnGaviao.Size = new System.Drawing.Size(105, 80);
+            this.btnGaviao.Size = new System.Drawing.Size(84, 68);
             this.btnGaviao.TabIndex = 6;
             this.btnGaviao.Tag = "gaviao";
             this.btnGaviao.UseVisualStyleBackColor = false;
@@ -197,10 +213,10 @@
             this.btnGato.BackgroundImage = global::N2___Animais.Properties.Resources.gatoapagado;
             this.btnGato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGato.Location = new System.Drawing.Point(1166, 607);
+            this.btnGato.Location = new System.Drawing.Point(1080, 587);
             this.btnGato.Margin = new System.Windows.Forms.Padding(2);
             this.btnGato.Name = "btnGato";
-            this.btnGato.Size = new System.Drawing.Size(105, 80);
+            this.btnGato.Size = new System.Drawing.Size(84, 68);
             this.btnGato.TabIndex = 5;
             this.btnGato.Tag = "gato";
             this.btnGato.UseVisualStyleBackColor = false;
@@ -214,10 +230,10 @@
             this.btnGalinha.BackgroundImage = global::N2___Animais.Properties.Resources.galinhaapagada;
             this.btnGalinha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGalinha.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGalinha.Location = new System.Drawing.Point(1053, 608);
+            this.btnGalinha.Location = new System.Drawing.Point(974, 587);
             this.btnGalinha.Margin = new System.Windows.Forms.Padding(2);
             this.btnGalinha.Name = "btnGalinha";
-            this.btnGalinha.Size = new System.Drawing.Size(105, 80);
+            this.btnGalinha.Size = new System.Drawing.Size(84, 68);
             this.btnGalinha.TabIndex = 4;
             this.btnGalinha.Tag = "galinha";
             this.btnGalinha.UseVisualStyleBackColor = false;
@@ -231,10 +247,10 @@
             this.btnElefante.BackgroundImage = global::N2___Animais.Properties.Resources.elefanteapagado;
             this.btnElefante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnElefante.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnElefante.Location = new System.Drawing.Point(940, 608);
+            this.btnElefante.Location = new System.Drawing.Point(868, 587);
             this.btnElefante.Margin = new System.Windows.Forms.Padding(2);
             this.btnElefante.Name = "btnElefante";
-            this.btnElefante.Size = new System.Drawing.Size(105, 80);
+            this.btnElefante.Size = new System.Drawing.Size(84, 68);
             this.btnElefante.TabIndex = 3;
             this.btnElefante.Tag = "elefante";
             this.btnElefante.UseVisualStyleBackColor = false;
@@ -248,10 +264,10 @@
             this.btnCoruja.BackgroundImage = global::N2___Animais.Properties.Resources.corujaapagada;
             this.btnCoruja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCoruja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCoruja.Location = new System.Drawing.Point(827, 607);
+            this.btnCoruja.Location = new System.Drawing.Point(762, 587);
             this.btnCoruja.Margin = new System.Windows.Forms.Padding(2);
             this.btnCoruja.Name = "btnCoruja";
-            this.btnCoruja.Size = new System.Drawing.Size(105, 80);
+            this.btnCoruja.Size = new System.Drawing.Size(84, 68);
             this.btnCoruja.TabIndex = 2;
             this.btnCoruja.Tag = "coruja";
             this.btnCoruja.UseVisualStyleBackColor = false;
@@ -265,10 +281,10 @@
             this.btnCachorro.BackgroundImage = global::N2___Animais.Properties.Resources.cachorroapagado;
             this.btnCachorro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCachorro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCachorro.Location = new System.Drawing.Point(714, 607);
+            this.btnCachorro.Location = new System.Drawing.Point(656, 587);
             this.btnCachorro.Margin = new System.Windows.Forms.Padding(2);
             this.btnCachorro.Name = "btnCachorro";
-            this.btnCachorro.Size = new System.Drawing.Size(105, 80);
+            this.btnCachorro.Size = new System.Drawing.Size(84, 68);
             this.btnCachorro.TabIndex = 1;
             this.btnCachorro.Tag = "cachorro";
             this.btnCachorro.UseVisualStyleBackColor = false;
@@ -282,10 +298,10 @@
             this.btnBaleia.BackgroundImage = global::N2___Animais.Properties.Resources.baleiaapagada;
             this.btnBaleia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBaleia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBaleia.Location = new System.Drawing.Point(601, 608);
+            this.btnBaleia.Location = new System.Drawing.Point(550, 587);
             this.btnBaleia.Margin = new System.Windows.Forms.Padding(2);
             this.btnBaleia.Name = "btnBaleia";
-            this.btnBaleia.Size = new System.Drawing.Size(105, 80);
+            this.btnBaleia.Size = new System.Drawing.Size(84, 68);
             this.btnBaleia.TabIndex = 0;
             this.btnBaleia.Tag = "baleia";
             this.btnBaleia.UseVisualStyleBackColor = false;
@@ -293,30 +309,66 @@
             this.btnBaleia.MouseEnter += new System.EventHandler(this.btnBaleia_MouseEnter);
             this.btnBaleia.MouseLeave += new System.EventHandler(this.btnBaleia_MouseLeave);
             // 
-            // btnCadastro
+            // pctCeu
             // 
-            this.btnCadastro.BackColor = System.Drawing.Color.Transparent;
-            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCadastro.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastro.ForeColor = System.Drawing.Color.White;
-            this.btnCadastro.Location = new System.Drawing.Point(64, 312);
-            this.btnCadastro.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(186, 104);
-            this.btnCadastro.TabIndex = 15;
-            this.btnCadastro.Text = "CADASTRAR";
-            this.btnCadastro.UseVisualStyleBackColor = false;
-            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
+            this.pctCeu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctCeu.Location = new System.Drawing.Point(276, 15);
+            this.pctCeu.Name = "pctCeu";
+            this.pctCeu.Size = new System.Drawing.Size(200, 200);
+            this.pctCeu.TabIndex = 1;
+            this.pctCeu.TabStop = false;
+            // 
+            // pctAgua
+            // 
+            this.pctAgua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctAgua.Location = new System.Drawing.Point(510, 141);
+            this.pctAgua.Name = "pctAgua";
+            this.pctAgua.Size = new System.Drawing.Size(200, 200);
+            this.pctAgua.TabIndex = 2;
+            this.pctAgua.TabStop = false;
+            // 
+            // pctArvore
+            // 
+            this.pctArvore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctArvore.Location = new System.Drawing.Point(39, 221);
+            this.pctArvore.Name = "pctArvore";
+            this.pctArvore.Size = new System.Drawing.Size(120, 120);
+            this.pctArvore.TabIndex = 3;
+            this.pctArvore.TabStop = false;
+            // 
+            // pctChao
+            // 
+            this.pctChao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctChao.Location = new System.Drawing.Point(276, 286);
+            this.pctChao.Name = "pctChao";
+            this.pctChao.Size = new System.Drawing.Size(200, 200);
+            this.pctChao.TabIndex = 0;
+            this.pctChao.TabStop = false;
+            // 
+            // pnlFundoAcao
+            // 
+            this.pnlFundoAcao.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
+            this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFundoAcao.Controls.Add(this.pctArvore);
+            this.pnlFundoAcao.Controls.Add(this.pctAgua);
+            this.pnlFundoAcao.Controls.Add(this.pctCeu);
+            this.pnlFundoAcao.Controls.Add(this.pctChao);
+            this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlFundoAcao.Location = new System.Drawing.Point(550, 12);
+            this.pnlFundoAcao.Name = "pnlFundoAcao";
+            this.pnlFundoAcao.Size = new System.Drawing.Size(720, 501);
+            this.pnlFundoAcao.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::N2___Animais.Properties.Resources.Fundo_form;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(151)))), ((int)(((byte)(236)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1281, 769);
             this.Controls.Add(this.btnCadastro);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlFundoAcao);
             this.Controls.Add(this.btnTartaruga);
             this.Controls.Add(this.btnPombo);
             this.Controls.Add(this.btnPinguim);
@@ -335,6 +387,11 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANIMAL KINGDOM";
+            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctChao)).EndInit();
+            this.pnlFundoAcao.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -355,8 +412,12 @@
         private System.Windows.Forms.Button btnPinguim;
         private System.Windows.Forms.Button btnPombo;
         private System.Windows.Forms.Button btnTartaruga;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCadastro;
+        private System.Windows.Forms.PictureBox pctCeu;
+        private System.Windows.Forms.PictureBox pctAgua;
+        private System.Windows.Forms.PictureBox pctArvore;
+        private System.Windows.Forms.PictureBox pctChao;
+        private System.Windows.Forms.Panel pnlFundoAcao;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -32,7 +33,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["baleia"] = false;
-                            botao.BackgroundImage = Properties.Resources.baleiaapagada;
+                            botao.BackgroundImage = Resources.baleiaapagada;
                             btnBaleia.BackColor = Color.LightYellow;
                             break;
 
@@ -40,7 +41,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["cachorro"] = false;
-                            botao.BackgroundImage = Properties.Resources.cachorroapagado;
+                            botao.BackgroundImage = Resources.cachorroapagado;
                             btnCachorro.BackColor = Color.LightYellow;
                             break;
 
@@ -48,7 +49,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["coruja"] = false;
-                            botao.BackgroundImage = Properties.Resources.corujaapagada;
+                            botao.BackgroundImage = Resources.corujaapagada;
                             btnCoruja.BackColor = Color.LightYellow;
                             break;
 
@@ -56,7 +57,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["elefante"] = false;
-                            botao.BackgroundImage = Properties.Resources.elefanteapagado;
+                            botao.BackgroundImage = Resources.elefanteapagado;
                             btnElefante.BackColor = Color.LightYellow;
                             break;
 
@@ -64,7 +65,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["galinha"] = false;
-                            botao.BackgroundImage = Properties.Resources.galinhaapagada;
+                            botao.BackgroundImage = Resources.galinhaapagada;
                             btnGalinha.BackColor = Color.LightYellow;
                             break;
 
@@ -72,7 +73,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["gato"] = false;
-                            botao.BackgroundImage = Properties.Resources.gatoapagado;
+                            botao.BackgroundImage = Resources.gatoapagado;
                             btnGato.BackColor = Color.LightYellow;
                             break;
 
@@ -80,7 +81,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["gaviao"] = false;
-                            botao.BackgroundImage = Properties.Resources.gaviaoapagado;
+                            botao.BackgroundImage = Resources.gaviaoapagado;
                             btnGaviao.BackColor = Color.LightYellow;
                             break;
 
@@ -88,7 +89,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["leao"] = false;
-                            botao.BackgroundImage = Properties.Resources.leaoapagado;
+                            botao.BackgroundImage = Resources.leaoapagado;
                             btnLeao.BackColor = Color.LightYellow;
                             break;
 
@@ -97,7 +98,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["morcego"] = false;
-                            botao.BackgroundImage = Properties.Resources.morcegoapagado;
+                            botao.BackgroundImage = Resources.morcegoapagado;
                             btnMorcego.BackColor = Color.LightYellow;
                             break;
 
@@ -105,7 +106,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["ornitorrinco"] = false;
-                            botao.BackgroundImage = Properties.Resources.ornitorrincoapagado;
+                            botao.BackgroundImage = Resources.ornitorrincoapagado;
                             btnOrnitorrinco.BackColor = Color.LightYellow;
                             break;
 
@@ -113,7 +114,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["pato"] = false;
-                            botao.BackgroundImage = Properties.Resources.patoapagado;
+                            botao.BackgroundImage = Resources.patoapagado;
                             btnPato.BackColor = Color.LightYellow;
                             break;
 
@@ -121,7 +122,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["pinguim"] = false;
-                            botao.BackgroundImage = Properties.Resources.pinguimapagado;
+                            botao.BackgroundImage = Resources.pinguimapagado;
                             btnPinguim.BackColor = Color.LightYellow;
                             break;
 
@@ -129,7 +130,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["pombo"] = false;
-                            botao.BackgroundImage = Properties.Resources.pomboapagado;
+                            botao.BackgroundImage = Resources.pomboapagado;
                             btnPombo.BackColor = Color.LightYellow;
                             break;
 
@@ -137,7 +138,7 @@ namespace N2___Animais
                             if (animal == animalclicado)
                                 break;
                             selecionados["tartaruga"] = false;
-                            botao.BackgroundImage = Properties.Resources.tartarugaapagada;
+                            botao.BackgroundImage = Resources.tartarugaapagada;
                             btnTartaruga.BackColor = Color.LightYellow;
                             break;
                     }
@@ -181,99 +182,154 @@ namespace N2___Animais
         private void btnBaleia_Click(object sender, EventArgs e)
         {
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
-            btnBaleia.BackgroundImage = Properties.Resources.baleialaranja;
+            btnBaleia.BackgroundImage = Resources.baleialaranja;
             btnBaleia.BackColor = Color.Orange;
+            ApagaImagens();
+            pnlFundoAcao.BackgroundImage = Resources.praia;
+            pctAgua.BackgroundImage = Resources.baleiaapagada;
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
         {
             EventoClique(btnCachorro.Tag.ToString(), btnCachorro);
-            btnCachorro.BackgroundImage = Properties.Resources.cachorrolaranja;
+            btnCachorro.BackgroundImage = Resources.cachorrolaranja;
             btnCachorro.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.gramado;
+            pctChao.BackgroundImage = Resources.cachorroapagado;
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
         {
             EventoClique(btnCoruja.Tag.ToString(), btnCoruja);
-            btnCoruja.BackgroundImage = Properties.Resources.corujalaranja;
+            btnCoruja.BackgroundImage = Resources.corujalaranja;
             btnCoruja.BackColor = Color.Orange;
+            ApagaImagens();
+            pnlFundoAcao.BackgroundImage = Resources.noite;
+            pctArvore.BackgroundImage = Resources.corujaapagada;
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
         {
             EventoClique(btnElefante.Tag.ToString(), btnElefante);
-            btnElefante.BackgroundImage = Properties.Resources.elefantelaranja;
+            btnElefante.BackgroundImage = Resources.elefantelaranja;
             btnElefante.BackColor = Color.Orange;
+            ApagaImagens();
+            pctChao.Width = 250;
+            pctChao.Height = 250;
+            pctChao.Location = new Point(254, 248);
+            pnlFundoAcao.BackgroundImage = Resources.lago;
+            pctChao.BackgroundImage = Resources.elefanteapagado;
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
         {
             EventoClique(btnGalinha.Tag.ToString(), btnGalinha);
-            btnGalinha.BackgroundImage = Properties.Resources.galinhalaranja;
+            btnGalinha.BackgroundImage = Resources.galinhalaranja;
             btnGalinha.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.lago;
+            pctChao.BackgroundImage = Resources.galinhaapagada;
         }
 
         private void btnGato_Click(object sender, EventArgs e)
         {
             EventoClique(btnGato.Tag.ToString(), btnGato);
-            btnGato.BackgroundImage = Properties.Resources.gatolaranja;
+            btnGato.BackgroundImage = Resources.gatolaranja;
             btnGato.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.gramado;
+            pctChao.BackgroundImage = Resources.gatoapagado;
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
         {
             EventoClique(btnGaviao.Tag.ToString(), btnGaviao);
-            btnGaviao.BackgroundImage = Properties.Resources.gaviaolarajna;
+            btnGaviao.BackgroundImage = Resources.gaviaolarajna;
             btnGaviao.BackColor = Color.Orange;
+            ApagaImagens();
+            pnlFundoAcao.BackgroundImage = Resources.ceu;
+            pctCeu.BackgroundImage = Resources.gaviaoapagado;
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
         {
             EventoClique(btnLeao.Tag.ToString(), btnLeao);
-            btnLeao.BackgroundImage = Properties.Resources.leaolaranja;
+            btnLeao.BackgroundImage = Resources.leaolaranja;
             btnLeao.BackColor = Color.Orange;
+            ApagaImagens();
+            pctChao.Width = 250;
+            pctChao.Height = 250;
+            pctChao.Location = new Point(254, 248);
+            pnlFundoAcao.BackgroundImage = Resources.lago;
+            pctChao.BackgroundImage = Resources.leaoapagado;
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
         {
             EventoClique(btnMorcego.Tag.ToString(), btnMorcego);
-            btnMorcego.BackgroundImage = Properties.Resources.morcegolaranja;
+            btnMorcego.BackgroundImage = Resources.morcegolaranja;
             btnMorcego.BackColor = Color.Orange;
+            ApagaImagens();
+            pnlFundoAcao.BackgroundImage = Resources.noite;
+            pctArvore.BackgroundImage = Resources.morcegoapagado;
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
         {
             EventoClique(btnOrnitorrinco.Tag.ToString(), btnOrnitorrinco);
-            btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincolaranja;
+            btnOrnitorrinco.BackgroundImage = Resources.ornitorrincolaranja;
             btnOrnitorrinco.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.lago;
+            pctChao.BackgroundImage = Resources.ornitorrincoapagado;
         }
 
         private void btnPato_Click(object sender, EventArgs e)
         {
             EventoClique(btnPato.Tag.ToString(), btnPato);
-            btnPato.BackgroundImage = Properties.Resources.patolaranja;
-         btnPato.BackColor = Color.Orange;
+            btnPato.BackgroundImage = Resources.patolaranja;
+            btnPato.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.lago;
+            pctChao.BackgroundImage = Resources.patoapagado;
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
         {
             EventoClique(btnPinguim.Tag.ToString(), btnPinguim);
-            btnPinguim.BackgroundImage = Properties.Resources.pinguimlaranja;
+            btnPinguim.BackgroundImage = Resources.pinguimlaranja;
             btnPinguim.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.gelo;
+            pctChao.BackgroundImage = Resources.pinguimapagado;
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
         {
             EventoClique(btnPombo.Tag.ToString(), btnPombo);
-            btnPombo.BackgroundImage = Properties.Resources.pombolaranja;
+            btnPombo.BackgroundImage = Resources.pombolaranja;
             btnPombo.BackColor = Color.Orange;
+            ApagaImagens();
+            pnlFundoAcao.BackgroundImage = Resources.ceu;
+            pctCeu.BackgroundImage = Resources.pomboapagado;
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
         {
             EventoClique(btnTartaruga.Tag.ToString(), btnTartaruga);
-            btnTartaruga.BackgroundImage = Properties.Resources.tartarugalarajna;
+            btnTartaruga.BackgroundImage = Resources.tartarugalarajna;
             btnTartaruga.BackColor = Color.Orange;
+            ApagaImagens();
+            VoltaTamanho();
+            pnlFundoAcao.BackgroundImage = Resources.praia;
+            pctChao.BackgroundImage = Resources.tartarugaapagada;
         }
         #endregion Eventos
 
@@ -284,7 +340,7 @@ namespace N2___Animais
             if (selecionados["baleia"])
                 return;
             else if (!selecionados["baleia"])
-                btnBaleia.BackgroundImage = Properties.Resources.baleiaverde;
+                btnBaleia.BackgroundImage = Resources.baleiaverde;
         }
 
         private void btnBaleia_MouseLeave(object sender, EventArgs e)
@@ -292,7 +348,7 @@ namespace N2___Animais
             if (selecionados["baleia"])
                 return;
 
-            btnBaleia.BackgroundImage = Properties.Resources.baleiaapagada;
+            btnBaleia.BackgroundImage = Resources.baleiaapagada;
         }
 
         private void btnCachorro_MouseEnter(object sender, EventArgs e)
@@ -300,7 +356,7 @@ namespace N2___Animais
             if (selecionados["cachorro"])
                 return;
             else if (!selecionados["cachorro"])
-                btnCachorro.BackgroundImage = Properties.Resources.cachorroverde;
+                btnCachorro.BackgroundImage = Resources.cachorroverde;
         }
 
         private void btnCachorro_MouseLeave(object sender, EventArgs e)
@@ -308,7 +364,7 @@ namespace N2___Animais
             if (selecionados["cachorro"])
                 return;
 
-            btnCachorro.BackgroundImage = Properties.Resources.cachorroapagado;
+            btnCachorro.BackgroundImage = Resources.cachorroapagado;
         }
 
         private void btnCoruja_MouseEnter(object sender, EventArgs e)
@@ -316,7 +372,7 @@ namespace N2___Animais
             if (selecionados["coruja"])
                 return;
             else if (!selecionados["coruja"])
-                btnCoruja.BackgroundImage = Properties.Resources.corujaverde;
+                btnCoruja.BackgroundImage = Resources.corujaverde;
         }
 
         private void btnCoruja_MouseLeave(object sender, EventArgs e)
@@ -324,7 +380,7 @@ namespace N2___Animais
             if (selecionados["coruja"])
                 return;
 
-            btnCoruja.BackgroundImage = Properties.Resources.corujaapagada;
+            btnCoruja.BackgroundImage = Resources.corujaapagada;
         }
 
         private void btnElefante_MouseEnter(object sender, EventArgs e)
@@ -332,7 +388,7 @@ namespace N2___Animais
             if (selecionados["elefante"])
                 return;
             else if (!selecionados["elefante"])
-                btnElefante.BackgroundImage = Properties.Resources.elefanteverde;
+                btnElefante.BackgroundImage = Resources.elefanteverde;
         }
 
         private void btnElefante_MouseLeave(object sender, EventArgs e)
@@ -340,7 +396,7 @@ namespace N2___Animais
             if (selecionados["elefante"])
                 return;
 
-            btnElefante.BackgroundImage = Properties.Resources.elefanteapagado;
+            btnElefante.BackgroundImage = Resources.elefanteapagado;
         }
 
         private void btnGalinha_MouseEnter(object sender, EventArgs e)
@@ -348,7 +404,7 @@ namespace N2___Animais
             if (selecionados["galinha"])
                 return;
             else if (!selecionados["galinha"])
-                btnGalinha.BackgroundImage = Properties.Resources.galinhaverde;
+                btnGalinha.BackgroundImage = Resources.galinhaverde;
         }
 
         private void btnGalinha_MouseLeave(object sender, EventArgs e)
@@ -356,7 +412,7 @@ namespace N2___Animais
             if (selecionados["galinha"])
                 return;
 
-            btnGalinha.BackgroundImage = Properties.Resources.galinhaapagada;
+            btnGalinha.BackgroundImage = Resources.galinhaapagada;
         }
 
         private void btnGato_MouseEnter(object sender, EventArgs e)
@@ -364,7 +420,7 @@ namespace N2___Animais
             if (selecionados["gato"])
                 return;
             else if (!selecionados["gato"])
-                btnGato.BackgroundImage = Properties.Resources.gatoverde;
+                btnGato.BackgroundImage = Resources.gatoverde;
         }
 
         private void btnGato_MouseLeave(object sender, EventArgs e)
@@ -372,7 +428,7 @@ namespace N2___Animais
             if (selecionados["gato"])
                 return;
 
-            btnGato.BackgroundImage = Properties.Resources.gatoapagado;
+            btnGato.BackgroundImage = Resources.gatoapagado;
         }
 
         private void btnGaviao_MouseEnter(object sender, EventArgs e)
@@ -380,7 +436,7 @@ namespace N2___Animais
             if (selecionados["gaviao"])
                 return;
             else if (!selecionados["gaviao"])
-                btnGaviao.BackgroundImage = Properties.Resources.gaviaoverde;
+                btnGaviao.BackgroundImage = Resources.gaviaoverde;
         }
 
         private void btnGaviao_MouseLeave(object sender, EventArgs e)
@@ -388,7 +444,7 @@ namespace N2___Animais
             if (selecionados["gaviao"])
                 return;
 
-            btnGaviao.BackgroundImage = Properties.Resources.gaviaoapagado;
+            btnGaviao.BackgroundImage = Resources.gaviaoapagado;
         }
 
         private void btnLeao_MouseEnter(object sender, EventArgs e)
@@ -396,7 +452,7 @@ namespace N2___Animais
             if (selecionados["leao"])
                 return;
             else if (!selecionados["leao"])
-                btnLeao.BackgroundImage = Properties.Resources.leaoverde;
+                btnLeao.BackgroundImage = Resources.leaoverde;
         }
 
         private void btnLeao_MouseLeave(object sender, EventArgs e)
@@ -404,7 +460,7 @@ namespace N2___Animais
             if (selecionados["leao"])
                 return;
 
-            btnLeao.BackgroundImage = Properties.Resources.leaoapagado;
+            btnLeao.BackgroundImage = Resources.leaoapagado;
         }
 
         private void btnMorcego_MouseEnter(object sender, EventArgs e)
@@ -412,7 +468,7 @@ namespace N2___Animais
             if (selecionados["morcego"])
                 return;
             else if (!selecionados["morcego"])
-                btnMorcego.BackgroundImage = Properties.Resources.mocegoverde;
+                btnMorcego.BackgroundImage = Resources.mocegoverde;
         }
 
         private void btnMorcego_MouseLeave(object sender, EventArgs e)
@@ -420,7 +476,7 @@ namespace N2___Animais
             if (selecionados["morcego"])
                 return;
 
-            btnMorcego.BackgroundImage = Properties.Resources.morcegoapagado;
+            btnMorcego.BackgroundImage = Resources.morcegoapagado;
         }
 
         private void btnOrnitorrinco_MouseEnter(object sender, EventArgs e)
@@ -428,7 +484,7 @@ namespace N2___Animais
             if (selecionados["ornitorrinco"])
                 return;
             else if (!selecionados["ornitorrinco"])
-                btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincoverde;
+                btnOrnitorrinco.BackgroundImage = Resources.ornitorrincoverde;
         }
 
         private void btnOrnitorrinco_MouseLeave(object sender, EventArgs e)
@@ -436,7 +492,7 @@ namespace N2___Animais
             if (selecionados["ornitorrinco"])
                 return;
 
-            btnOrnitorrinco.BackgroundImage = Properties.Resources.ornitorrincoapagado;
+            btnOrnitorrinco.BackgroundImage = Resources.ornitorrincoapagado;
         }
 
         private void btnPato_MouseEnter(object sender, EventArgs e)
@@ -444,7 +500,7 @@ namespace N2___Animais
             if (selecionados["pato"])
                 return;
             else if (!selecionados["pato"])
-                btnPato.BackgroundImage = Properties.Resources.patoverde;
+                btnPato.BackgroundImage = Resources.patoverde;
         }
 
         private void btnPato_MouseLeave(object sender, EventArgs e)
@@ -452,7 +508,7 @@ namespace N2___Animais
             if (selecionados["pato"])
                 return;
 
-            btnPato.BackgroundImage = Properties.Resources.patoapagado;
+            btnPato.BackgroundImage = Resources.patoapagado;
         }
 
         private void btnPinguim_MouseEnter(object sender, EventArgs e)
@@ -460,7 +516,7 @@ namespace N2___Animais
             if (selecionados["pinguim"])
                 return;
             else if (!selecionados["pinguim"])
-                btnPinguim.BackgroundImage = Properties.Resources.pinguimverde;
+                btnPinguim.BackgroundImage = Resources.pinguimverde;
         }
 
         private void btnPinguim_MouseLeave(object sender, EventArgs e)
@@ -468,7 +524,7 @@ namespace N2___Animais
             if (selecionados["pinguim"])
                 return;
 
-            btnPinguim.BackgroundImage = Properties.Resources.pinguimapagado;
+            btnPinguim.BackgroundImage = Resources.pinguimapagado;
         }
 
         private void btnPombo_MouseEnter(object sender, EventArgs e)
@@ -476,7 +532,7 @@ namespace N2___Animais
             if (selecionados["pombo"])
                 return;
             else if (!selecionados["pombo"])
-                btnPombo.BackgroundImage = Properties.Resources.pomboverde;
+                btnPombo.BackgroundImage = Resources.pomboverde;
         }
 
         private void btnPombo_MouseLeave(object sender, EventArgs e)
@@ -484,7 +540,7 @@ namespace N2___Animais
             if (selecionados["pombo"])
                 return;
 
-            btnPombo.BackgroundImage = Properties.Resources.pomboapagado;
+            btnPombo.BackgroundImage = Resources.pomboapagado;
         }
 
         private void btnTartaruga_MouseEnter(object sender, EventArgs e)
@@ -492,7 +548,7 @@ namespace N2___Animais
             if (selecionados["tartaruga"])
                 return;
             else if (!selecionados["tartaruga"])
-                btnTartaruga.BackgroundImage = Properties.Resources.tartarugaverde;
+                btnTartaruga.BackgroundImage = Resources.tartarugaverde;
         }
 
         private void btnTartaruga_MouseLeave(object sender, EventArgs e)
@@ -500,7 +556,7 @@ namespace N2___Animais
             if (selecionados["tartaruga"])
                 return;
 
-            btnTartaruga.BackgroundImage = Properties.Resources.tartarugaapagada;
+            btnTartaruga.BackgroundImage = Resources.tartarugaapagada;
         }
         #endregion
 
@@ -526,5 +582,22 @@ namespace N2___Animais
 
 
         }
+
+        private void ApagaImagens()
+        {
+            pnlFundoAcao.BackgroundImage = null;
+            pctCeu.BackgroundImage = null;
+            pctAgua.BackgroundImage = null;
+            pctChao.BackgroundImage = null;
+            pctArvore.BackgroundImage = null;
+        }
+
+        private void VoltaTamanho()
+        {
+            pctChao.Width = 200;
+            pctChao.Height = 200;
+            pctChao.Location = new Point(276, 286);
+        }
+
     }
 }

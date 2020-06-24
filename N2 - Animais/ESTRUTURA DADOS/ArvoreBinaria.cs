@@ -185,7 +185,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             //return (nodo != null && nodo.GetValor() == numero)
             return (nodo != null && nodo.EhInterno());
         }
-
+        /*
 
         public int CalculaAlturaArvore()
         {
@@ -203,6 +203,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             listaAnimal.InserirNoFim(no.GetValor());
             PercursoInterfixado(no.GetNoDireita());
         }
+        
 
         /// <summary>
         /// Devolve um string com os elementos da árvore, em ordem crescente
@@ -280,5 +281,6 @@ namespace N2___Animais.ESTRUTURA_DADOS
             CalculaAltura(no.GetNoEsquerda());
             CalculaAltura(no.GetNoDireita());
         }
+        */
     }
 }
