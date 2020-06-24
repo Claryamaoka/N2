@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,24 +11,27 @@ namespace N2___Animais.ESTRUTURA_DADOS
     {
         private Nodo raiz = null; // raiz da árvore
         private int qtdeNodosInternos = 0; // qtde de nos internos
-        private List<int> resultado; // utilizada na listagem dos nodos
-        private int maiorProfundidadeEncontrada = 0;
-        private int qtdeNodosExternos = 0;
+
+        Lista listaAnimal; // utilizada na listagem dos nodos - MUDAR
+
+        private int maiorProfundidadeEncontrada = 0; // não necessário
+        private int qtdeNodosExternos = 0; // não necessário
 
 
         /// <summary>
-        /// Returna a qtde de nós internos
+        /// Retorna a qtde de nós internos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Quantidade de elementos inseridos na árvore</returns>
         public int QtdeNodosInternos() // devolve a qtde de nós internos
         {
             return qtdeNodosInternos;
         }
+
         /// <summary>
         /// Insere um valor na árvore. Não aceita valores repetidos!!!
         /// </summary>
         /// <param name="valor">valor a ser inserido</param>
-        public void Insere(int valor) // insere um valor int
+        public void Insere(Animal valor) // insere um valor int
         {
             Nodo no_aux;
             if (qtdeNodosInternos == 0) // árvore vazia!
@@ -41,7 +45,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             {
                 qtdeNodosExternos++;
                 // localiza onde deve ser inserido o novo nó.
-                no_aux = PesquisaValor(valor, raiz);
+                no_aux = PesquisaValor(valor, raiz, new ComparadorNome()); //pesquisar pelo nome
                 if (no_aux.EhInterno())
                 {
                     throw new Exception("Este valor já existe na árvore!!!!");
@@ -71,29 +75,28 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// <param name="valor"></param>
         /// <param name="no"></param>
         /// <returns></returns>
-        private Nodo PesquisaValor(int valor, Nodo no)
+        private Nodo PesquisaValor(Animal valor, Nodo no, IComparer comparador)
         {
             if (no == null)
                 return null;
             else if (no.EhExterno())
                 return no; // não achou!
-            else if (no.GetValor() == valor)
-
+            else if (no.GetValor().Nome == valor.Nome)//comparador = 0
                 return no;
-            else if (valor > no.GetValor())
-                return PesquisaValor(valor, no.GetNoDireita());
+            else if (comparador.Compare(valor.Nome, no.GetValor().Nome) > 0)    //comparar o tamanho de dois Nomes
+                return PesquisaValor(valor, no.GetNoDireita(),new ComparadorNome());
             else
-                return PesquisaValor(valor, no.GetNoEsquerda());
+                return PesquisaValor(valor, no.GetNoEsquerda(), new ComparadorNome());
         }
 
         /// <summary>
         /// Remove um valor da árvore
         /// </summary>
         /// <param name="valor"></param>
-        public void Remove(int valor)
+        public void Remove(Animal valor)
         {
             //primeiro, procuramos o nodo que tem o valor:
-            Nodo noQueSeraApagado = PesquisaValor(valor, raiz);
+            Nodo noQueSeraApagado = PesquisaValor(valor, raiz, new ComparadorNome());
 
             if (noQueSeraApagado == null || noQueSeraApagado.EhExterno())
                 throw new Exception("Valor não existe na árvore");
@@ -175,10 +178,10 @@ namespace N2___Animais.ESTRUTURA_DADOS
         }
 
 
-
-        public bool Pesquisa(int numero)
+       
+        public bool Pesquisa(Animal animal)
         {
-            Nodo nodo = PesquisaValor(numero, raiz);
+            Nodo nodo = PesquisaValor(animal, raiz, new ComparadorNome());
             //return (nodo != null && nodo.GetValor() == numero)
             return (nodo != null && nodo.EhInterno());
         }
@@ -191,22 +194,23 @@ namespace N2___Animais.ESTRUTURA_DADOS
             return maiorProfundidadeEncontrada;
         }
 
-
+        //remover a lista 
         private void PercursoInterfixado(Nodo no)
         {
             if (no.EhExterno())
                 return;
             PercursoInterfixado(no.GetNoEsquerda());
-            resultado.Add(no.GetValor());
+            listaAnimal.InserirNoFim(no.GetValor());
             PercursoInterfixado(no.GetNoDireita());
         }
+
         /// <summary>
         /// Devolve um string com os elementos da árvore, em ordem crescente
         /// </summary>
         /// <returns></returns>
-        public List<int> ListagemInterfixada()
+        public Lista ListagemInterfixada()
         {
-            resultado = new List<int>();
+            resultado = new Lista();
             if (qtdeNodosInternos != 0)
                 PercursoInterfixado(raiz);
             return resultado;
@@ -252,7 +256,10 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
 
 
-
+        /// <summary>
+        /// Calcula a altura
+        /// </summary>
+        /// <param name="no"></param>
         private void CalculaAltura(Nodo no)
         {
             if (no.EhExterno())

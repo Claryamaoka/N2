@@ -11,9 +11,9 @@ namespace N2___Animais.ESTRUTURA_DADOS
         private Nodo no_pai = null;
         private Nodo no_direita = null;
         private Nodo no_esquerda = null;
-        private int valor = 0;
-        public int GetValor() { return valor; }
-        public void SetValor(int v) { valor = v; }
+        private Animal valor = new Animal();
+        public Animal GetValor() { return valor; }
+        public void SetValor(Animal v) { valor = v; }
         public void SetNoPai(Nodo no) { no_pai = no; }
         public void SetNoDireita(Nodo no) { no_direita = no; }
         public void SetNoEsquerda(Nodo no) { no_esquerda = no; }
@@ -21,6 +21,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         public Nodo GetNoDireita() { return no_direita; }
         public Nodo GetNoEsquerda() { return no_esquerda; }
         public Boolean NoEhRaiz() { return GetNoPai() == null; }
+
         /// <summary>
         /// Verifica se o nodo é externo
         /// </summary>
@@ -30,6 +31,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         {
             return (no_direita == null) && (no_esquerda == null);
         }
+
         /// <summary>
         /// Verifica se o nodo é interno
         /// </summary>
@@ -39,6 +41,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         {
             return (no_direita != null) || (no_esquerda != null);
         }
+
         /// <summary>
         /// Cria um nodo externo.
         /// </summary>

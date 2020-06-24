@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>N2___Animais</RootNamespace>
     <AssemblyName>N2 - Animais</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -63,6 +63,7 @@
     <Compile Include="CLASSES ANIMAIS\Animal.cs" />
     <Compile Include="CLASSES ANIMAIS\Ave.cs" />
     <Compile Include="ESTRUTURA DADOS\ArvoreBinaria.cs" />
+    <Compile Include="ESTRUTURA DADOS\ComparadorNome.cs" />
     <Compile Include="ESTRUTURA DADOS\Lista.cs" />
     <Compile Include="ESTRUTURA DADOS\Nodo.cs" />
     <Compile Include="ESTRUTURA DADOS\NodoLista.cs" />
@@ -85,6 +86,12 @@
     <Compile Include="INTERFACES\IPredador.cs" />
     <Compile Include="INTERFACES\IVoar.cs" />
     <Compile Include="CLASSES ANIMAIS\Mamifero.cs" />
+    <Compile Include="Listagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagem.Designer.cs">
+      <DependentUpon>Listagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CLASSES ANIMAIS\Reptil.cs" />

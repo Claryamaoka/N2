@@ -310,11 +310,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::N2___Animais.Properties.Resources.Fundo_form;
-            this.ClientSize = new System.Drawing.Size(1401, 800);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTartaruga);

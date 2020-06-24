@@ -1,4 +1,5 @@
 ﻿using N2___Animais.ANIMAIS;
+using N2___Animais.ESTRUTURA_DADOS;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -11,6 +12,9 @@ namespace N2___Animais
         {
             InitializeComponent();
         }
+
+        ArvoreBinaria arvore = new ArvoreBinaria();
+        
 
         /// <summary>
         /// Carrega o nome do animal no topo e seleciona no combobox invisivel
