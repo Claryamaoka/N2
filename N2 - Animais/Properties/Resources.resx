@@ -142,14 +142,14 @@
   <data name="leaoverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leaoverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cachorroverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cachorroverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gramado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gramado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="galinhaapagada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\galinhaapagada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pinguimapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pinguimapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gelo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +169,14 @@
   <data name="corujaverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corujaverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gaviaoverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gaviaoverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="galinhalaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galinhalaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="galinhaverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\galinhaverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="elefanteverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elefanteverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,9 +190,6 @@
   <data name="ornitorrincoapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ornitorrincoapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ornitorrincolaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ornitorrincolaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="pomboverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pomboverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -198,6 +198,9 @@
   </data>
   <data name="patoverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\patoverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="praia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\praia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="baleiaverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baleiaverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +211,9 @@
   <data name="leaolaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\leaolaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cadastro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cadastro2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="background-scene-with-trees-lake_1308-35095" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background-scene-with-trees-lake_1308-35095.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,8 +223,8 @@
   <data name="tartarugalarajna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tartarugalarajna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="praia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\praia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pinguimapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinguimapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="morcegolaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\morcegolaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +241,8 @@
   <data name="patoapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\patoapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="galinhaverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\galinhaverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ornitorrincolaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ornitorrincolaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ornitorrincoverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ornitorrincoverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,8 +271,10 @@
   <data name="lago" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lago.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cachorroverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cachorroverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="galinhalaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\galinhalaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-
+  <data name="sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

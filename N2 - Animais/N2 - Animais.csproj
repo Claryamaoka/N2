@@ -272,7 +272,10 @@
     <None Include="Resources\praia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sair.png" />
     <None Include="Resources\Fundo form.jpg" />
+    <None Include="Resources\cadastro.jpg" />
+    <None Include="Resources\cadastro2.jpg" />
     <Content Include="Resources\lago.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -600,7 +600,7 @@ namespace N2___Animais
             btnTartaruga.BackgroundImage = Resources.tartarugaapagada;
         }
         #endregion
-                
+
 
         private void ApagaImagens()
         {
@@ -617,7 +617,15 @@ namespace N2___Animais
             pctChao.Height = 200;
             pctChao.Location = new Point(276, 286);
         }
-
         
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 27)
+            {
+                DialogResult result = MessageBox.Show("Deseja realmente sair?", "SAIR", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                    this.Close();
+            }
+        }
     }
 }

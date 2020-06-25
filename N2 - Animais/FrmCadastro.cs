@@ -23,6 +23,8 @@ namespace N2___Animais
         private void FrmCadastro_Load(object sender, EventArgs e)
         {
             label8.Text = $"CADASTRANDO UM(A) {PegaAnimalSelecionado.ToUpper()}";
+            label8.Left = (500 - label8.Width)/2;
+            label8.Top = 0;
             foreach (string linha in cmbTipoAnimal.Items)
             {
                 if (linha.ToUpper() == PegaAnimalSelecionado.ToUpper())
@@ -147,6 +149,7 @@ namespace N2___Animais
                         baleia.DataNascimento = nascimento;
                         baleia.Sexo = sexo;
                         baleia.QtdeMamas = qtdemamas;
+                        baleia.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(baleia);
                         break;
@@ -166,6 +169,7 @@ namespace N2___Animais
                         cachorro.DataNascimento = nascimento;
                         cachorro.Sexo = sexo;
                         cachorro.QtdeMamas = qtdemamas;
+                        cachorro.Idade = nascimento.Year;
 
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(cachorro);
@@ -187,6 +191,7 @@ namespace N2___Animais
                         elefante.DataNascimento = nascimento;
                         elefante.Sexo = sexo;
                         elefante.QtdeMamas = qtdemamas;
+                        elefante.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(elefante);
                         break;
@@ -206,6 +211,7 @@ namespace N2___Animais
                         gato.DataNascimento = nascimento;
                         gato.Sexo = sexo;
                         gato.QtdeMamas = qtdemamas;
+                        gato.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(gato);
                         break;
@@ -225,6 +231,7 @@ namespace N2___Animais
                         leao.DataNascimento = nascimento;
                         leao.Sexo = sexo;
                         leao.QtdeMamas = qtdemamas;
+                        leao.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(leao);
                         break;
@@ -244,6 +251,7 @@ namespace N2___Animais
                         morcego.DataNascimento = nascimento;
                         morcego.Sexo = sexo;
                         morcego.QtdeMamas = qtdemamas;
+                        morcego.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(morcego);
                         break;
@@ -263,6 +271,7 @@ namespace N2___Animais
                         ornitorrinco.DataNascimento = nascimento;
                         ornitorrinco.Sexo = sexo;
                         ornitorrinco.QtdeMamas = qtdemamas;
+                        ornitorrinco.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(ornitorrinco);
                         break;
@@ -297,6 +306,7 @@ namespace N2___Animais
                         galinha.CorPena = corpena;
                         galinha.DataNascimento = nascimento;
                         galinha.Sexo = sexo;
+                        galinha.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(galinha);
                         break;
@@ -318,7 +328,7 @@ namespace N2___Animais
                         coruja.Sexo = sexo;
                         coruja.AlturaMaximaM = altura;
                         coruja.VelocidadeVoo = velocidade;
-                        int idade = coruja.Idade;
+                        coruja.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(coruja);
                         break;
@@ -339,6 +349,7 @@ namespace N2___Animais
                         gaviao.Sexo = sexo;
                         gaviao.AlturaMaximaM = altura;
                         gaviao.VelocidadeVoo = velocidade;
+                        gaviao.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(gaviao);
                         break;
@@ -362,6 +373,7 @@ namespace N2___Animais
                         pato.Sexo = sexo;
                         pato.AlturaMaximaM = altura;
                         pato.VelocidadeVoo = velocidade;
+                        pato.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pato);
                         break;
@@ -381,6 +393,7 @@ namespace N2___Animais
                         pinguim.CorPena = corpena;
                         pinguim.DataNascimento = nascimento;
                         pinguim.Sexo = sexo;
+                        pinguim.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pinguim);
                         break;
@@ -402,6 +415,7 @@ namespace N2___Animais
                         pombo.Sexo = sexo;
                         pombo.AlturaMaximaM = altura;
                         pombo.VelocidadeVoo = velocidade;
+                        pombo.Idade = nascimento.Year;
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pombo);
                         break;
@@ -430,6 +444,7 @@ namespace N2___Animais
                 tartaruga.Nome = nome;
                 tartaruga.DataNascimento = nascimento;
                 tartaruga.Sexo = sexo;
+                tartaruga.Idade = nascimento.Year;
                 //Adicionar na árvore
                 ArvoreBinaria.Insere(tartaruga);
             }
@@ -442,5 +457,10 @@ namespace N2___Animais
         #endregion
 
         #endregion
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

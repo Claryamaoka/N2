@@ -22,6 +22,11 @@ namespace N2___Animais
         
         Lista listar = new Lista();
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
         //listar = ArvoreBinaria.ListagemInterfixada();
         //textBox1.Text = ArvoreBinaria.ListagemInterfixada().Listar();

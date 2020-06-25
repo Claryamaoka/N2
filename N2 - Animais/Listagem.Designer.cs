@@ -37,6 +37,7 @@
             this.btnListarAnimaisQueVoam = new System.Windows.Forms.Button();
             this.btnListarAnimaisAquaticos = new System.Windows.Forms.Button();
             this.btnListarPredadores = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnListarAnimais
@@ -57,8 +58,8 @@
             // 
             // btnListarMamiferos
             // 
-            this.btnListarMamiferos.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnListarMamiferos, "btnListarMamiferos");
+            this.btnListarMamiferos.BackColor = System.Drawing.Color.Transparent;
             this.btnListarMamiferos.ForeColor = System.Drawing.Color.White;
             this.btnListarMamiferos.Name = "btnListarMamiferos";
             this.btnListarMamiferos.UseVisualStyleBackColor = false;
@@ -103,11 +104,22 @@
             this.btnListarPredadores.Name = "btnListarPredadores";
             this.btnListarPredadores.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::N2___Animais.Properties.Resources.sair;
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Listagem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListarPredadores);
             this.Controls.Add(this.btnListarAnimaisAquaticos);
             this.Controls.Add(this.btnListarAnimaisQueVoam);
@@ -116,6 +128,7 @@
             this.Controls.Add(this.btnListarMamiferos);
             this.Controls.Add(this.btnListarOviparos);
             this.Controls.Add(this.btnListarAnimais);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Listagem";
             this.ResumeLayout(false);
 
@@ -131,5 +144,6 @@
         private System.Windows.Forms.Button btnListarAnimaisQueVoam;
         private System.Windows.Forms.Button btnListarAnimaisAquaticos;
         private System.Windows.Forms.Button btnListarPredadores;
+        private System.Windows.Forms.Button button1;
     }
 }

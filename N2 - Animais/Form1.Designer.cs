@@ -544,11 +544,16 @@
             this.Controls.Add(this.btnCoruja);
             this.Controls.Add(this.btnCachorro);
             this.Controls.Add(this.btnBaleia);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1281, 749);
+            this.MinimumSize = new System.Drawing.Size(1281, 749);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANIMAL KINGDOM";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).EndInit();
