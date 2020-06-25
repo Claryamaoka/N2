@@ -81,6 +81,12 @@
     <Compile Include="FrmCadastro.Designer.cs">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="INTERFACES\IAquatico.cs" />
     <Compile Include="INTERFACES\IOviparo.cs" />
     <Compile Include="INTERFACES\IPredador.cs" />
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listagem.aa-DJ.resx">
       <DependentUpon>Listagem.cs</DependentUpon>
@@ -272,10 +281,12 @@
     <None Include="Resources\praia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\SPLASH.png" />
     <None Include="Resources\sair.png" />
     <None Include="Resources\Fundo form.jpg" />
     <None Include="Resources\cadastro.jpg" />
     <None Include="Resources\cadastro2.jpg" />
+    <None Include="Resources\inicio.png" />
     <Content Include="Resources\lago.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

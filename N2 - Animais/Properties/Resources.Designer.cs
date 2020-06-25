@@ -343,6 +343,16 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inicio {
+            get {
+                object obj = ResourceManager.GetObject("inicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lago {
             get {
                 object obj = ResourceManager.GetObject("lago", resourceCulture);
@@ -556,6 +566,16 @@ namespace N2___Animais.Properties {
         internal static System.Drawing.Bitmap sair {
             get {
                 object obj = ResourceManager.GetObject("sair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SPLASH {
+            get {
+                object obj = ResourceManager.GetObject("SPLASH", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

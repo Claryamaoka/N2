@@ -44,11 +44,6 @@
             this.btnCoruja = new System.Windows.Forms.Button();
             this.btnCachorro = new System.Windows.Forms.Button();
             this.btnBaleia = new System.Windows.Forms.Button();
-            this.pctCeu = new System.Windows.Forms.PictureBox();
-            this.pctAgua = new System.Windows.Forms.PictureBox();
-            this.pctArvore = new System.Windows.Forms.PictureBox();
-            this.pctChao = new System.Windows.Forms.PictureBox();
-            this.pnlFundoAcao = new System.Windows.Forms.Panel();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnMovimentar = new System.Windows.Forms.Button();
             this.btnComunicar = new System.Windows.Forms.Button();
@@ -59,10 +54,15 @@
             this.btnCiscar = new System.Windows.Forms.Button();
             this.btnAtaque = new System.Windows.Forms.Button();
             this.btnVoar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
+            this.pctArvore = new System.Windows.Forms.PictureBox();
+            this.pctChao = new System.Windows.Forms.PictureBox();
+            this.pctAgua = new System.Windows.Forms.PictureBox();
+            this.pctCeu = new System.Windows.Forms.PictureBox();
+            this.pnlFundoAcao = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctChao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).BeginInit();
             this.pnlFundoAcao.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -319,57 +319,6 @@
             this.btnBaleia.MouseEnter += new System.EventHandler(this.btnBaleia_MouseEnter);
             this.btnBaleia.MouseLeave += new System.EventHandler(this.btnBaleia_MouseLeave);
             // 
-            // pctCeu
-            // 
-            this.pctCeu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctCeu.Location = new System.Drawing.Point(276, 15);
-            this.pctCeu.Name = "pctCeu";
-            this.pctCeu.Size = new System.Drawing.Size(200, 200);
-            this.pctCeu.TabIndex = 1;
-            this.pctCeu.TabStop = false;
-            // 
-            // pctAgua
-            // 
-            this.pctAgua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctAgua.Location = new System.Drawing.Point(510, 141);
-            this.pctAgua.Name = "pctAgua";
-            this.pctAgua.Size = new System.Drawing.Size(200, 200);
-            this.pctAgua.TabIndex = 2;
-            this.pctAgua.TabStop = false;
-            // 
-            // pctArvore
-            // 
-            this.pctArvore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctArvore.Location = new System.Drawing.Point(39, 221);
-            this.pctArvore.Name = "pctArvore";
-            this.pctArvore.Size = new System.Drawing.Size(120, 120);
-            this.pctArvore.TabIndex = 3;
-            this.pctArvore.TabStop = false;
-            // 
-            // pctChao
-            // 
-            this.pctChao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctChao.Location = new System.Drawing.Point(276, 286);
-            this.pctChao.Name = "pctChao";
-            this.pctChao.Size = new System.Drawing.Size(200, 200);
-            this.pctChao.TabIndex = 0;
-            this.pctChao.TabStop = false;
-            // 
-            // pnlFundoAcao
-            // 
-            this.pnlFundoAcao.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
-            this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlFundoAcao.Controls.Add(this.pctArvore);
-            this.pnlFundoAcao.Controls.Add(this.pctAgua);
-            this.pnlFundoAcao.Controls.Add(this.pctCeu);
-            this.pnlFundoAcao.Controls.Add(this.pctChao);
-            this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlFundoAcao.Location = new System.Drawing.Point(550, 12);
-            this.pnlFundoAcao.Name = "pnlFundoAcao";
-            this.pnlFundoAcao.Size = new System.Drawing.Size(720, 501);
-            this.pnlFundoAcao.TabIndex = 14;
-            // 
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.Color.Transparent;
@@ -511,6 +460,57 @@
             this.btnVoar.Text = "VOAR";
             this.btnVoar.UseVisualStyleBackColor = false;
             // 
+            // pctArvore
+            // 
+            this.pctArvore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctArvore.Location = new System.Drawing.Point(39, 221);
+            this.pctArvore.Name = "pctArvore";
+            this.pctArvore.Size = new System.Drawing.Size(120, 120);
+            this.pctArvore.TabIndex = 3;
+            this.pctArvore.TabStop = false;
+            // 
+            // pctChao
+            // 
+            this.pctChao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctChao.Location = new System.Drawing.Point(276, 286);
+            this.pctChao.Name = "pctChao";
+            this.pctChao.Size = new System.Drawing.Size(200, 200);
+            this.pctChao.TabIndex = 0;
+            this.pctChao.TabStop = false;
+            // 
+            // pctAgua
+            // 
+            this.pctAgua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctAgua.Location = new System.Drawing.Point(510, 141);
+            this.pctAgua.Name = "pctAgua";
+            this.pctAgua.Size = new System.Drawing.Size(200, 200);
+            this.pctAgua.TabIndex = 2;
+            this.pctAgua.TabStop = false;
+            // 
+            // pctCeu
+            // 
+            this.pctCeu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctCeu.Location = new System.Drawing.Point(276, 15);
+            this.pctCeu.Name = "pctCeu";
+            this.pctCeu.Size = new System.Drawing.Size(200, 200);
+            this.pctCeu.TabIndex = 1;
+            this.pctCeu.TabStop = false;
+            // 
+            // pnlFundoAcao
+            // 
+            this.pnlFundoAcao.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
+            this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFundoAcao.Controls.Add(this.pctArvore);
+            this.pnlFundoAcao.Controls.Add(this.pctAgua);
+            this.pnlFundoAcao.Controls.Add(this.pctCeu);
+            this.pnlFundoAcao.Controls.Add(this.pctChao);
+            this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlFundoAcao.Location = new System.Drawing.Point(550, 12);
+            this.pnlFundoAcao.Name = "pnlFundoAcao";
+            this.pnlFundoAcao.Size = new System.Drawing.Size(720, 501);
+            this.pnlFundoAcao.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -553,11 +553,13 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANIMAL KINGDOM";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctChao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
             this.pnlFundoAcao.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -580,11 +582,6 @@
         private System.Windows.Forms.Button btnPombo;
         private System.Windows.Forms.Button btnTartaruga;
         private System.Windows.Forms.Button btnCadastro;
-        private System.Windows.Forms.PictureBox pctCeu;
-        private System.Windows.Forms.PictureBox pctAgua;
-        private System.Windows.Forms.PictureBox pctArvore;
-        private System.Windows.Forms.PictureBox pctChao;
-        private System.Windows.Forms.Panel pnlFundoAcao;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnMovimentar;
         private System.Windows.Forms.Button btnComunicar;
@@ -595,6 +592,11 @@
         private System.Windows.Forms.Button btnCiscar;
         private System.Windows.Forms.Button btnAtaque;
         private System.Windows.Forms.Button btnVoar;
+        private System.Windows.Forms.PictureBox pctArvore;
+        private System.Windows.Forms.PictureBox pctChao;
+        private System.Windows.Forms.PictureBox pctAgua;
+        private System.Windows.Forms.PictureBox pctCeu;
+        private System.Windows.Forms.Panel pnlFundoAcao;
     }
 }
 

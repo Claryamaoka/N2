@@ -606,9 +606,9 @@ namespace N2___Animais
         {
             pnlFundoAcao.BackgroundImage = null;
             pctCeu.BackgroundImage = null;
-            pctAgua.BackgroundImage = null;
-            pctChao.BackgroundImage = null;
             pctArvore.BackgroundImage = null;
+            pctChao.BackgroundImage = null;
+            pctAgua.BackgroundImage = null;
         }
 
         private void VoltaTamanho()
@@ -626,6 +626,16 @@ namespace N2___Animais
                 if (result == DialogResult.Yes)
                     this.Close();
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para sair precione ESC", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
