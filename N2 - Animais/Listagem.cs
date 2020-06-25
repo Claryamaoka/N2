@@ -1,4 +1,6 @@
 ﻿using System;
+using N2___Animais.ANIMAIS;
+using N2___Animais.ESTRUTURA_DADOS;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,11 @@ namespace N2___Animais
             InitializeComponent();
         }
 
+        
+        Lista listar = new Lista();
+
+        //listar = ArvoreBinaria.ListagemInterfixada();
+        //textBox1.Text = ArvoreBinaria.ListagemInterfixada().Listar();
 
     }
 }

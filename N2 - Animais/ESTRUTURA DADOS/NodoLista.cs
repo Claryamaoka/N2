@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ESTRUTURA_DADOS
 {
-    class NodoLista
+    public class NodoLista
     {
         public Animal Dado { get; set; }
         public NodoLista Proximo { get; set; }

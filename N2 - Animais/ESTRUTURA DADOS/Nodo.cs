@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ESTRUTURA_DADOS
 {
-    class Nodo
+    public class Nodo
     {
         private Nodo no_pai = null;
         private Nodo no_direita = null;

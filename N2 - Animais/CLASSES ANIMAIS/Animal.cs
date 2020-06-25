@@ -2,7 +2,7 @@
 
 namespace N2___Animais
 {
-    class Animal
+    public class Animal
     {
         string nome;
         DateTime dataNascimento;

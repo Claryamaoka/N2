@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ESTRUTURA_DADOS
 {
-    class Lista
+    public class Lista
     {
         NodoLista primeiro = null; // ponteiro para o primeiro elemento da lista
         int qtde = 0;
@@ -17,7 +17,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             return qtde;
         }
 
-        private void InserirNaPosicao(Nodo anterior, Animal valor)
+        private void InserirNaPosicao(NodoLista anterior, Animal valor)
         {
             NodoLista novo = new NodoLista();
             novo.Dado = valor;
@@ -45,7 +45,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             InserirNaPosicao(null, valor);
         }
 
-        public void InserirNoFim(Animal valor)
+        public void InserirNoFim(Animal valor) //corrigir
         {
             if (qtde == 0)
                 InserirNoInicio(valor);
@@ -55,7 +55,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
                 while (aux.Proximo != null)
                     aux = aux.Proximo;
-                //InserirNaPosicao(aux, valor);
+                InserirNaPosicao(aux, valor);
             }
 
 
@@ -96,11 +96,24 @@ namespace N2___Animais.ESTRUTURA_DADOS
             qtde--;
         }
 
-        /*
-        public Animal[] Listar
+        public string Listar()
         {
-
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                r += aux.Dado.Nome + Environment.NewLine + aux.Dado.Sexo + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            return r.ToString();
         }
-        */
+
+        public void Listar(NodoLista e)
+        {
+            if (e != null)
+                Console.WriteLine(e.Dado);
+            if (e.Proximo != null)
+                Listar(e.Proximo);
+        }
     }
 }

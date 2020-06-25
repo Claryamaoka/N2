@@ -178,7 +178,9 @@ namespace N2___Animais
             VoltaImagem(botao.Tag.ToString());
         }
 
-        #region"Eventos cliques dos botoes"
+        #region EVENTOS BOTÕES
+
+        #region ANIMAIS
         private void btnBaleia_Click(object sender, EventArgs e)
         {
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
@@ -331,7 +333,46 @@ namespace N2___Animais
             pnlFundoAcao.BackgroundImage = Resources.praia;
             pctChao.BackgroundImage = Resources.tartarugaapagada;
         }
-        #endregion Eventos
+
+        #endregion
+
+        /// <summary>
+        /// Chama o form de cadastro
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            FrmCadastro Cadastro = new FrmCadastro();
+            foreach (var animal in selecionados)
+            {
+                if (animal.Value)
+                {
+                    Cadastro.PegaAnimalSelecionado = animal.Key;
+                    Cadastro.ShowDialog();
+                    return;
+                }
+            }
+            MessageBox.Show("Selecione um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+
+
+        }
+
+        /// <summary>
+        /// Chama o Forms de Listagem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnListar_Click(object sender, EventArgs e)
+        {
+            Listagem listagem = new Listagem();
+            listagem.ShowDialog();
+        }
+
+
+
+        #endregion 
 
 
         #region"Evento  MouseEnter e MouseLeave"
@@ -559,29 +600,7 @@ namespace N2___Animais
             btnTartaruga.BackgroundImage = Resources.tartarugaapagada;
         }
         #endregion
-
-        /// <summary>
-        /// Chama o form de cadastro
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnCadastro_Click(object sender, EventArgs e)
-        {
-            FrmCadastro Cadastro = new FrmCadastro();
-            foreach (var animal in selecionados)
-            {
-                if (animal.Value)
-                {
-                    Cadastro.PegaAnimalSelecionado = animal.Key;
-                    Cadastro.ShowDialog();
-                    return;
-                }
-            }
-            MessageBox.Show("Selecione um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return;
-
-
-        }
+                
 
         private void ApagaImagens()
         {
@@ -599,5 +618,6 @@ namespace N2___Animais
             pctChao.Location = new Point(276, 286);
         }
 
+        
     }
 }

@@ -12,10 +12,9 @@ namespace N2___Animais
         {
             InitializeComponent();
         }
-
-        ArvoreBinaria arvore = new ArvoreBinaria();
         
 
+        #region MÉTODOS PRIVADOS
         /// <summary>
         /// Carrega o nome do animal no topo e seleciona no combobox invisivel
         /// </summary>
@@ -105,6 +104,10 @@ namespace N2___Animais
 
         }
 
+        #endregion
+
+        #region MÉTODOS PÚBLICOS
+
         /// <summary>
         /// Limpa os componentes do form após o cadastro concluído
         /// </summary>
@@ -144,7 +147,8 @@ namespace N2___Animais
                         baleia.DataNascimento = nascimento;
                         baleia.Sexo = sexo;
                         baleia.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(baleia);
                         break;
                     }
                     catch
@@ -163,7 +167,9 @@ namespace N2___Animais
                         cachorro.Sexo = sexo;
                         cachorro.QtdeMamas = qtdemamas;
 
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(cachorro);
+
                         break;
                     }
                     catch
@@ -181,7 +187,8 @@ namespace N2___Animais
                         elefante.DataNascimento = nascimento;
                         elefante.Sexo = sexo;
                         elefante.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(elefante);
                         break;
                     }
                     catch
@@ -199,7 +206,8 @@ namespace N2___Animais
                         gato.DataNascimento = nascimento;
                         gato.Sexo = sexo;
                         gato.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(gato);
                         break;
                     }
                     catch
@@ -217,7 +225,8 @@ namespace N2___Animais
                         leao.DataNascimento = nascimento;
                         leao.Sexo = sexo;
                         leao.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(leao);
                         break;
                     }
                     catch
@@ -235,7 +244,8 @@ namespace N2___Animais
                         morcego.DataNascimento = nascimento;
                         morcego.Sexo = sexo;
                         morcego.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(morcego);
                         break;
                     }
                     catch
@@ -253,7 +263,8 @@ namespace N2___Animais
                         ornitorrinco.DataNascimento = nascimento;
                         ornitorrinco.Sexo = sexo;
                         ornitorrinco.QtdeMamas = qtdemamas;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(ornitorrinco);
                         break;
                     }
                     catch
@@ -286,7 +297,8 @@ namespace N2___Animais
                         galinha.CorPena = corpena;
                         galinha.DataNascimento = nascimento;
                         galinha.Sexo = sexo;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(galinha);
                         break;
                     }
                     catch
@@ -307,7 +319,8 @@ namespace N2___Animais
                         coruja.AlturaMaximaM = altura;
                         coruja.VelocidadeVoo = velocidade;
                         int idade = coruja.Idade;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(coruja);
                         break;
                     }
                     catch
@@ -326,7 +339,8 @@ namespace N2___Animais
                         gaviao.Sexo = sexo;
                         gaviao.AlturaMaximaM = altura;
                         gaviao.VelocidadeVoo = velocidade;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(gaviao);
                         break;
                     }
                     catch
@@ -348,7 +362,8 @@ namespace N2___Animais
                         pato.Sexo = sexo;
                         pato.AlturaMaximaM = altura;
                         pato.VelocidadeVoo = velocidade;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(pato);
                         break;
                     }
                     catch
@@ -366,7 +381,8 @@ namespace N2___Animais
                         pinguim.CorPena = corpena;
                         pinguim.DataNascimento = nascimento;
                         pinguim.Sexo = sexo;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(pinguim);
                         break;
                     }
                     catch
@@ -386,7 +402,8 @@ namespace N2___Animais
                         pombo.Sexo = sexo;
                         pombo.AlturaMaximaM = altura;
                         pombo.VelocidadeVoo = velocidade;
-                        //Adicionar na lista
+                        //Adicionar na árvore
+                        ArvoreBinaria.Insere(pombo);
                         break;
                     }
                     catch
@@ -413,12 +430,17 @@ namespace N2___Animais
                 tartaruga.Nome = nome;
                 tartaruga.DataNascimento = nascimento;
                 tartaruga.Sexo = sexo;
+                //Adicionar na árvore
+                ArvoreBinaria.Insere(tartaruga);
             }
-            catch
+            catch(Exception erro)
             {
+                MessageBox.Show(erro.Message);
                 MessageBox.Show("Algum dado inválido");
             }
         }
+        #endregion
+
         #endregion
     }
 }

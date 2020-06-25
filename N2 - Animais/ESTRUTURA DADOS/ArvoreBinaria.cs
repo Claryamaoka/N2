@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ESTRUTURA_DADOS
 {
-    class ArvoreBinaria
+    public static class ArvoreBinaria
     {
-        private Nodo raiz = null; // raiz da árvore
-        private int qtdeNodosInternos = 0; // qtde de nos internos
+        private static Nodo raiz = null; // raiz da árvore
+        private static int qtdeNodosInternos = 0; // qtde de nos internos
 
-        Lista listaAnimal; // utilizada na listagem dos nodos - MUDAR
+        static Lista resultado; // utilizada na listagem dos nodos - MUDAR
 
-        private int maiorProfundidadeEncontrada = 0; // não necessário
-        private int qtdeNodosExternos = 0; // não necessário
+        private static int maiorProfundidadeEncontrada = 0; // não necessário
+        private static int qtdeNodosExternos = 0; // não necessário
 
 
         /// <summary>
         /// Retorna a qtde de nós internos
         /// </summary>
         /// <returns>Quantidade de elementos inseridos na árvore</returns>
-        public int QtdeNodosInternos() // devolve a qtde de nós internos
+        public static int QtdeNodosInternos() // devolve a qtde de nós internos
         {
             return qtdeNodosInternos;
         }
@@ -31,7 +31,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// Insere um valor na árvore. Não aceita valores repetidos!!!
         /// </summary>
         /// <param name="valor">valor a ser inserido</param>
-        public void Insere(Animal valor) // insere um valor int
+        public static void Insere(Animal valor) // insere um valor int
         {
             Nodo no_aux;
             if (qtdeNodosInternos == 0) // árvore vazia!
@@ -62,7 +62,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             qtdeNodosInternos++;
         }
 
-        public int TotalNodosExternos()
+        public static int TotalNodosExternos()
         {
             return qtdeNodosExternos;
         }
@@ -75,7 +75,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// <param name="valor"></param>
         /// <param name="no"></param>
         /// <returns></returns>
-        private Nodo PesquisaValor(Animal valor, Nodo no, IComparer comparador)
+        private static Nodo PesquisaValor(Animal valor, Nodo no, IComparer comparador)
         {
             if (no == null)
                 return null;
@@ -83,7 +83,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
                 return no; // não achou!
             else if (no.GetValor().Nome == valor.Nome)//comparador = 0
                 return no;
-            else if (comparador.Compare(valor.Nome, no.GetValor().Nome) > 0)    //comparar o tamanho de dois Nomes
+            else if (comparador.Compare(valor, no.GetValor()) > 0)    //comparar o tamanho de dois Nomes
                 return PesquisaValor(valor, no.GetNoDireita(),new ComparadorNome());
             else
                 return PesquisaValor(valor, no.GetNoEsquerda(), new ComparadorNome());
@@ -93,7 +93,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// Remove um valor da árvore
         /// </summary>
         /// <param name="valor"></param>
-        public void Remove(Animal valor)
+        public static void Remove(Animal valor)
         {
             //primeiro, procuramos o nodo que tem o valor:
             Nodo noQueSeraApagado = PesquisaValor(valor, raiz, new ComparadorNome());
@@ -117,11 +117,12 @@ namespace N2___Animais.ESTRUTURA_DADOS
             if (qtdeNodosInternos == 0)
                 qtdeNodosExternos = 0;
         }
+
         /// <summary>
         /// Exclui um nodo que abaixo dele possua, ao menos, 1 nodo exteno.
         /// </summary>
         /// <param name="noQueSeraApagado"></param>
-        private void ExcluiComNodoExterno(Nodo noQueSeraApagado)
+        private static void ExcluiComNodoExterno(Nodo noQueSeraApagado)
         {
             qtdeNodosExternos--;
             qtdeNodosInternos--;
@@ -152,7 +153,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// </summary>
         /// <param name="no"></param>
         /// <returns></returns>
-        private Nodo PesquisaNodoInternoInterfixado(Nodo no)
+        private static Nodo PesquisaNodoInternoInterfixado(Nodo no)
         {
             if (no.EhExterno())
                 return null;
@@ -162,11 +163,12 @@ namespace N2___Animais.ESTRUTURA_DADOS
             else
                 return retorno;
         }
+
         /// <summary>
         /// Exclui um nodo que abaixo dele não há nodos externos.
         /// </summary>
         /// <param name="noQueSeraApagado"></param>
-        private void ExcluiSemNodoExterno(Nodo noQueSeraApagado)
+        private static void ExcluiSemNodoExterno(Nodo noQueSeraApagado)
         {
             //encontra o nodo substituto
             Nodo NodoSubstituto = PesquisaNodoInternoInterfixado(noQueSeraApagado.GetNoDireita());
@@ -179,28 +181,28 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
 
        
-        public bool Pesquisa(Animal animal)
+        public static bool Pesquisa(Animal animal)
         {
             Nodo nodo = PesquisaValor(animal, raiz, new ComparadorNome());
             //return (nodo != null && nodo.GetValor() == numero)
             return (nodo != null && nodo.EhInterno());
         }
-        /*
+        
 
-        public int CalculaAlturaArvore()
+        public static int CalculaAlturaArvore()
         {
             maiorProfundidadeEncontrada = 0;
             CalculaAltura(raiz);
             return maiorProfundidadeEncontrada;
         }
 
-        //remover a lista 
-        private void PercursoInterfixado(Nodo no)
+       
+        private static void PercursoInterfixado(Nodo no)
         {
             if (no.EhExterno())
                 return;
             PercursoInterfixado(no.GetNoEsquerda());
-            listaAnimal.InserirNoFim(no.GetValor());
+            resultado.InserirNoInicio(no.GetValor());
             PercursoInterfixado(no.GetNoDireita());
         }
         
@@ -209,7 +211,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// Devolve um string com os elementos da árvore, em ordem crescente
         /// </summary>
         /// <returns></returns>
-        public Lista ListagemInterfixada()
+        public static Lista ListagemInterfixada()
         {
             resultado = new Lista();
             if (qtdeNodosInternos != 0)
@@ -218,37 +220,38 @@ namespace N2___Animais.ESTRUTURA_DADOS
         }
 
 
-        private void PercursoPosFixado(Nodo no)
+        private static void PercursoPosFixado(Nodo no)
         {
             if (no.EhExterno())
                 return;
             PercursoInterfixado(no.GetNoEsquerda());
             PercursoInterfixado(no.GetNoDireita());
-            resultado.Add(no.GetValor());
+            resultado.InserirNoFim(no.GetValor());
         }
 
-        public List<int> PercursoPosFixado()
+        public static Lista PercursoPosFixado()
         {
-            resultado = new List<int>();
+            resultado = new Lista();
             if (qtdeNodosInternos != 0)
                 PercursoPosFixado(raiz);
             return resultado;
         }
 
 
-        private void PercursoPrefixado(Nodo no)
+        private static void PercursoPrefixado(Nodo no)
         {
             if (no.EhExterno())
                 return;
 
-            resultado.Add(no.GetValor());
+            resultado.InserirNoFim(no.GetValor());
             PercursoInterfixado(no.GetNoEsquerda());
             PercursoInterfixado(no.GetNoDireita());
         }
 
-        public List<int> PercursoPrefixado()
+
+        public static Lista PercursoPrefixado()
         {
-            resultado = new List<int>();
+            resultado = new Lista();
             if (qtdeNodosInternos != 0)
                 PercursoPrefixado(raiz);
             return resultado;
@@ -261,7 +264,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         /// Calcula a altura
         /// </summary>
         /// <param name="no"></param>
-        private void CalculaAltura(Nodo no)
+        private static void CalculaAltura(Nodo no)
         {
             if (no.EhExterno())
             {
@@ -281,6 +284,6 @@ namespace N2___Animais.ESTRUTURA_DADOS
             CalculaAltura(no.GetNoEsquerda());
             CalculaAltura(no.GetNoDireita());
         }
-        */
+        
     }
 }
