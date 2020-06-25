@@ -1,6 +1,6 @@
 ﻿namespace N2___Animais
 {
-    partial class Listagem
+    partial class FrmListagem
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listagem));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmListagem));
             this.btnListarAnimais = new System.Windows.Forms.Button();
             this.btnListarOviparos = new System.Windows.Forms.Button();
             this.btnListarMamiferos = new System.Windows.Forms.Button();

@@ -1,6 +1,6 @@
 ﻿namespace N2___Animais
 {
-    partial class Form1
+    partial class FrmJogo
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmJogo));
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnTartaruga = new System.Windows.Forms.Button();
             this.btnPombo = new System.Windows.Forms.Button();

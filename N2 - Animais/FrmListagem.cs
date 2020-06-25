@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace N2___Animais
 {
-    public partial class Listagem : Form
+    public partial class FrmListagem : Form
     {
-        public Listagem()
+        public FrmListagem()
         {
             InitializeComponent();
         }

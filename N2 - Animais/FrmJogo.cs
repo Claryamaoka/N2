@@ -6,15 +6,16 @@ using System.Windows.Forms;
 
 namespace N2___Animais
 {
-    public partial class Form1 : Form
+    public partial class FrmJogo : Form
     {
-        public Form1()
+        public FrmJogo()
         {
             InitializeComponent();
             DicionarioBotoes();
         }
 
         SortedDictionary<string, bool> selecionados = new SortedDictionary<string, bool>();
+
 
         /// <summary>
         /// Volta a imagem para seu modo original
@@ -178,8 +179,10 @@ namespace N2___Animais
             VoltaImagem(botao.Tag.ToString());
         }
 
+        //Todos os eventos dos botões
         #region EVENTOS BOTÕES
 
+        //Botões dos animais
         #region ANIMAIS
         private void btnBaleia_Click(object sender, EventArgs e)
         {
@@ -332,15 +335,12 @@ namespace N2___Animais
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.praia;
             pctChao.BackgroundImage = Resources.tartarugaapagada;
+
         }
 
         #endregion
 
-        /// <summary>
-        /// Chama o form de cadastro
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        //Chama o form de cadastro
         private void btnCadastro_Click(object sender, EventArgs e)
         {
             FrmCadastro Cadastro = new FrmCadastro();
@@ -359,22 +359,14 @@ namespace N2___Animais
 
         }
 
-        /// <summary>
-        /// Chama o Forms de Listagem
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        //Chama o form de Listagem
         private void BtnListar_Click(object sender, EventArgs e)
         {
-            Listagem listagem = new Listagem();
+            FrmListagem listagem = new FrmListagem();
             listagem.ShowDialog();
         }
 
-
-
-        #endregion 
-
-
+        //Eventos Mouse Leave e Enter
         #region"Evento  MouseEnter e MouseLeave"
         private void btnBaleia_MouseEnter(object sender, EventArgs e)
         {
@@ -601,7 +593,9 @@ namespace N2___Animais
         }
         #endregion
 
+        #endregion
 
+        //Apaga as imagens quando troca o animal
         private void ApagaImagens()
         {
             pnlFundoAcao.BackgroundImage = null;
@@ -611,13 +605,16 @@ namespace N2___Animais
             pctAgua.BackgroundImage = null;
         }
 
+        //Volta ao tamanho padrão sem ser Leão e Elefante
         private void VoltaTamanho()
         {
             pctChao.Width = 200;
             pctChao.Height = 200;
             pctChao.Location = new Point(276, 286);
         }
-        
+
+
+        //Verificador pra fechar o form
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyValue == 27)
@@ -628,11 +625,13 @@ namespace N2___Animais
             }
         }
 
+        //Mensagem de como fechar o jogo
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Para sair precione ESC", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
+        //Evento pra fechar o jogo
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

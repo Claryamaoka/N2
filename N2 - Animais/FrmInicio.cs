@@ -25,7 +25,7 @@ namespace N2___Animais
         {
             this.Hide();
             timer.Stop();
-            Form1 form = new Form1();
+            FrmJogo form = new FrmJogo();
             form.ShowDialog();
             
         }

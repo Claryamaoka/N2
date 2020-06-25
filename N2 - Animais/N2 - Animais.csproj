@@ -68,11 +68,11 @@
     <Compile Include="ESTRUTURA DADOS\Nodo.cs" />
     <Compile Include="ESTRUTURA DADOS\NodoLista.cs" />
     <Compile Include="ESTRUTURA DADOS\Ordenacao.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmJogo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmJogo.Designer.cs">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
     </Compile>
     <Compile Include="ANIMAIS\Gato.cs" />
     <Compile Include="FrmCadastro.cs">
@@ -92,17 +92,17 @@
     <Compile Include="INTERFACES\IPredador.cs" />
     <Compile Include="INTERFACES\IVoar.cs" />
     <Compile Include="CLASSES ANIMAIS\Mamifero.cs" />
-    <Compile Include="Listagem.cs">
+    <Compile Include="FrmListagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Listagem.Designer.cs">
-      <DependentUpon>Listagem.cs</DependentUpon>
+    <Compile Include="FrmListagem.Designer.cs">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CLASSES ANIMAIS\Reptil.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmJogo.resx">
+      <DependentUpon>FrmJogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
@@ -110,11 +110,11 @@
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Listagem.aa-DJ.resx">
-      <DependentUpon>Listagem.cs</DependentUpon>
+    <EmbeddedResource Include="FrmListagem.aa-DJ.resx">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Listagem.resx">
-      <DependentUpon>Listagem.cs</DependentUpon>
+    <EmbeddedResource Include="FrmListagem.resx">
+      <DependentUpon>FrmListagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
