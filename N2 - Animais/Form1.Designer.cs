@@ -51,7 +51,14 @@
             this.pnlFundoAcao = new System.Windows.Forms.Panel();
             this.btnListar = new System.Windows.Forms.Button();
             this.btnMovimentar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnComunicar = new System.Windows.Forms.Button();
+            this.btnAlimentar = new System.Windows.Forms.Button();
+            this.btnAmamentar = new System.Windows.Forms.Button();
+            this.btnChocar = new System.Windows.Forms.Button();
+            this.btnBotar = new System.Windows.Forms.Button();
+            this.btnCiscar = new System.Windows.Forms.Button();
+            this.btnAtaque = new System.Windows.Forms.Button();
+            this.btnVoar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).BeginInit();
@@ -384,27 +391,125 @@
             this.btnMovimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMovimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovimentar.ForeColor = System.Drawing.Color.White;
-            this.btnMovimentar.Location = new System.Drawing.Point(11, 462);
+            this.btnMovimentar.Location = new System.Drawing.Point(5, 462);
             this.btnMovimentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMovimentar.Name = "btnMovimentar";
-            this.btnMovimentar.Size = new System.Drawing.Size(146, 70);
+            this.btnMovimentar.Size = new System.Drawing.Size(162, 70);
             this.btnMovimentar.TabIndex = 17;
             this.btnMovimentar.Text = "MOVIMENTAR";
             this.btnMovimentar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnComunicar
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(186, 462);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 70);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "COMUNICAR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnComunicar.BackColor = System.Drawing.Color.Transparent;
+            this.btnComunicar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnComunicar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComunicar.ForeColor = System.Drawing.Color.White;
+            this.btnComunicar.Location = new System.Drawing.Point(186, 462);
+            this.btnComunicar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnComunicar.Name = "btnComunicar";
+            this.btnComunicar.Size = new System.Drawing.Size(146, 70);
+            this.btnComunicar.TabIndex = 18;
+            this.btnComunicar.Text = "COMUNICAR";
+            this.btnComunicar.UseVisualStyleBackColor = false;
+            // 
+            // btnAlimentar
+            // 
+            this.btnAlimentar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAlimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAlimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlimentar.ForeColor = System.Drawing.Color.White;
+            this.btnAlimentar.Location = new System.Drawing.Point(362, 462);
+            this.btnAlimentar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAlimentar.Name = "btnAlimentar";
+            this.btnAlimentar.Size = new System.Drawing.Size(146, 70);
+            this.btnAlimentar.TabIndex = 19;
+            this.btnAlimentar.Text = "ALIMENTAR";
+            this.btnAlimentar.UseVisualStyleBackColor = false;
+            // 
+            // btnAmamentar
+            // 
+            this.btnAmamentar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmamentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAmamentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnAmamentar.ForeColor = System.Drawing.Color.White;
+            this.btnAmamentar.Location = new System.Drawing.Point(11, 566);
+            this.btnAmamentar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAmamentar.Name = "btnAmamentar";
+            this.btnAmamentar.Size = new System.Drawing.Size(156, 70);
+            this.btnAmamentar.TabIndex = 20;
+            this.btnAmamentar.Text = "AMAMENTAR";
+            this.btnAmamentar.UseVisualStyleBackColor = false;
+            // 
+            // btnChocar
+            // 
+            this.btnChocar.BackColor = System.Drawing.Color.Transparent;
+            this.btnChocar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChocar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChocar.ForeColor = System.Drawing.Color.White;
+            this.btnChocar.Location = new System.Drawing.Point(11, 668);
+            this.btnChocar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnChocar.Name = "btnChocar";
+            this.btnChocar.Size = new System.Drawing.Size(146, 70);
+            this.btnChocar.TabIndex = 21;
+            this.btnChocar.Text = "CHOCAR";
+            this.btnChocar.UseVisualStyleBackColor = false;
+            // 
+            // btnBotar
+            // 
+            this.btnBotar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBotar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBotar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBotar.ForeColor = System.Drawing.Color.White;
+            this.btnBotar.Location = new System.Drawing.Point(362, 566);
+            this.btnBotar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBotar.Name = "btnBotar";
+            this.btnBotar.Size = new System.Drawing.Size(146, 70);
+            this.btnBotar.TabIndex = 22;
+            this.btnBotar.Text = "BOTAR";
+            this.btnBotar.UseVisualStyleBackColor = false;
+            // 
+            // btnCiscar
+            // 
+            this.btnCiscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCiscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCiscar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCiscar.ForeColor = System.Drawing.Color.White;
+            this.btnCiscar.Location = new System.Drawing.Point(186, 566);
+            this.btnCiscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCiscar.Name = "btnCiscar";
+            this.btnCiscar.Size = new System.Drawing.Size(146, 70);
+            this.btnCiscar.TabIndex = 23;
+            this.btnCiscar.Text = "CISCAR";
+            this.btnCiscar.UseVisualStyleBackColor = false;
+            // 
+            // btnAtaque
+            // 
+            this.btnAtaque.BackColor = System.Drawing.Color.Transparent;
+            this.btnAtaque.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAtaque.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtaque.ForeColor = System.Drawing.Color.White;
+            this.btnAtaque.Location = new System.Drawing.Point(362, 668);
+            this.btnAtaque.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAtaque.Name = "btnAtaque";
+            this.btnAtaque.Size = new System.Drawing.Size(146, 70);
+            this.btnAtaque.TabIndex = 24;
+            this.btnAtaque.Text = "ATAQUE";
+            this.btnAtaque.UseVisualStyleBackColor = false;
+            // 
+            // btnVoar
+            // 
+            this.btnVoar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVoar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVoar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoar.ForeColor = System.Drawing.Color.White;
+            this.btnVoar.Location = new System.Drawing.Point(186, 668);
+            this.btnVoar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnVoar.Name = "btnVoar";
+            this.btnVoar.Size = new System.Drawing.Size(146, 70);
+            this.btnVoar.TabIndex = 25;
+            this.btnVoar.Text = "VOAR";
+            this.btnVoar.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -413,7 +518,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(151)))), ((int)(((byte)(236)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1281, 749);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnVoar);
+            this.Controls.Add(this.btnAtaque);
+            this.Controls.Add(this.btnCiscar);
+            this.Controls.Add(this.btnBotar);
+            this.Controls.Add(this.btnChocar);
+            this.Controls.Add(this.btnAmamentar);
+            this.Controls.Add(this.btnAlimentar);
+            this.Controls.Add(this.btnComunicar);
             this.Controls.Add(this.btnMovimentar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnCadastro);
@@ -470,7 +582,14 @@
         private System.Windows.Forms.Panel pnlFundoAcao;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnMovimentar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnComunicar;
+        private System.Windows.Forms.Button btnAlimentar;
+        private System.Windows.Forms.Button btnAmamentar;
+        private System.Windows.Forms.Button btnChocar;
+        private System.Windows.Forms.Button btnBotar;
+        private System.Windows.Forms.Button btnCiscar;
+        private System.Windows.Forms.Button btnAtaque;
+        private System.Windows.Forms.Button btnVoar;
     }
 }
 

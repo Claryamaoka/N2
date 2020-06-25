@@ -36,7 +36,7 @@ namespace N2___Animais
 
             set
             {
-                if (dataNascimento < DateTime.Now)
+                if (value < DateTime.Now)
                     dataNascimento = value;
                 else
                     throw new Exception("A data de nascimento nao pode ser futura!");
