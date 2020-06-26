@@ -1,4 +1,5 @@
-﻿using N2___Animais.Properties;
+﻿using N2___Animais.ESTRUTURA_DADOS;
+using N2___Animais.Properties;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -197,7 +198,13 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
-
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("baleia");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
@@ -213,6 +220,15 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("cachorro");
+            cmbAnimais.Items.Clear();
+
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
@@ -229,6 +245,14 @@ namespace N2___Animais
             btnChocar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("coruja");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
@@ -246,6 +270,14 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("elefante");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
@@ -263,6 +295,14 @@ namespace N2___Animais
             btnBotar.Enabled = true;
             btnChocar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("galinha");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnGato_Click(object sender, EventArgs e)
@@ -278,6 +318,14 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("gato");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
@@ -295,6 +343,14 @@ namespace N2___Animais
             btnChocar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("gaviao");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
@@ -312,6 +368,14 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("leao");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
@@ -327,6 +391,14 @@ namespace N2___Animais
             btnAmamentar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("morcego");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
@@ -343,6 +415,14 @@ namespace N2___Animais
             btnAmamentar.Enabled = true;
             btnBotar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("ornitorrinco");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnPato_Click(object sender, EventArgs e)
@@ -360,6 +440,14 @@ namespace N2___Animais
             btnBotar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("pato");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
@@ -377,6 +465,14 @@ namespace N2___Animais
             btnBotar.Enabled = true;
             btnChocar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("pinguim");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
@@ -395,6 +491,14 @@ namespace N2___Animais
             btnChocar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("pombo");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
@@ -410,6 +514,14 @@ namespace N2___Animais
             DesativaBotoes();
             btnBotar.Enabled = true;
             btnMovimentar.Enabled = true;
+
+            string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("tartaruga");
+            cmbAnimais.Items.Clear();
+            foreach (string linha in nomes)
+            {
+                if (linha != null)
+                    cmbAnimais.Items.Add(linha);
+            }
         }
 
         #endregion
@@ -1038,7 +1150,7 @@ namespace N2___Animais
             }
             else
             {
-                
+
                 Movimentacao(RetornaAnimal());
             }
         }
@@ -1047,6 +1159,11 @@ namespace N2___Animais
         {
             Voar(RetornaAnimal());
             btnMovimentar.Enabled = false;
+        }
+        
+        private void cmbAnimais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ArvoreBinaria.Pesquisa()
         }
     }
 }
