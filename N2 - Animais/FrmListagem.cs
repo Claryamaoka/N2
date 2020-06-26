@@ -27,6 +27,47 @@ namespace N2___Animais
             this.Close();
         }
 
+        #region BOTÕES DE LISTAGEM
+        private void BtnListarAnimais_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarMamiferos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarOviparos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarPredadores_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarAnimaisAquaticos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarAnimaisQueVoam_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnLIstarPorIdade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnListarOrdemAlfabetica_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
 
         //listar = ArvoreBinaria.ListagemInterfixada();
         //textBox1.Text = ArvoreBinaria.ListagemInterfixada().Listar();

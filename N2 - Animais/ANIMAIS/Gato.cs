@@ -20,5 +20,10 @@ namespace N2___Animais
             Carnivoro = carne;
             Peconhento = peconhento;
         }
+
+        public override string ToString()
+        {
+            return "GATO" + Environment.NewLine+ base.ToString();
+        }
     }
 }

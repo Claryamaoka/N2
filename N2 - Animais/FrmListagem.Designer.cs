@@ -47,6 +47,7 @@
             this.btnListarAnimais.ForeColor = System.Drawing.Color.White;
             this.btnListarAnimais.Name = "btnListarAnimais";
             this.btnListarAnimais.UseVisualStyleBackColor = false;
+            this.btnListarAnimais.Click += new System.EventHandler(this.BtnListarAnimais_Click);
             // 
             // btnListarOviparos
             // 
@@ -55,6 +56,7 @@
             this.btnListarOviparos.ForeColor = System.Drawing.Color.White;
             this.btnListarOviparos.Name = "btnListarOviparos";
             this.btnListarOviparos.UseVisualStyleBackColor = false;
+            this.btnListarOviparos.Click += new System.EventHandler(this.BtnListarOviparos_Click);
             // 
             // btnListarMamiferos
             // 
@@ -63,6 +65,7 @@
             this.btnListarMamiferos.ForeColor = System.Drawing.Color.White;
             this.btnListarMamiferos.Name = "btnListarMamiferos";
             this.btnListarMamiferos.UseVisualStyleBackColor = false;
+            this.btnListarMamiferos.Click += new System.EventHandler(this.BtnListarMamiferos_Click);
             // 
             // btnListarOrdemAlfabetica
             // 
@@ -71,6 +74,7 @@
             this.btnListarOrdemAlfabetica.ForeColor = System.Drawing.Color.White;
             this.btnListarOrdemAlfabetica.Name = "btnListarOrdemAlfabetica";
             this.btnListarOrdemAlfabetica.UseVisualStyleBackColor = false;
+            this.btnListarOrdemAlfabetica.Click += new System.EventHandler(this.BtnListarOrdemAlfabetica_Click);
             // 
             // btnLIstarPorIdade
             // 
@@ -79,6 +83,7 @@
             this.btnLIstarPorIdade.ForeColor = System.Drawing.Color.White;
             this.btnLIstarPorIdade.Name = "btnLIstarPorIdade";
             this.btnLIstarPorIdade.UseVisualStyleBackColor = false;
+            this.btnLIstarPorIdade.Click += new System.EventHandler(this.BtnLIstarPorIdade_Click);
             // 
             // btnListarAnimaisQueVoam
             // 
@@ -87,6 +92,7 @@
             this.btnListarAnimaisQueVoam.ForeColor = System.Drawing.Color.White;
             this.btnListarAnimaisQueVoam.Name = "btnListarAnimaisQueVoam";
             this.btnListarAnimaisQueVoam.UseVisualStyleBackColor = false;
+            this.btnListarAnimaisQueVoam.Click += new System.EventHandler(this.BtnListarAnimaisQueVoam_Click);
             // 
             // btnListarAnimaisAquaticos
             // 
@@ -95,6 +101,7 @@
             this.btnListarAnimaisAquaticos.ForeColor = System.Drawing.Color.White;
             this.btnListarAnimaisAquaticos.Name = "btnListarAnimaisAquaticos";
             this.btnListarAnimaisAquaticos.UseVisualStyleBackColor = false;
+            this.btnListarAnimaisAquaticos.Click += new System.EventHandler(this.BtnListarAnimaisAquaticos_Click);
             // 
             // btnListarPredadores
             // 
@@ -103,6 +110,7 @@
             this.btnListarPredadores.ForeColor = System.Drawing.Color.White;
             this.btnListarPredadores.Name = "btnListarPredadores";
             this.btnListarPredadores.UseVisualStyleBackColor = false;
+            this.btnListarPredadores.Click += new System.EventHandler(this.BtnListarPredadores_Click);
             // 
             // button1
             // 
@@ -114,7 +122,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Listagem
+            // FrmListagem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             resources.ApplyResources(this, "$this");
@@ -129,7 +137,7 @@
             this.Controls.Add(this.btnListarOviparos);
             this.Controls.Add(this.btnListarAnimais);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Listagem";
+            this.Name = "FrmListagem";
             this.ResumeLayout(false);
 
         }

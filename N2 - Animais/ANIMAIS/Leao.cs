@@ -27,5 +27,10 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return "LEÃO" + Environment.NewLine + base.ToString() + "PREDADOR" + Environment.NewLine;
+        }
     }
 }

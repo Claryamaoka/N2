@@ -89,6 +89,30 @@ namespace N2___Animais
         /// </summary>
         public void Alimentar()
         { }
+
+        public override string ToString()
+        {
+            string aux = "NOME: " + Nome + Environment.NewLine + "DATA DE NASCIMENTO: " + DataNascimento +
+                Environment.NewLine + "IDADE: " + Idade + Environment.NewLine + "SEXO: " + Sexo +
+                Environment.NewLine;
+            if (Carnivoro)
+            {
+                if (Peconhento)
+                    return aux + "CARNIVORO " + Environment.NewLine + "PEÇONHENTO" + Environment.NewLine;
+                else
+                    return aux + "CARNIVORO " + Environment.NewLine;
+
+            }
+            else
+            {
+                if(Peconhento)
+                    return aux + "PEÇONHENTO" + Environment.NewLine;
+                else
+                    return aux;
+            }
+                
+
+        }
         #endregion
     }
 }

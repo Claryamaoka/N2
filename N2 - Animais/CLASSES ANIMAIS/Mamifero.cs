@@ -54,5 +54,14 @@ namespace N2___Animais
         /// </summary>
         public void Amamentar()
         { }
+
+        public override string ToString()
+        {
+            if (Pelos)
+                return base.ToString() + "QUANTIDADE DE MAMAS: " + QtdeMamas + Environment.NewLine +
+                "POSSUI PELOS" + Environment.NewLine + CorPelo + Environment.NewLine;
+            else
+                return base.ToString() + "QUANTIDADE DE MAMAS: " + QtdeMamas + Environment.NewLine;
+        }
     }
 }

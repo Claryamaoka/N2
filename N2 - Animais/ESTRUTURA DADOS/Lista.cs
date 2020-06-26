@@ -34,8 +34,8 @@ namespace N2___Animais.ESTRUTURA_DADOS
             }
             else
             {
-                //novo.Proximo = anterior.Proximo;
-                //anterior.Proximo = novo;
+                novo.Proximo = anterior.Proximo;
+                anterior.Proximo = novo;
             }
             qtde++;
         }

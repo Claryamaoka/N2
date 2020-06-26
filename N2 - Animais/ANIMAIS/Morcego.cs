@@ -24,7 +24,7 @@ namespace N2___Animais.ANIMAIS
         #region PARÂMETROS
         private int alturaMaxima;
         private double velocidadeVoo;
-        //Falta validar
+        
         public int AlturaMaximaM
         {
             get
@@ -64,5 +64,11 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return "MORCEGO" + Environment.NewLine + base.ToString() + Environment.NewLine + "ALTURA MÁXIMA DE VOO EM METROS: "
+                + AlturaMaximaM + Environment.NewLine + "VELOCIDADE DE VOO: " + VelocidadeVoo;
+        }
     }
 }

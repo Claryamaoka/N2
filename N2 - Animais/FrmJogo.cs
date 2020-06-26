@@ -628,7 +628,7 @@ namespace N2___Animais
         //Mensagem de como fechar o jogo
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Para sair precione ESC", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show("Para sair pressione ESC", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         //Evento pra fechar o jogo

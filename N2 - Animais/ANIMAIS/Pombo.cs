@@ -75,5 +75,12 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return "POMBO" + Environment.NewLine + base.ToString() + Environment.NewLine + "ALTURA MÁXIMA DE VOO EM M: " +
+                AlturaMaximaM + Environment.NewLine + "VELOCIDADE DE VOO: " + VelocidadeVoo + Environment.NewLine;
+                
+        }
     }
 }

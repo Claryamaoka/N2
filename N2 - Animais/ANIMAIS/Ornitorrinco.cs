@@ -61,5 +61,11 @@ namespace N2___Animais.ANIMAIS
         }
         #endregion
 
+        public override string ToString()
+        {
+            return "ORNITORRINCO" + Environment.NewLine + base.ToString() + "MERGULHA" + Environment.NewLine +
+                "VIVE EM TERRA" + Environment.NewLine ;
+        }
+
     }
 }

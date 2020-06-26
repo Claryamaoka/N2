@@ -100,5 +100,11 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return "PATO" + Environment.NewLine + base.ToString() +Environment.NewLine+ "VIVE EM TERRA" + Environment.NewLine +
+                "MERGULHA" + Environment.NewLine;
+        }
     }
 }

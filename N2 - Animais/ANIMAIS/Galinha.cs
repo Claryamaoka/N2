@@ -32,5 +32,10 @@ namespace N2___Animais.ANIMAIS
             throw new NotImplementedException();
         }
         #endregion
+
+        public override string ToString()
+        {
+            return "GALINHA" +Environment.NewLine+ base.ToString();
+        }
     }
 }

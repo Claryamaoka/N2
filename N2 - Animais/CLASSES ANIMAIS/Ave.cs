@@ -37,5 +37,14 @@ namespace N2___Animais
         /// </summary>
         public void Ciscar()
         { }
+
+        public override string ToString()
+        {
+            if(Rapina)
+               return base.ToString() + "COR DA PENA: " + CorPena + 
+                    Environment.NewLine + "AVE DE RAPINA" + Environment.NewLine;
+            else
+                return base.ToString() + "COR DA PENA: " + CorPena + Environment.NewLine;
+        }
     }
 }

@@ -202,7 +202,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             if (no.EhExterno())
                 return;
             PercursoInterfixado(no.GetNoEsquerda());
-            resultado.InserirNoInicio(no.GetValor());
+            resultado.InserirNoFim(no.GetValor());
             PercursoInterfixado(no.GetNoDireita());
         }
         

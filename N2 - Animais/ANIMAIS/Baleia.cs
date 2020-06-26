@@ -48,5 +48,10 @@ namespace N2___Animais.ANIMAIS
         }
         #endregion
 
+        public override string ToString()
+        {
+            return "BALEIA" +Environment.NewLine+ base.ToString() + "MERGULHA" + Environment.NewLine;
+        }
+
     }
 }

@@ -13,5 +13,24 @@ namespace N2___Animais
 
         public bool TemCasco
         { get; set; }
+
+        public override string ToString()
+        {
+            if(TemCasco)
+            {
+                if(TemEscama)
+                    return base.ToString() + "POSSUI CASCO" + Environment.NewLine + "POSSUI ESCAMAS" + Environment.NewLine;
+                else
+                    return base.ToString() + "POSSUI CASCO" + Environment.NewLine;
+            }
+            else
+            {
+                if (TemEscama)
+                    return base.ToString() + "POSSUI ESCAMAS" + Environment.NewLine;
+                else
+                    return base.ToString();
+            }
+            
+        }
     }
 }

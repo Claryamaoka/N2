@@ -20,5 +20,10 @@ namespace N2___Animais.ANIMAIS
             Pelos = pelo;
             Peconhento = peconhento;
         }
+
+        public override string ToString()
+        {
+            return "ELEFANTE" +Environment.NewLine+ base.ToString();
+        }
     }
 }
