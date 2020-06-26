@@ -59,6 +59,8 @@
             this.pctAgua = new System.Windows.Forms.PictureBox();
             this.pctCeu = new System.Windows.Forms.PictureBox();
             this.pnlFundoAcao = new System.Windows.Forms.Panel();
+            this.txtCarac = new System.Windows.Forms.TextBox();
+            this.cmbAnimais = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctChao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
@@ -72,7 +74,7 @@
             this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCadastro.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastro.ForeColor = System.Drawing.Color.White;
-            this.btnCadastro.Location = new System.Drawing.Point(52, 298);
+            this.btnCadastro.Location = new System.Drawing.Point(48, 328);
             this.btnCadastro.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(181, 104);
@@ -87,7 +89,7 @@
             this.btnTartaruga.BackgroundImage = global::N2___Animais.Properties.Resources.tartarugaapagada;
             this.btnTartaruga.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTartaruga.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTartaruga.Location = new System.Drawing.Point(1186, 672);
+            this.btnTartaruga.Location = new System.Drawing.Point(1186, 724);
             this.btnTartaruga.Margin = new System.Windows.Forms.Padding(2);
             this.btnTartaruga.Name = "btnTartaruga";
             this.btnTartaruga.Size = new System.Drawing.Size(84, 68);
@@ -104,7 +106,7 @@
             this.btnPombo.BackgroundImage = global::N2___Animais.Properties.Resources.pomboapagado;
             this.btnPombo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPombo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPombo.Location = new System.Drawing.Point(1080, 672);
+            this.btnPombo.Location = new System.Drawing.Point(1080, 724);
             this.btnPombo.Margin = new System.Windows.Forms.Padding(2);
             this.btnPombo.Name = "btnPombo";
             this.btnPombo.Size = new System.Drawing.Size(84, 68);
@@ -121,7 +123,7 @@
             this.btnPinguim.BackgroundImage = global::N2___Animais.Properties.Resources.pinguimapagado;
             this.btnPinguim.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPinguim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPinguim.Location = new System.Drawing.Point(974, 672);
+            this.btnPinguim.Location = new System.Drawing.Point(974, 724);
             this.btnPinguim.Margin = new System.Windows.Forms.Padding(2);
             this.btnPinguim.Name = "btnPinguim";
             this.btnPinguim.Size = new System.Drawing.Size(84, 68);
@@ -138,7 +140,7 @@
             this.btnPato.BackgroundImage = global::N2___Animais.Properties.Resources.patoapagado;
             this.btnPato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPato.Location = new System.Drawing.Point(868, 672);
+            this.btnPato.Location = new System.Drawing.Point(868, 724);
             this.btnPato.Margin = new System.Windows.Forms.Padding(2);
             this.btnPato.Name = "btnPato";
             this.btnPato.Size = new System.Drawing.Size(84, 68);
@@ -155,7 +157,7 @@
             this.btnOrnitorrinco.BackgroundImage = global::N2___Animais.Properties.Resources.ornitorrincoapagado;
             this.btnOrnitorrinco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnOrnitorrinco.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOrnitorrinco.Location = new System.Drawing.Point(762, 672);
+            this.btnOrnitorrinco.Location = new System.Drawing.Point(762, 724);
             this.btnOrnitorrinco.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrnitorrinco.Name = "btnOrnitorrinco";
             this.btnOrnitorrinco.Size = new System.Drawing.Size(84, 68);
@@ -172,7 +174,7 @@
             this.btnMorcego.BackgroundImage = global::N2___Animais.Properties.Resources.morcegoapagado;
             this.btnMorcego.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMorcego.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMorcego.Location = new System.Drawing.Point(656, 672);
+            this.btnMorcego.Location = new System.Drawing.Point(656, 724);
             this.btnMorcego.Margin = new System.Windows.Forms.Padding(2);
             this.btnMorcego.Name = "btnMorcego";
             this.btnMorcego.Size = new System.Drawing.Size(84, 68);
@@ -189,7 +191,7 @@
             this.btnLeao.BackgroundImage = global::N2___Animais.Properties.Resources.leaoapagado;
             this.btnLeao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLeao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLeao.Location = new System.Drawing.Point(550, 672);
+            this.btnLeao.Location = new System.Drawing.Point(550, 724);
             this.btnLeao.Margin = new System.Windows.Forms.Padding(2);
             this.btnLeao.Name = "btnLeao";
             this.btnLeao.Size = new System.Drawing.Size(84, 68);
@@ -206,7 +208,7 @@
             this.btnGaviao.BackgroundImage = global::N2___Animais.Properties.Resources.gaviaoapagado;
             this.btnGaviao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnGaviao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGaviao.Location = new System.Drawing.Point(1186, 587);
+            this.btnGaviao.Location = new System.Drawing.Point(1186, 639);
             this.btnGaviao.Margin = new System.Windows.Forms.Padding(2);
             this.btnGaviao.Name = "btnGaviao";
             this.btnGaviao.Size = new System.Drawing.Size(84, 68);
@@ -223,7 +225,7 @@
             this.btnGato.BackgroundImage = global::N2___Animais.Properties.Resources.gatoapagado;
             this.btnGato.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGato.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGato.Location = new System.Drawing.Point(1080, 587);
+            this.btnGato.Location = new System.Drawing.Point(1080, 639);
             this.btnGato.Margin = new System.Windows.Forms.Padding(2);
             this.btnGato.Name = "btnGato";
             this.btnGato.Size = new System.Drawing.Size(84, 68);
@@ -240,7 +242,7 @@
             this.btnGalinha.BackgroundImage = global::N2___Animais.Properties.Resources.galinhaapagada;
             this.btnGalinha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGalinha.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGalinha.Location = new System.Drawing.Point(974, 587);
+            this.btnGalinha.Location = new System.Drawing.Point(974, 639);
             this.btnGalinha.Margin = new System.Windows.Forms.Padding(2);
             this.btnGalinha.Name = "btnGalinha";
             this.btnGalinha.Size = new System.Drawing.Size(84, 68);
@@ -257,7 +259,7 @@
             this.btnElefante.BackgroundImage = global::N2___Animais.Properties.Resources.elefanteapagado;
             this.btnElefante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnElefante.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnElefante.Location = new System.Drawing.Point(868, 587);
+            this.btnElefante.Location = new System.Drawing.Point(868, 639);
             this.btnElefante.Margin = new System.Windows.Forms.Padding(2);
             this.btnElefante.Name = "btnElefante";
             this.btnElefante.Size = new System.Drawing.Size(84, 68);
@@ -274,7 +276,7 @@
             this.btnCoruja.BackgroundImage = global::N2___Animais.Properties.Resources.corujaapagada;
             this.btnCoruja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCoruja.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCoruja.Location = new System.Drawing.Point(762, 587);
+            this.btnCoruja.Location = new System.Drawing.Point(762, 639);
             this.btnCoruja.Margin = new System.Windows.Forms.Padding(2);
             this.btnCoruja.Name = "btnCoruja";
             this.btnCoruja.Size = new System.Drawing.Size(84, 68);
@@ -291,7 +293,7 @@
             this.btnCachorro.BackgroundImage = global::N2___Animais.Properties.Resources.cachorroapagado;
             this.btnCachorro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCachorro.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCachorro.Location = new System.Drawing.Point(656, 587);
+            this.btnCachorro.Location = new System.Drawing.Point(656, 639);
             this.btnCachorro.Margin = new System.Windows.Forms.Padding(2);
             this.btnCachorro.Name = "btnCachorro";
             this.btnCachorro.Size = new System.Drawing.Size(84, 68);
@@ -308,7 +310,7 @@
             this.btnBaleia.BackgroundImage = global::N2___Animais.Properties.Resources.baleiaapagada;
             this.btnBaleia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBaleia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBaleia.Location = new System.Drawing.Point(550, 587);
+            this.btnBaleia.Location = new System.Drawing.Point(550, 639);
             this.btnBaleia.Margin = new System.Windows.Forms.Padding(2);
             this.btnBaleia.Name = "btnBaleia";
             this.btnBaleia.Size = new System.Drawing.Size(84, 68);
@@ -325,7 +327,7 @@
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnListar.Font = new System.Drawing.Font("Arial", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.ForeColor = System.Drawing.Color.White;
-            this.btnListar.Location = new System.Drawing.Point(303, 298);
+            this.btnListar.Location = new System.Drawing.Point(299, 328);
             this.btnListar.Margin = new System.Windows.Forms.Padding(2);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(181, 104);
@@ -340,7 +342,7 @@
             this.btnMovimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMovimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovimentar.ForeColor = System.Drawing.Color.White;
-            this.btnMovimentar.Location = new System.Drawing.Point(5, 462);
+            this.btnMovimentar.Location = new System.Drawing.Point(6, 510);
             this.btnMovimentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMovimentar.Name = "btnMovimentar";
             this.btnMovimentar.Size = new System.Drawing.Size(162, 70);
@@ -356,7 +358,7 @@
             this.btnComunicar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnComunicar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComunicar.ForeColor = System.Drawing.Color.White;
-            this.btnComunicar.Location = new System.Drawing.Point(186, 462);
+            this.btnComunicar.Location = new System.Drawing.Point(187, 510);
             this.btnComunicar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComunicar.Name = "btnComunicar";
             this.btnComunicar.Size = new System.Drawing.Size(146, 70);
@@ -371,7 +373,7 @@
             this.btnAlimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAlimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlimentar.ForeColor = System.Drawing.Color.White;
-            this.btnAlimentar.Location = new System.Drawing.Point(362, 462);
+            this.btnAlimentar.Location = new System.Drawing.Point(363, 510);
             this.btnAlimentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlimentar.Name = "btnAlimentar";
             this.btnAlimentar.Size = new System.Drawing.Size(146, 70);
@@ -387,7 +389,7 @@
             this.btnAmamentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAmamentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnAmamentar.ForeColor = System.Drawing.Color.White;
-            this.btnAmamentar.Location = new System.Drawing.Point(11, 566);
+            this.btnAmamentar.Location = new System.Drawing.Point(12, 614);
             this.btnAmamentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAmamentar.Name = "btnAmamentar";
             this.btnAmamentar.Size = new System.Drawing.Size(156, 70);
@@ -401,7 +403,7 @@
             this.btnChocar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChocar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChocar.ForeColor = System.Drawing.Color.White;
-            this.btnChocar.Location = new System.Drawing.Point(11, 668);
+            this.btnChocar.Location = new System.Drawing.Point(12, 729);
             this.btnChocar.Margin = new System.Windows.Forms.Padding(2);
             this.btnChocar.Name = "btnChocar";
             this.btnChocar.Size = new System.Drawing.Size(146, 70);
@@ -415,7 +417,7 @@
             this.btnBotar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBotar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBotar.ForeColor = System.Drawing.Color.White;
-            this.btnBotar.Location = new System.Drawing.Point(362, 566);
+            this.btnBotar.Location = new System.Drawing.Point(363, 614);
             this.btnBotar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBotar.Name = "btnBotar";
             this.btnBotar.Size = new System.Drawing.Size(146, 70);
@@ -429,7 +431,7 @@
             this.btnCiscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCiscar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCiscar.ForeColor = System.Drawing.Color.White;
-            this.btnCiscar.Location = new System.Drawing.Point(186, 566);
+            this.btnCiscar.Location = new System.Drawing.Point(187, 614);
             this.btnCiscar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCiscar.Name = "btnCiscar";
             this.btnCiscar.Size = new System.Drawing.Size(146, 70);
@@ -443,7 +445,7 @@
             this.btnAtaque.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAtaque.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtaque.ForeColor = System.Drawing.Color.White;
-            this.btnAtaque.Location = new System.Drawing.Point(362, 668);
+            this.btnAtaque.Location = new System.Drawing.Point(363, 729);
             this.btnAtaque.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtaque.Name = "btnAtaque";
             this.btnAtaque.Size = new System.Drawing.Size(146, 70);
@@ -458,7 +460,7 @@
             this.btnVoar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVoar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoar.ForeColor = System.Drawing.Color.White;
-            this.btnVoar.Location = new System.Drawing.Point(186, 668);
+            this.btnVoar.Location = new System.Drawing.Point(187, 729);
             this.btnVoar.Margin = new System.Windows.Forms.Padding(2);
             this.btnVoar.Name = "btnVoar";
             this.btnVoar.Size = new System.Drawing.Size(146, 70);
@@ -508,15 +510,36 @@
             this.pnlFundoAcao.BackColor = System.Drawing.Color.Transparent;
             this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
             this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFundoAcao.Controls.Add(this.txtCarac);
             this.pnlFundoAcao.Controls.Add(this.pctArvore);
             this.pnlFundoAcao.Controls.Add(this.pctAgua);
             this.pnlFundoAcao.Controls.Add(this.pctCeu);
             this.pnlFundoAcao.Controls.Add(this.pctChao);
             this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pnlFundoAcao.Location = new System.Drawing.Point(550, 12);
+            this.pnlFundoAcao.Location = new System.Drawing.Point(550, 9);
             this.pnlFundoAcao.Name = "pnlFundoAcao";
-            this.pnlFundoAcao.Size = new System.Drawing.Size(720, 501);
+            this.pnlFundoAcao.Size = new System.Drawing.Size(720, 551);
             this.pnlFundoAcao.TabIndex = 14;
+            // 
+            // txtCarac
+            // 
+            this.txtCarac.BackColor = System.Drawing.Color.White;
+            this.txtCarac.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCarac.Location = new System.Drawing.Point(4, 498);
+            this.txtCarac.Multiline = true;
+            this.txtCarac.Name = "txtCarac";
+            this.txtCarac.Size = new System.Drawing.Size(711, 48);
+            this.txtCarac.TabIndex = 4;
+            // 
+            // cmbAnimais
+            // 
+            this.cmbAnimais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnimais.FormattingEnabled = true;
+            this.cmbAnimais.Location = new System.Drawing.Point(1065, 576);
+            this.cmbAnimais.Name = "cmbAnimais";
+            this.cmbAnimais.Size = new System.Drawing.Size(190, 24);
+            this.cmbAnimais.TabIndex = 26;
+            this.cmbAnimais.SelectedIndexChanged += new System.EventHandler(this.cmbAnimais_SelectedIndexChanged);
             // 
             // FrmJogo
             // 
@@ -524,7 +547,9 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(151)))), ((int)(((byte)(236)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1281, 749);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1281, 833);
+            this.Controls.Add(this.cmbAnimais);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.btnAtaque);
             this.Controls.Add(this.btnCiscar);
@@ -555,7 +580,6 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1281, 749);
             this.MinimumSize = new System.Drawing.Size(1281, 749);
             this.Name = "FrmJogo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -568,6 +592,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
             this.pnlFundoAcao.ResumeLayout(false);
+            this.pnlFundoAcao.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -604,6 +629,8 @@
         private System.Windows.Forms.PictureBox pctAgua;
         private System.Windows.Forms.PictureBox pctCeu;
         private System.Windows.Forms.Panel pnlFundoAcao;
+        private System.Windows.Forms.TextBox txtCarac;
+        private System.Windows.Forms.ComboBox cmbAnimais;
     }
 }
 

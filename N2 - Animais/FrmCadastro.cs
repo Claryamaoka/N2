@@ -102,6 +102,7 @@ namespace N2___Animais
             catch
             {
                 MessageBox.Show("Algum dado inválido");
+                return;
             }
 
         }
