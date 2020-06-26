@@ -1,4 +1,5 @@
 ﻿using System;
+using N2___Animais.ANIMAIS;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -127,7 +128,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             while (aux != null)
             {
                 if(aux.Dado is Mamifero)
-                    r += r.ToString() + Environment.NewLine;
+                    r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
             if (r == string.Empty)
@@ -146,7 +147,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             while (aux != null)
             {
                 if (aux.Dado is IOviparo)
-                    r += r.ToString() + Environment.NewLine;
+                    r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
             if (r == string.Empty)
@@ -166,7 +167,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             while (aux != null)
             {
                 if (aux.Dado is IAquatico)
-                    r += r.ToString() + Environment.NewLine;
+                    r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
             if (r == string.Empty)
@@ -186,7 +187,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             while (aux != null)
             {
                 if (aux.Dado is IVoar)
-                    r += r.ToString() + Environment.NewLine;
+                    r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
             if (r == string.Empty)
@@ -195,6 +196,10 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
         }
 
+        /// <summary>
+        /// Lista apenas predadores
+        /// </summary>
+        /// <returns></returns>
         public string ListarPredadores()
         {
             string r = string.Empty;
@@ -202,7 +207,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             while (aux != null)
             {
                 if (aux.Dado is IPredador)
-                    r += r.ToString() + Environment.NewLine;
+                    r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
             if (r == string.Empty)
@@ -211,6 +216,32 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
         }
 
+        /// <summary>
+        /// Lista por ordem de idade
+        /// </summary>
+        /// <returns></returns>
+        public string ListarIdade()
+        {
+            NodoLista aux = primeiro;
+            string r = string.Empty;
+            Animal[] vetorAnimal = new Animal[qtde];
+            int i = 0;
+            while(aux!= null)
+            {
+                vetorAnimal[i] = aux.Dado;
+                i++;
+                aux = aux.Proximo;
+            }
+            Ordenacao ordena = new Ordenacao();
+
+            foreach(Animal a in ordena.Ordena_BubbleSort(vetorAnimal))
+            {
+                r += aux.Dado.ToString() + Environment.NewLine;
+            }
+            return r;
+        }
+
+
         public void Listar(NodoLista e)
         {
             if (e != null)
@@ -218,6 +249,123 @@ namespace N2___Animais.ESTRUTURA_DADOS
             if (e.Proximo != null)
                 Listar(e.Proximo);
         }
+
+
+        #region CRIAÇÃO DE VETORES POR ANIMAL
+
+        public string[] VetorPorAnimal(string TipoAnimal)
+        {
+            NodoLista aux = primeiro;
+            string[] vetorAnimal = new string[qtde];
+            int i = 0;
+            while (aux != null)
+            {                     
+                if(TipoAnimal == "baleia")
+                {
+                    if(aux.Dado is Baleia)
+                    {
+                        vetorAnimal[i]= aux.Dado.Nome;
+                    }
+                }else if (TipoAnimal == "cachorro")
+                {
+                    if (aux.Dado is Cachorro)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "gato")
+                {
+                    if (aux.Dado is Gato)
+                    {
+                        vetorAnimal[i]= aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "coruja")
+                {
+                    if (aux.Dado is Coruja)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "elefante")
+                {
+                    if (aux.Dado is Elefante)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "galinha")
+                {
+                    if (aux.Dado is Galinha)
+                    {
+                        vetorAnimal[i]= aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "gaviao")
+                {
+                    if (aux.Dado is Gaviao)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "leao")
+                {
+                    if (aux.Dado is Leao)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "morcego")
+                {
+                    if (aux.Dado is Morcego)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "ornitorrinco")
+                {
+                    if (aux.Dado is Ornitorrinco)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "pato")
+                {
+                    if (aux.Dado is Pato)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "pinguim")
+                {
+                    if (aux.Dado is Pinguim)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "pombo")
+                {
+                    if (aux.Dado is Pombo)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+                else if (TipoAnimal == "tartaruga")
+                {
+                    if (aux.Dado is Tartaruga)
+                    {
+                        vetorAnimal[i] = aux.Dado.Nome;
+                    }
+                }
+
+
+                i++;
+                aux = aux.Proximo;
+            }
+            return vetorAnimal;
+
+        }
+        #endregion
 
         #endregion
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais
 {
-    class Mamifero:Animal
+    public class Mamifero:Animal
     {
         int qtdeMamas;
         string corPelo;

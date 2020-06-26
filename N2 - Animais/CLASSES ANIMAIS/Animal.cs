@@ -61,8 +61,17 @@ namespace N2___Animais
 
         public int Idade
         {
-            get => idade;
-            set => idade = 2020 - dataNascimento.Year;
+            get
+            {
+                return idade;
+            }
+            set
+            {
+                if(dataNascimento.Month > DateTime.Now.Month)
+                    idade = 2020 - dataNascimento.Year -1;
+                else
+                    idade = 2020 - dataNascimento.Year - 1;
+            }
         }
         public bool Carnivoro
         { get; set; }
@@ -105,12 +114,12 @@ namespace N2___Animais
             }
             else
             {
-                if(Peconhento)
+                if (Peconhento)
                     return aux + "PEÇONHENTO" + Environment.NewLine;
                 else
                     return aux;
             }
-                
+
 
         }
         #endregion

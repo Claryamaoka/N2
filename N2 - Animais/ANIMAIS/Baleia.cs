@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ANIMAIS
 {
-    class Baleia : Mamifero, IAquatico
+    public class Baleia : Mamifero, IAquatico
     {
         /// <summary>
         /// Construtor Personalizado

@@ -60,7 +60,7 @@ namespace N2___Animais
 
         private void BtnLIstarPorIdade_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarIdade();
         }
 
         private void BtnListarOrdemAlfabetica_Click(object sender, EventArgs e)
