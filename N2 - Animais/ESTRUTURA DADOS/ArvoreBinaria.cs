@@ -89,6 +89,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
                 return PesquisaValor(valor, no.GetNoEsquerda(), new ComparadorNome());
         }
 
+
         /// <summary>
         /// Remove um valor da árvore
         /// </summary>

@@ -367,6 +367,23 @@ namespace N2___Animais.ESTRUTURA_DADOS
         }
         #endregion
 
+        /// <summary>
+        /// pesquisar animal pelo nome
+        /// </summary>
+        /// <param name="nomeAnimal"></param>
+        /// <returns> objeto da classe animal</returns>
+        public Animal PesquisaAnimal(string nomeAnimal)
+        {
+            NodoLista aux = primeiro;                    
+            while (aux != null)
+            {
+                if (aux.Dado.Nome == nomeAnimal)
+                    return aux.Dado;
+                aux = aux.Proximo;
+            }
+            return null;
+        }
+
         #endregion
     }
 }
