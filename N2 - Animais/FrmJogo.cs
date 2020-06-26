@@ -1,4 +1,5 @@
-﻿using N2___Animais.ESTRUTURA_DADOS;
+﻿using N2___Animais.ANIMAIS;
+using N2___Animais.ESTRUTURA_DADOS;
 using N2___Animais.Properties;
 using System;
 using System.Collections.Generic;
@@ -205,6 +206,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnCachorro_Click(object sender, EventArgs e)
@@ -229,6 +231,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnCoruja_Click(object sender, EventArgs e)
@@ -253,6 +256,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnElefante_Click(object sender, EventArgs e)
@@ -278,6 +282,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnGalinha_Click(object sender, EventArgs e)
@@ -303,6 +308,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnGato_Click(object sender, EventArgs e)
@@ -326,6 +332,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnGaviao_Click(object sender, EventArgs e)
@@ -351,6 +358,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnLeao_Click(object sender, EventArgs e)
@@ -376,6 +384,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnMorcego_Click(object sender, EventArgs e)
@@ -399,6 +408,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnOrnitorrinco_Click(object sender, EventArgs e)
@@ -423,6 +433,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnPato_Click(object sender, EventArgs e)
@@ -448,6 +459,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnPinguim_Click(object sender, EventArgs e)
@@ -473,6 +485,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnPombo_Click(object sender, EventArgs e)
@@ -499,6 +512,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         private void btnTartaruga_Click(object sender, EventArgs e)
@@ -522,6 +536,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+            txtCarac.Text = "";
         }
 
         #endregion
@@ -1160,10 +1175,39 @@ namespace N2___Animais
             Voar(RetornaAnimal());
             btnMovimentar.Enabled = false;
         }
-        
+
         private void cmbAnimais_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ArvoreBinaria.Pesquisa()
+            Animal animal = ArvoreBinaria.ListagemInterfixada().PesquisaAnimal(cmbAnimais.SelectedItem.ToString());
+            string texto = $"Nome: {animal.Nome}\t Data de nascimento: {animal.DataNascimento}\t Idade: {animal.Idade}\t Sexo: {animal.Sexo}";
+
+            if (animal is Mamifero)
+            {
+                if (!(animal as Mamifero).Pelos)
+                    texto += Environment.NewLine + $"Qtde Mamas: {(animal as Mamifero).QtdeMamas}\t Não tem pelos";
+
+                else
+                    texto += Environment.NewLine + $"Qtde Mamas: {(animal as Mamifero).QtdeMamas}\t Cor dos Pelos: {(animal as Mamifero).CorPelo}";
+            }
+
+            if (animal is Ave)
+                texto += Environment.NewLine + $"Cor da Pena: {(animal as Ave).CorPena}";
+
+            if (animal is Reptil)
+                texto += Environment.NewLine + $"Tem casco\t Tem escama";
+
+            if (animal is IOviparo)
+                texto += "\t É oviparo";
+
+            if (animal is IVoar)
+                texto += "\t Voa";
+
+            if (animal is IPredador)
+                texto += "\t É predador";
+
+            txtCarac.Text = texto;
+
+
         }
     }
 }

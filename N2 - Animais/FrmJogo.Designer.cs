@@ -525,6 +525,7 @@
             // 
             this.txtCarac.BackColor = System.Drawing.Color.White;
             this.txtCarac.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCarac.Font = new System.Drawing.Font("Arial Narrow", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarac.Location = new System.Drawing.Point(4, 498);
             this.txtCarac.Multiline = true;
             this.txtCarac.Name = "txtCarac";
