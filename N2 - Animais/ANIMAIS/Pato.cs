@@ -104,7 +104,7 @@ namespace N2___Animais.ANIMAIS
         public override string ToString()
         {
             return "PATO" + Environment.NewLine + base.ToString() +Environment.NewLine+ "VIVE EM TERRA" + Environment.NewLine +
-                "MERGULHA" + Environment.NewLine;
+                "MERGULHA" + Environment.NewLine + "PODE SER ENCONTRADO EM ÁGUA DOCE" + Environment.NewLine;
         }
     }
 }

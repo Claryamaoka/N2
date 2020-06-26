@@ -66,8 +66,9 @@ namespace N2___Animais.ANIMAIS
 
         public override string ToString()
         {
-            return "TARTARUGA" + Environment.NewLine + base.ToString() + Environment.NewLine + "MERGULHA" + 
-                Environment.NewLine ;
+            return "TARTARUGA" + Environment.NewLine + base.ToString() + "MERGULHA" + 
+                Environment.NewLine + "VIVE EM TERRA" + Environment.NewLine + "PODE VIVER EM ÁGUA DOCE"+
+                Environment.NewLine;
         }
 
     }

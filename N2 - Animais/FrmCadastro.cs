@@ -388,7 +388,7 @@ namespace N2___Animais
                 case "pinguim":
                     try
                     {
-                        Pinguim pinguim = new Pinguim(true, false, false);
+                        Pinguim pinguim = new Pinguim(true, false, false,true,true,false);
                         pinguim.Nome = nome;
                         pinguim.CorPena = corpena;
                         pinguim.DataNascimento = nascimento;

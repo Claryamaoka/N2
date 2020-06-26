@@ -16,7 +16,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
         {
             return qtde;
         }
-
+        #region MÉTODOS DE INSERÇÃO
         private void InserirNaPosicao(NodoLista anterior, Animal valor)
         {
             NodoLista novo = new NodoLista();
@@ -45,7 +45,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             InserirNaPosicao(null, valor);
         }
 
-        public void InserirNoFim(Animal valor) //corrigir
+        public void InserirNoFim(Animal valor) 
         {
             if (qtde == 0)
                 InserirNoInicio(valor);
@@ -74,9 +74,11 @@ namespace N2___Animais.ESTRUTURA_DADOS
                 for (int i = 1; i < posicao; i++)
                     aux = aux.Proximo;
 
-               // InserirNaPosicao(aux, valor);
+               InserirNaPosicao(aux, valor);
             }
         }
+
+        #endregion
 
         public void RemoverDaPosicao(int posicao)
         {
@@ -96,16 +98,117 @@ namespace N2___Animais.ESTRUTURA_DADOS
             qtde--;
         }
 
-        public string Listar()
+        #region MÉTODOS DE LISTAGEM
+
+        /// <summary>
+        /// Lista todos os animais cadastrados
+        /// </summary>
+        /// <returns></returns>
+        public string ListarGeral()
         {
             string r = string.Empty;
             NodoLista aux = primeiro;
             while (aux != null)
             {
-                r += aux.Dado.Nome + Environment.NewLine + aux.Dado.Sexo + Environment.NewLine;
+                r += aux.Dado.ToString() + Environment.NewLine;
                 aux = aux.Proximo;
             }
-            return r.ToString();
+            return r;
+        }
+
+        /// <summary>
+        /// Lista apenas mamíferos
+        /// </summary>
+        /// <returns></returns>
+        public string ListarMamifero()
+        {
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                if(aux.Dado is Mamifero)
+                    r += r.ToString() + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            if (r == string.Empty)
+                r = "NÃO HÁ MAMÍFEROS CADASTRADOS!!";
+            return r;
+        }
+
+        /// <summary>
+        /// Lista apenas oviparos
+        /// </summary>
+        /// <returns></returns>
+        public string ListarOviparo()
+        {
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                if (aux.Dado is IOviparo)
+                    r += r.ToString() + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            if (r == string.Empty)
+                r = "NÃO HÁ OVÍPAROS CADASTRADOS!!";
+            return r;
+            
+        }
+
+        /// <summary>
+        /// Lista apenas animais aquáticos
+        /// </summary>
+        /// <returns></returns>
+        public string ListarAquaticos()
+        {
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                if (aux.Dado is IAquatico)
+                    r += r.ToString() + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            if (r == string.Empty)
+                r = "NÃO HÁ ANIMAIS AQUÁTICOS CADASTRADOS!!";
+            return r;
+
+        }
+
+        /// <summary>
+        /// Lista apenas animais que voam 
+        /// </summary>
+        /// <returns></returns>
+        public string ListarAnimaisVoam()
+        {
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                if (aux.Dado is IVoar)
+                    r += r.ToString() + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            if (r == string.Empty)
+                r = "NÃO HÁ ANIMAIS QUE VOAM CADASTRADOS!!";
+            return r;
+
+        }
+
+        public string ListarPredadores()
+        {
+            string r = string.Empty;
+            NodoLista aux = primeiro;
+            while (aux != null)
+            {
+                if (aux.Dado is IPredador)
+                    r += r.ToString() + Environment.NewLine;
+                aux = aux.Proximo;
+            }
+            if (r == string.Empty)
+                r = "NÃO HÁ PREDADORES CADASTRADOS!!";
+            return r;
+
         }
 
         public void Listar(NodoLista e)
@@ -115,5 +218,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
             if (e.Proximo != null)
                 Listar(e.Proximo);
         }
+
+        #endregion
     }
 }

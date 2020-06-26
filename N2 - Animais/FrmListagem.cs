@@ -30,32 +30,32 @@ namespace N2___Animais
         #region BOTÕES DE LISTAGEM
         private void BtnListarAnimais_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarGeral();
         }
 
         private void BtnListarMamiferos_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarMamifero();
         }
 
         private void BtnListarOviparos_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarOviparo();
         }
 
         private void BtnListarPredadores_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarPredadores();
         }
 
         private void BtnListarAnimaisAquaticos_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarAquaticos();
         }
 
         private void BtnListarAnimaisQueVoam_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarAnimaisVoam();
         }
 
         private void BtnLIstarPorIdade_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace N2___Animais
 
         private void BtnListarOrdemAlfabetica_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text = ArvoreBinaria.ListagemInterfixada().ListarGeral();
         }
         #endregion
 

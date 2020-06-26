@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N2___Animais.ANIMAIS
 {
-    class Pinguim : Ave, IOviparo
+    class Pinguim : Ave, IOviparo,IAquatico
     {
         /// <summary>
         /// Construtor Personalizado
@@ -14,12 +14,36 @@ namespace N2___Animais.ANIMAIS
         /// <param name="carne"></param>
         /// <param name="peconhento"></param>
         /// <param name="rapina"></param>
-        public Pinguim(bool carne, bool peconhento, bool rapina)
+        public Pinguim(bool carne, bool peconhento, bool rapina,bool terra, bool mergulho, bool agua)
         {
             Carnivoro = carne;
             Peconhento = peconhento;
             Rapina = rapina;
+            ViveEmTerra = terra;
+            Mergulha = mergulho;
+            AguaDoce = agua;
         }
+
+
+        #region PARÂMETROS
+        private bool viveTerra, mergulha, aguaDoce;
+
+        public bool ViveEmTerra
+        {
+            get => viveTerra;
+            set => viveTerra = value;
+        }
+        public bool Mergulha
+        {
+            get => mergulha;
+            set => mergulha = value;
+        }
+        public bool AguaDoce
+        {
+            get => aguaDoce;
+            set => aguaDoce = value;
+        }
+        #endregion
 
         #region MÉTODOS
         public void Botar()
@@ -35,7 +59,8 @@ namespace N2___Animais.ANIMAIS
 
         public override string ToString()
         {
-            return "PINGUIM" + Environment.NewLine + base.ToString();
+            return "PINGUIM" + Environment.NewLine + base.ToString() + Environment.NewLine + "VIVE EM TERRA" + Environment.NewLine +
+                "MERGULHA" + Environment.NewLine ;
         }
     }
 }

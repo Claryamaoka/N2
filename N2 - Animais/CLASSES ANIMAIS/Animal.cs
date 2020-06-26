@@ -92,7 +92,7 @@ namespace N2___Animais
 
         public override string ToString()
         {
-            string aux = "NOME: " + Nome + Environment.NewLine + "DATA DE NASCIMENTO: " + DataNascimento +
+            string aux = "NOME: " + Nome + Environment.NewLine + "DATA DE NASCIMENTO: " + DataNascimento.ToShortDateString() +
                 Environment.NewLine + "IDADE: " + Idade + Environment.NewLine + "SEXO: " + Sexo +
                 Environment.NewLine;
             if (Carnivoro)

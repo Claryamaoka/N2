@@ -64,7 +64,7 @@ namespace N2___Animais.ANIMAIS
         public override string ToString()
         {
             return "ORNITORRINCO" + Environment.NewLine + base.ToString() + "MERGULHA" + Environment.NewLine +
-                "VIVE EM TERRA" + Environment.NewLine ;
+                "VIVE EM TERRA" + Environment.NewLine + "ÁGUA DOCE" + Environment.NewLine;
         }
 
     }
