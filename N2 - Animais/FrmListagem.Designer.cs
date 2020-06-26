@@ -38,6 +38,7 @@
             this.btnListarAnimaisAquaticos = new System.Windows.Forms.Button();
             this.btnListarPredadores = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnListarAnimais
@@ -122,11 +123,19 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(198)))), ((int)(((byte)(158)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
             // FrmListagem
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             resources.ApplyResources(this, "$this");
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnListarPredadores);
             this.Controls.Add(this.btnListarAnimaisAquaticos);
@@ -139,6 +148,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmListagem";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -153,5 +163,6 @@
         private System.Windows.Forms.Button btnListarAnimaisAquaticos;
         private System.Windows.Forms.Button btnListarPredadores;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

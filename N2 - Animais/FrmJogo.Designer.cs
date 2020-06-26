@@ -345,8 +345,10 @@
             this.btnMovimentar.Name = "btnMovimentar";
             this.btnMovimentar.Size = new System.Drawing.Size(162, 70);
             this.btnMovimentar.TabIndex = 17;
+            this.btnMovimentar.Tag = "movimentar";
             this.btnMovimentar.Text = "MOVIMENTAR";
             this.btnMovimentar.UseVisualStyleBackColor = false;
+            this.btnMovimentar.Click += new System.EventHandler(this.btnMovimentar_Click);
             // 
             // btnComunicar
             // 
@@ -359,6 +361,7 @@
             this.btnComunicar.Name = "btnComunicar";
             this.btnComunicar.Size = new System.Drawing.Size(146, 70);
             this.btnComunicar.TabIndex = 18;
+            this.btnComunicar.Tag = "comunicar";
             this.btnComunicar.Text = "COMUNICAR";
             this.btnComunicar.UseVisualStyleBackColor = false;
             // 
@@ -373,8 +376,10 @@
             this.btnAlimentar.Name = "btnAlimentar";
             this.btnAlimentar.Size = new System.Drawing.Size(146, 70);
             this.btnAlimentar.TabIndex = 19;
+            this.btnAlimentar.Tag = "alimentar";
             this.btnAlimentar.Text = "ALIMENTAR";
             this.btnAlimentar.UseVisualStyleBackColor = false;
+            this.btnAlimentar.Click += new System.EventHandler(this.btnAlimentar_Click);
             // 
             // btnAmamentar
             // 
@@ -443,6 +448,7 @@
             this.btnAtaque.Name = "btnAtaque";
             this.btnAtaque.Size = new System.Drawing.Size(146, 70);
             this.btnAtaque.TabIndex = 24;
+            this.btnAtaque.Tag = "ataque";
             this.btnAtaque.Text = "ATAQUE";
             this.btnAtaque.UseVisualStyleBackColor = false;
             // 
@@ -459,6 +465,7 @@
             this.btnVoar.TabIndex = 25;
             this.btnVoar.Text = "VOAR";
             this.btnVoar.UseVisualStyleBackColor = false;
+            this.btnVoar.Click += new System.EventHandler(this.btnVoar_Click);
             // 
             // pctArvore
             // 
@@ -481,7 +488,7 @@
             // pctAgua
             // 
             this.pctAgua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctAgua.Location = new System.Drawing.Point(510, 141);
+            this.pctAgua.Location = new System.Drawing.Point(514, 178);
             this.pctAgua.Name = "pctAgua";
             this.pctAgua.Size = new System.Drawing.Size(200, 200);
             this.pctAgua.TabIndex = 2;
@@ -490,7 +497,7 @@
             // pctCeu
             // 
             this.pctCeu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctCeu.Location = new System.Drawing.Point(276, 15);
+            this.pctCeu.Location = new System.Drawing.Point(212, 16);
             this.pctCeu.Name = "pctCeu";
             this.pctCeu.Size = new System.Drawing.Size(200, 200);
             this.pctCeu.TabIndex = 1;
@@ -511,7 +518,7 @@
             this.pnlFundoAcao.Size = new System.Drawing.Size(720, 501);
             this.pnlFundoAcao.TabIndex = 14;
             // 
-            // Form1
+            // FrmJogo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -550,7 +557,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1281, 749);
             this.MinimumSize = new System.Drawing.Size(1281, 749);
-            this.Name = "Form1";
+            this.Name = "FrmJogo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ANIMAL KINGDOM";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
