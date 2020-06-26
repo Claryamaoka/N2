@@ -236,7 +236,7 @@ namespace N2___Animais.ESTRUTURA_DADOS
 
             foreach(Animal a in ordena.Ordena_BubbleSort(vetorAnimal))
             {
-                r += aux.Dado.ToString() + Environment.NewLine;
+                r += a.ToString() + Environment.NewLine;
             }
             return r;
         }
