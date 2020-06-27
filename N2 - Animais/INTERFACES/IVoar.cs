@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais
 {
@@ -16,6 +17,6 @@ namespace N2___Animais
         double VelocidadeVoo
         { get; set; }
         
-        void Voar();
+        void Voar(ref PictureBox pctAnimal, ref Panel pnlFundoAcao);
     }
 }

@@ -92,14 +92,13 @@ namespace N2___Animais
             switch (tag)
             {
                 case "baleia":
-                    pctAnimal.Left = 129;
-                    if (pctAnimal.Left > 350)
+                    if (pctAnimal.Left > 130)
                     {
                         pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctAnimal.Location = new Point(514, 178);
+                        pctAnimal.Location = new Point(276, 286);
                         pctAnimal.Left -= 2;
                     }
                     break;

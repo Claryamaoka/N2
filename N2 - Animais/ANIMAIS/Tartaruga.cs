@@ -1,8 +1,10 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais.ANIMAIS
 {
@@ -53,12 +55,12 @@ namespace N2___Animais.ANIMAIS
 
 
         #region MÉTODOS
-        public void Botar()
+        public void Botar(ref PictureBox pctAnimal)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.tartarugaovo;
         }
 
-        public void Chocar()
+        public void Chocar(ref PictureBox pct)
         {
             throw new NotImplementedException();
         }

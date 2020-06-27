@@ -383,6 +383,26 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GalinhaBotando {
+            get {
+                object obj = ResourceManager.GetObject("GalinhaBotando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GalinhaChocando {
+            get {
+                object obj = ResourceManager.GetObject("GalinhaChocando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Galinhacomendo {
             get {
                 object obj = ResourceManager.GetObject("Galinhacomendo", resourceCulture);

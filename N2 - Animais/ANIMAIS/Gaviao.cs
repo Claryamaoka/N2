@@ -1,8 +1,11 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais.ANIMAIS
 {
@@ -58,24 +61,26 @@ namespace N2___Animais.ANIMAIS
         #endregion
 
         #region MÉTODOS
-        public void Ataque()
+        public void Ataque(ref PictureBox pctAnimal, ref Label lblComunica)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.Gaviaocomendo;
+            lblComunica.Text = "QUE RATINHO GOSTOSO";
         }
 
-        public void Botar()
+        public void Botar(ref PictureBox pctAnimal)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.gaviaoovo;
         }
 
-        public void Chocar()
+        public void Chocar(ref PictureBox pctAnimal)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.gaviaochocando;
         }
 
-        public void Voar()
+        public void Voar(ref PictureBox pctAnimal, ref Panel pnlFundoAcao)
         {
-            throw new NotImplementedException();
+            pnlFundoAcao.BackgroundImage = Resources.ceu;
+            pctAnimal.Location = new Point(266,39);
         }
         #endregion
 

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais.ANIMAIS
 {
@@ -14,7 +16,7 @@ namespace N2___Animais.ANIMAIS
         /// <param name="deRapina"></param>
         /// <param name="carne"></param>
         /// <param name="peconhento"></param>
-        public Galinha(bool deRapina,bool carne, bool peconhento)
+        public Galinha(bool deRapina, bool carne, bool peconhento)
         {
             Rapina = deRapina;
             Carnivoro = carne;
@@ -22,20 +24,24 @@ namespace N2___Animais.ANIMAIS
         }
 
         #region MÉTODOS
-        public void Botar()
+        public void Botar(ref PictureBox pctAnimal)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.GalinhaBotando;
         }
 
-        public void Chocar()
+        public void Chocar(ref PictureBox pctAnimal)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.GalinhaChocando;
         }
         #endregion
 
+
         public override string ToString()
         {
-            return "GALINHA" +Environment.NewLine+ base.ToString();
+            return "GALINHA" + Environment.NewLine + base.ToString();
         }
     }
 }
+
+
+

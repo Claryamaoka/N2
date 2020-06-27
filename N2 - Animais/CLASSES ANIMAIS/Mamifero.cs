@@ -54,38 +54,38 @@ namespace N2___Animais
         /// <summary>
         /// Método referente a ação de amamentar do mamífero
         /// </summary>
-        public void Amamentar(string tag, ref PictureBox pctAnimal, ref Button btnMovimentar)
+        public void Amamentar(string tag, ref PictureBox pctAnimal)
         {
             switch (tag)
             {
                 case "baleia":
                     pctAnimal.BackgroundImage = Resources.Baleia;
-                    btnMovimentar.Enabled = false;
+                    //btnMovimentar.Enabled = false;
                     break;
 
                 case "cachorro":
                     pctAnimal.BackgroundImage = Resources.Cachorro;
-                    btnMovimentar.Enabled = false;
+                   // btnMovimentar.Enabled = false;
                     break;
 
                 case "elefante":
                     pctAnimal.BackgroundImage = Resources.Elefante;
-                    btnMovimentar.Enabled = false;
+                  //  btnMovimentar.Enabled = false;
                     break;
 
                 case "gato":
                     pctAnimal.BackgroundImage = Resources.Gato;
-                    btnMovimentar.Enabled = false;
+                  //  btnMovimentar.Enabled = false;
                     break;
 
                 case "leao":
                     pctAnimal.BackgroundImage = Resources.Leao;
-                    btnMovimentar.Enabled = false;
+                 //   btnMovimentar.Enabled = false;
                     break;
 
                 case "morcego":
                     pctAnimal.BackgroundImage = Resources.Morcego;
-                    btnMovimentar.Enabled = false;
+                  //  btnMovimentar.Enabled = false;
                     break;
             }
         }

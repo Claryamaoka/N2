@@ -1,8 +1,11 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais
 {
@@ -35,8 +38,43 @@ namespace N2___Animais
         /// <summary>
         /// Método referente a ação de ciscar da ave
         /// </summary>
-        public void Ciscar()
-        { }
+        public void Ciscar(string tag, ref PictureBox pctAnimal, ref Label lblComunica)
+        {
+            switch (tag)
+            {
+                
+                case "coruja":
+                    pctAnimal.Location = new Point(302, 333);
+                    lblComunica.ForeColor = Color.White;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+
+                case "galinha":
+                    pctAnimal.BackgroundImage = Resources.Galinhacomendo;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+
+                case "gaviao":
+                    pctAnimal.BackgroundImage = Resources.Gaviaocomendo;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+
+                case "pato":
+                    pctAnimal.BackgroundImage = Resources.Patocomendo;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+
+                case "pinguim":
+                    pctAnimal.BackgroundImage = Resources.Pinguimcomendo;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+
+                case "pombo":
+                    pctAnimal.BackgroundImage = Resources.Pombocomendo;
+                    lblComunica.Text = "PIC PIC PIC PIC";
+                    break;
+            }
+        }
 
         public override string ToString()
         {

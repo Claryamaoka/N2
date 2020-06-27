@@ -1,8 +1,11 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais.ANIMAIS
 {
@@ -22,9 +25,10 @@ namespace N2___Animais.ANIMAIS
         }
 
         #region MÉTODOS
-        public void Ataque()
+        public void Ataque(ref PictureBox pctAnimal, ref Label lblComunica)
         {
-            throw new NotImplementedException();
+            pctAnimal.BackgroundImage = Resources.Leaocomendo;
+            lblComunica.Text = "QUE BIFÃO GOSTOSO";
         }
         #endregion
 

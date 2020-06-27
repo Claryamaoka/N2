@@ -60,6 +60,7 @@
             this.txtCarac = new System.Windows.Forms.TextBox();
             this.cmbAnimais = new System.Windows.Forms.ComboBox();
             this.tmrApagalbl = new System.Windows.Forms.Timer(this.components);
+            this.btnLiberaMov = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctAnimal)).BeginInit();
             this.pnlFundoAcao.SuspendLayout();
             this.SuspendLayout();
@@ -338,7 +339,7 @@
             this.btnMovimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMovimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMovimentar.ForeColor = System.Drawing.Color.White;
-            this.btnMovimentar.Location = new System.Drawing.Point(6, 510);
+            this.btnMovimentar.Location = new System.Drawing.Point(6, 506);
             this.btnMovimentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnMovimentar.Name = "btnMovimentar";
             this.btnMovimentar.Size = new System.Drawing.Size(162, 70);
@@ -354,7 +355,7 @@
             this.btnComunicar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnComunicar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComunicar.ForeColor = System.Drawing.Color.White;
-            this.btnComunicar.Location = new System.Drawing.Point(187, 510);
+            this.btnComunicar.Location = new System.Drawing.Point(189, 505);
             this.btnComunicar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComunicar.Name = "btnComunicar";
             this.btnComunicar.Size = new System.Drawing.Size(146, 70);
@@ -370,7 +371,7 @@
             this.btnAlimentar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAlimentar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlimentar.ForeColor = System.Drawing.Color.White;
-            this.btnAlimentar.Location = new System.Drawing.Point(363, 510);
+            this.btnAlimentar.Location = new System.Drawing.Point(360, 506);
             this.btnAlimentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAlimentar.Name = "btnAlimentar";
             this.btnAlimentar.Size = new System.Drawing.Size(146, 70);
@@ -416,7 +417,7 @@
             this.btnBotar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBotar.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBotar.ForeColor = System.Drawing.Color.White;
-            this.btnBotar.Location = new System.Drawing.Point(363, 614);
+            this.btnBotar.Location = new System.Drawing.Point(359, 616);
             this.btnBotar.Margin = new System.Windows.Forms.Padding(2);
             this.btnBotar.Name = "btnBotar";
             this.btnBotar.Size = new System.Drawing.Size(146, 70);
@@ -446,7 +447,7 @@
             this.btnAtaque.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAtaque.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtaque.ForeColor = System.Drawing.Color.White;
-            this.btnAtaque.Location = new System.Drawing.Point(363, 729);
+            this.btnAtaque.Location = new System.Drawing.Point(358, 729);
             this.btnAtaque.Margin = new System.Windows.Forms.Padding(2);
             this.btnAtaque.Name = "btnAtaque";
             this.btnAtaque.Size = new System.Drawing.Size(146, 70);
@@ -454,6 +455,7 @@
             this.btnAtaque.Tag = "ataque";
             this.btnAtaque.Text = "ATAQUE";
             this.btnAtaque.UseVisualStyleBackColor = false;
+            this.btnAtaque.Click += new System.EventHandler(this.btnAtaque_Click);
             // 
             // btnVoar
             // 
@@ -508,7 +510,7 @@
             // 
             this.txtCarac.BackColor = System.Drawing.Color.White;
             this.txtCarac.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCarac.Font = new System.Drawing.Font("Arial Narrow", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarac.Font = new System.Drawing.Font("Arial Narrow", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarac.Location = new System.Drawing.Point(4, 498);
             this.txtCarac.Multiline = true;
             this.txtCarac.Name = "txtCarac";
@@ -530,6 +532,22 @@
             this.tmrApagalbl.Interval = 4000;
             this.tmrApagalbl.Tick += new System.EventHandler(this.tmrApagalbl_Tick);
             // 
+            // btnLiberaMov
+            // 
+            this.btnLiberaMov.BackColor = System.Drawing.Color.Transparent;
+            this.btnLiberaMov.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLiberaMov.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLiberaMov.ForeColor = System.Drawing.Color.White;
+            this.btnLiberaMov.Location = new System.Drawing.Point(12, 461);
+            this.btnLiberaMov.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLiberaMov.Name = "btnLiberaMov";
+            this.btnLiberaMov.Size = new System.Drawing.Size(156, 37);
+            this.btnLiberaMov.TabIndex = 27;
+            this.btnLiberaMov.Tag = "movimentar";
+            this.btnLiberaMov.Text = "LIBERAR";
+            this.btnLiberaMov.UseVisualStyleBackColor = false;
+            this.btnLiberaMov.Click += new System.EventHandler(this.btnLiberaMov_Click);
+            // 
             // FrmJogo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -538,6 +556,7 @@
             this.BackgroundImage = global::N2___Animais.Properties.Resources.Fundo_form_azul;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1281, 833);
+            this.Controls.Add(this.btnLiberaMov);
             this.Controls.Add(this.cmbAnimais);
             this.Controls.Add(this.btnVoar);
             this.Controls.Add(this.btnAtaque);
@@ -617,6 +636,7 @@
         private System.Windows.Forms.ComboBox cmbAnimais;
         private System.Windows.Forms.Label lblComunica;
         private System.Windows.Forms.Timer tmrApagalbl;
+        private System.Windows.Forms.Button btnLiberaMov;
     }
 }
 

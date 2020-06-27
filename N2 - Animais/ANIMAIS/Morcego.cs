@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais.ANIMAIS
 {
@@ -59,9 +61,9 @@ namespace N2___Animais.ANIMAIS
 
         #region MÉTODOS
 
-        public void Voar()
+        public void Voar(ref PictureBox pctAnimal, ref Panel pnl)
         {
-            throw new NotImplementedException();
+            pctAnimal.Location = new Point(294, 46);
         }
         #endregion
 
