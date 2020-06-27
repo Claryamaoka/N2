@@ -281,6 +281,8 @@
     <None Include="Resources\praia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Morcego.png" />
+    <None Include="Resources\Leao.png" />
     <None Include="Resources\tartarugaovo.png" />
     <None Include="Resources\pomboovo.png" />
     <None Include="Resources\pinguim ovo.png" />
@@ -323,6 +325,10 @@
     <None Include="Resources\corujaovo.png" />
     <None Include="Resources\gaviaoovo.png" />
     <None Include="Resources\Fundo form azul.jpg" />
+    <None Include="Resources\Baleia.png" />
+    <None Include="Resources\Cachorro.png" />
+    <None Include="Resources\Elefante.png" />
+    <None Include="Resources\Gato.png" />
     <Content Include="Resources\lago.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -83,6 +83,16 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Baleia {
+            get {
+                object obj = ResourceManager.GetObject("Baleia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baleiaapagada {
             get {
                 object obj = ResourceManager.GetObject("baleiaapagada", resourceCulture);
@@ -116,6 +126,16 @@ namespace N2___Animais.Properties {
         internal static System.Drawing.Bitmap baleiaverde {
             get {
                 object obj = ResourceManager.GetObject("baleiaverde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cachorro {
+            get {
+                object obj = ResourceManager.GetObject("Cachorro", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +293,16 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Elefante {
+            get {
+                object obj = ResourceManager.GetObject("Elefante", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap elefanteapagado {
             get {
                 object obj = ResourceManager.GetObject("elefanteapagado", resourceCulture);
@@ -376,6 +406,16 @@ namespace N2___Animais.Properties {
         internal static System.Drawing.Bitmap galinhaverde {
             get {
                 object obj = ResourceManager.GetObject("galinhaverde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gato {
+            get {
+                object obj = ResourceManager.GetObject("Gato", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +563,16 @@ namespace N2___Animais.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Leao {
+            get {
+                object obj = ResourceManager.GetObject("Leao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap leaoapagado {
             get {
                 object obj = ResourceManager.GetObject("leaoapagado", resourceCulture);
@@ -586,6 +636,16 @@ namespace N2___Animais.Properties {
         internal static System.Drawing.Bitmap mocegoverde {
             get {
                 object obj = ResourceManager.GetObject("mocegoverde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Morcego {
+            get {
+                object obj = ResourceManager.GetObject("Morcego", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

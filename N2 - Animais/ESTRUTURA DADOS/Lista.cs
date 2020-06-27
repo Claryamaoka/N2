@@ -117,6 +117,19 @@ namespace N2___Animais.ESTRUTURA_DADOS
             return r;
         }
 
+        public Animal[] RetornaAnimais()
+        {
+            Animal[] r = new Animal[qtde];
+            NodoLista aux = primeiro;
+            int count = 0;
+            while (aux != null)
+            {
+                r[count++] = aux.Dado;
+                aux = aux.Proximo;
+            }
+            return r;
+        }
+
         /// <summary>
         /// Lista apenas mamíferos
         /// </summary>

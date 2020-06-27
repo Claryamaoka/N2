@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnTartaruga = new System.Windows.Forms.Button();
             this.btnPombo = new System.Windows.Forms.Button();
@@ -55,8 +56,10 @@
             this.btnVoar = new System.Windows.Forms.Button();
             this.pctAnimal = new System.Windows.Forms.PictureBox();
             this.pnlFundoAcao = new System.Windows.Forms.Panel();
+            this.lblComunica = new System.Windows.Forms.Label();
             this.txtCarac = new System.Windows.Forms.TextBox();
             this.cmbAnimais = new System.Windows.Forms.ComboBox();
+            this.tmrApagalbl = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pctAnimal)).BeginInit();
             this.pnlFundoAcao.SuspendLayout();
             this.SuspendLayout();
@@ -470,9 +473,9 @@
             // pctAnimal
             // 
             this.pctAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctAnimal.Location = new System.Drawing.Point(276, 286);
+            this.pctAnimal.Location = new System.Drawing.Point(33, 238);
             this.pctAnimal.Name = "pctAnimal";
-            this.pctAnimal.Size = new System.Drawing.Size(200, 200);
+            this.pctAnimal.Size = new System.Drawing.Size(157, 147);
             this.pctAnimal.TabIndex = 0;
             this.pctAnimal.TabStop = false;
             // 
@@ -481,6 +484,7 @@
             this.pnlFundoAcao.BackColor = System.Drawing.Color.Transparent;
             this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
             this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlFundoAcao.Controls.Add(this.lblComunica);
             this.pnlFundoAcao.Controls.Add(this.txtCarac);
             this.pnlFundoAcao.Controls.Add(this.pctAnimal);
             this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -488,6 +492,17 @@
             this.pnlFundoAcao.Name = "pnlFundoAcao";
             this.pnlFundoAcao.Size = new System.Drawing.Size(720, 551);
             this.pnlFundoAcao.TabIndex = 14;
+            // 
+            // lblComunica
+            // 
+            this.lblComunica.AutoSize = true;
+            this.lblComunica.BackColor = System.Drawing.Color.Transparent;
+            this.lblComunica.Font = new System.Drawing.Font("Arial Narrow", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComunica.Location = new System.Drawing.Point(30, 23);
+            this.lblComunica.Name = "lblComunica";
+            this.lblComunica.Size = new System.Drawing.Size(18, 29);
+            this.lblComunica.TabIndex = 5;
+            this.lblComunica.Text = ".";
             // 
             // txtCarac
             // 
@@ -509,6 +524,11 @@
             this.cmbAnimais.Size = new System.Drawing.Size(190, 24);
             this.cmbAnimais.TabIndex = 26;
             this.cmbAnimais.SelectedIndexChanged += new System.EventHandler(this.cmbAnimais_SelectedIndexChanged);
+            // 
+            // tmrApagalbl
+            // 
+            this.tmrApagalbl.Interval = 4000;
+            this.tmrApagalbl.Tick += new System.EventHandler(this.tmrApagalbl_Tick);
             // 
             // FrmJogo
             // 
@@ -595,6 +615,8 @@
         private System.Windows.Forms.Panel pnlFundoAcao;
         private System.Windows.Forms.TextBox txtCarac;
         private System.Windows.Forms.ComboBox cmbAnimais;
+        private System.Windows.Forms.Label lblComunica;
+        private System.Windows.Forms.Timer tmrApagalbl;
     }
 }
 

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using N2___Animais.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace N2___Animais
 {
@@ -52,8 +54,41 @@ namespace N2___Animais
         /// <summary>
         /// Método referente a ação de amamentar do mamífero
         /// </summary>
-        public void Amamentar()
-        { }
+        public void Amamentar(string tag, ref PictureBox pctAnimal, ref Button btnMovimentar)
+        {
+            switch (tag)
+            {
+                case "baleia":
+                    pctAnimal.BackgroundImage = Resources.Baleia;
+                    btnMovimentar.Enabled = false;
+                    break;
+
+                case "cachorro":
+                    pctAnimal.BackgroundImage = Resources.Cachorro;
+                    btnMovimentar.Enabled = false;
+                    break;
+
+                case "elefante":
+                    pctAnimal.BackgroundImage = Resources.Elefante;
+                    btnMovimentar.Enabled = false;
+                    break;
+
+                case "gato":
+                    pctAnimal.BackgroundImage = Resources.Gato;
+                    btnMovimentar.Enabled = false;
+                    break;
+
+                case "leao":
+                    pctAnimal.BackgroundImage = Resources.Leao;
+                    btnMovimentar.Enabled = false;
+                    break;
+
+                case "morcego":
+                    pctAnimal.BackgroundImage = Resources.Morcego;
+                    btnMovimentar.Enabled = false;
+                    break;
+            }
+        }
 
         public override string ToString()
         {

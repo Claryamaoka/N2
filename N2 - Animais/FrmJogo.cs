@@ -17,7 +17,21 @@ namespace N2___Animais
         }
 
         SortedDictionary<string, bool> selecionados = new SortedDictionary<string, bool>();
-
+        
+        //Desativar botoes
+        private void DesativaBotoes()
+        {
+            btnAmamentar.Enabled = false;
+            btnAmamentar.Enabled = false;
+            btnAmamentar.Enabled = false;
+            btnAmamentar.Enabled = false;
+            btnAmamentar.Enabled = false;
+            btnCiscar.Enabled = false;
+            btnBotar.Enabled = false;
+            btnChocar.Enabled = false;
+            btnVoar.Enabled = false;
+            btnAtaque.Enabled = false;
+        }
 
         /// <summary>
         /// Volta a imagem para seu modo original
@@ -191,6 +205,10 @@ namespace N2___Animais
             EventoClique(btnBaleia.Tag.ToString(), btnBaleia);
             btnBaleia.BackgroundImage = Resources.baleialaranja;
             btnBaleia.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(300, 236);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.praia;
             pctAnimal.BackgroundImage = Resources.baleiaapagada;
@@ -199,6 +217,7 @@ namespace N2___Animais
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+
             string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("baleia");
             cmbAnimais.Items.Clear();
             foreach (string linha in nomes)
@@ -206,6 +225,7 @@ namespace N2___Animais
                 if (linha != null)
                     cmbAnimais.Items.Add(linha);
             }
+
             txtCarac.Text = "";
         }
 
@@ -214,10 +234,13 @@ namespace N2___Animais
             EventoClique(btnCachorro.Tag.ToString(), btnCachorro);
             btnCachorro.BackgroundImage = Resources.cachorrolaranja;
             btnCachorro.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(200, 200);
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
             pctAnimal.BackgroundImage = Resources.cachorroapagado;
+
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -239,6 +262,9 @@ namespace N2___Animais
             EventoClique(btnCoruja.Tag.ToString(), btnCoruja);
             btnCoruja.BackgroundImage = Resources.corujalaranja;
             btnCoruja.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(33, 238);
+            pctAnimal.Size = new Size(150, 150);
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.noite;
             pctAnimal.BackgroundImage = Resources.corujaapagada;
@@ -248,6 +274,7 @@ namespace N2___Animais
             btnChocar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+            btnAtaque.Enabled = true;
 
             string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("coruja");
             cmbAnimais.Items.Clear();
@@ -264,10 +291,11 @@ namespace N2___Animais
             EventoClique(btnElefante.Tag.ToString(), btnElefante);
             btnElefante.BackgroundImage = Resources.elefantelaranja;
             btnElefante.BackColor = Color.Orange;
+
+            pctAnimal.Size = new Size(250, 250);
+            pctAnimal.Location = new Point(278, 280);
+
             ApagaImagens();
-            pctAnimal.Width = 250;
-            pctAnimal.Height = 250;
-            pctAnimal.Location = new Point(254, 248);
             pnlFundoAcao.BackgroundImage = Resources.lago;
             pctAnimal.BackgroundImage = Resources.elefanteapagado;
 
@@ -290,8 +318,10 @@ namespace N2___Animais
             EventoClique(btnGalinha.Tag.ToString(), btnGalinha);
             btnGalinha.BackgroundImage = Resources.galinhalaranja;
             btnGalinha.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(150, 150);
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
             pctAnimal.BackgroundImage = Resources.galinhaapagada;
 
@@ -316,8 +346,11 @@ namespace N2___Animais
             EventoClique(btnGato.Tag.ToString(), btnGato);
             btnGato.BackgroundImage = Resources.gatolaranja;
             btnGato.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
             pctAnimal.BackgroundImage = Resources.gatoapagado;
 
@@ -340,8 +373,11 @@ namespace N2___Animais
             EventoClique(btnGaviao.Tag.ToString(), btnGaviao);
             btnGaviao.BackgroundImage = Resources.gaviaolarajna;
             btnGaviao.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
             pctAnimal.BackgroundImage = Resources.gaviaoapagado;
 
@@ -351,6 +387,7 @@ namespace N2___Animais
             btnBotar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
+            btnAtaque.Enabled = true;
 
             string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("gaviao");
             cmbAnimais.Items.Clear();
@@ -367,16 +404,18 @@ namespace N2___Animais
             EventoClique(btnLeao.Tag.ToString(), btnLeao);
             btnLeao.BackgroundImage = Resources.leaolaranja;
             btnLeao.BackColor = Color.Orange;
+
+            pctAnimal.Size = new Size(250, 250);
+            pctAnimal.Location = new Point(278, 280);
+
             ApagaImagens();
-            pctAnimal.Width = 250;
-            pctAnimal.Height = 250;
-            pctAnimal.Location = new Point(254, 248);
             pnlFundoAcao.BackgroundImage = Resources.lago;
             pctAnimal.BackgroundImage = Resources.leaoapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
             btnMovimentar.Enabled = true;
+            btnAtaque.Enabled = true;
 
             string[] nomes = ArvoreBinaria.ListagemInterfixada().VetorPorAnimal("leao");
             cmbAnimais.Items.Clear();
@@ -393,6 +432,10 @@ namespace N2___Animais
             EventoClique(btnMorcego.Tag.ToString(), btnMorcego);
             btnMorcego.BackgroundImage = Resources.morcegolaranja;
             btnMorcego.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(33, 238);
+            pctAnimal.Size = new Size(150, 150);
+
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.noite;
             pctAnimal.BackgroundImage = Resources.morcegoapagado;
@@ -417,8 +460,11 @@ namespace N2___Animais
             EventoClique(btnOrnitorrinco.Tag.ToString(), btnOrnitorrinco);
             btnOrnitorrinco.BackgroundImage = Resources.ornitorrincolaranja;
             btnOrnitorrinco.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
             pctAnimal.BackgroundImage = Resources.ornitorrincoapagado;
 
@@ -442,8 +488,11 @@ namespace N2___Animais
             EventoClique(btnPato.Tag.ToString(), btnPato);
             btnPato.BackgroundImage = Resources.patolaranja;
             btnPato.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
             pctAnimal.BackgroundImage = Resources.patoapagado;
 
@@ -468,8 +517,11 @@ namespace N2___Animais
             EventoClique(btnPinguim.Tag.ToString(), btnPinguim);
             btnPinguim.BackgroundImage = Resources.pinguimlaranja;
             btnPinguim.BackColor = Color.Orange;
+
+            pctAnimal.Size = new Size(200, 200);
+            pctAnimal.Location = new Point(278, 280);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gelo;
             pctAnimal.BackgroundImage = Resources.pinguimapagado;
 
@@ -494,8 +546,11 @@ namespace N2___Animais
             EventoClique(btnPombo.Tag.ToString(), btnPombo);
             btnPombo.BackgroundImage = Resources.pombolaranja;
             btnPombo.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(278, 292);
+            pctAnimal.Size = new Size(150, 150);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
             pctAnimal.BackgroundImage = Resources.pomboapagado;
 
@@ -521,8 +576,11 @@ namespace N2___Animais
             EventoClique(btnTartaruga.Tag.ToString(), btnTartaruga);
             btnTartaruga.BackgroundImage = Resources.tartarugalarajna;
             btnTartaruga.BackColor = Color.Orange;
+
+            pctAnimal.Location = new Point(300, 236);
+            pctAnimal.Size = new Size(200, 200);
+
             ApagaImagens();
-            VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.praia;
             pctAnimal.BackgroundImage = Resources.tartarugaapagada;
 
@@ -800,10 +858,7 @@ namespace N2___Animais
         //Apaga as imagens quando troca o animal
         private void ApagaImagens()
         {
-            pnlFundoAcao.BackgroundImage = null;
-            pctAnimal.BackgroundImage = null;
-            pctAnimal.BackgroundImage = null;
-            pctAnimal.BackgroundImage = null;
+            //pnlFundoAcao.BackgroundImage = null;
             pctAnimal.BackgroundImage = null;
         }
 
@@ -814,7 +869,6 @@ namespace N2___Animais
             pctAnimal.Height = 200;
             pctAnimal.Location = new Point(276, 286);
         }
-
 
         //Verificador pra fechar o form
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -831,6 +885,7 @@ namespace N2___Animais
         private void Form1_Load(object sender, EventArgs e)
         {
             MessageBox.Show("Para sair pressione ESC", "INFORMAÇÃO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            tmrApagalbl.Start();
         }
 
         //Evento pra fechar o jogo
@@ -839,35 +894,238 @@ namespace N2___Animais
             Application.Exit();
         }
 
-
-        private void DesativaBotoes()
-        {
-            btnAmamentar.Enabled = false;
-            btnAmamentar.Enabled = false;
-            btnAmamentar.Enabled = false;
-            btnAmamentar.Enabled = false;
-            btnAmamentar.Enabled = false;
-            btnCiscar.Enabled = false;
-            btnBotar.Enabled = false;
-            btnChocar.Enabled = false;
-            btnVoar.Enabled = false;
-        }
-
+        //Botões de ação
+        #region BOTÕES DE AÇÃO
         private void btnAlimentar_Click(object sender, EventArgs e)
         {
-            if (RetornaAnimal() == "")
+            Lista lista = ArvoreBinaria.ListagemInterfixada();
+            Animal[] animais = lista.RetornaAnimais();
+
+            if (cmbAnimais.SelectedIndex == -1)
             {
-                MessageBox.Show("Selecione um animal");
+                MessageBox.Show("Cadastre um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            else
+
+            foreach (var animal in animais)
             {
-                Alimentacao(RetornaAnimal());
-                btnMovimentar.Enabled = false;
+                if (animal is Baleia)
+                    (animal as Animal).Alimentar("baleia", ref pctAnimal);
+
+                if (animal is Cachorro)
+                    (animal as Animal).Alimentar("cachorro", ref pctAnimal);
+
+                if (animal is Coruja)
+                    (animal as Animal).Alimentar("coruja", ref pctAnimal);
+
+                if (animal is Elefante)
+                    (animal as Animal).Alimentar("elefante", ref pctAnimal);
+
+                if (animal is Galinha)
+                    (animal as Animal).Alimentar("galinha", ref pctAnimal);
+
+                if (animal is Gato)
+                    (animal as Animal).Alimentar("gato", ref pctAnimal);
+
+                if (animal is Gaviao)
+                    (animal as Animal).Alimentar("gaviao", ref pctAnimal);
+
+                if (animal is Leao)
+                    (animal as Animal).Alimentar("leao", ref pctAnimal);
+
+                if (animal is Morcego)
+                    (animal as Animal).Alimentar("morcego", ref pctAnimal);
+
+                if (animal is Ornitorrinco)
+                    (animal as Animal).Alimentar("ornitorrinco", ref pctAnimal);
+
+                if (animal is Pato)
+                    (animal as Animal).Alimentar("pato", ref pctAnimal);
+
+                if (animal is Pinguim)
+                    (animal as Animal).Alimentar("pinguim", ref pctAnimal);
+
+                if (animal is Pombo)
+                    (animal as Animal).Alimentar("pombo", ref pctAnimal);
+
+                if (animal is Tartaruga)
+                    (animal as Animal).Alimentar("tartaruga", ref pctAnimal);
             }
 
 
         }
+
+        private void btnMovimentar_Click(object sender, EventArgs e)
+        {
+            Lista lista = ArvoreBinaria.ListagemInterfixada();
+            Animal[] animais = lista.RetornaAnimais();
+
+            if (cmbAnimais.SelectedIndex == -1)
+            {
+                MessageBox.Show("Cadastre um animal", "ERRO", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+
+            foreach (var animal in animais)
+            {
+                if (animal is Baleia)
+                    (animal as Animal).Movimentar("baleia", ref pctAnimal);
+
+                if (animal is Cachorro)
+                    (animal as Animal).Movimentar("cachorro", ref pctAnimal);
+
+                if (animal is Coruja)
+                    (animal as Animal).Movimentar("coruja", ref pctAnimal);
+
+                if (animal is Elefante)
+                    (animal as Animal).Movimentar("elefante", ref pctAnimal);
+
+                if (animal is Galinha)
+                    (animal as Animal).Movimentar("galinha", ref pctAnimal);
+
+                if (animal is Gato)
+                    (animal as Animal).Movimentar("gato", ref pctAnimal);
+
+                if (animal is Gaviao)
+                    (animal as Animal).Movimentar("gaviao", ref pctAnimal);
+
+                if (animal is Leao)
+                    (animal as Animal).Movimentar("leao", ref pctAnimal);
+
+                if (animal is Morcego)
+                    (animal as Animal).Movimentar("morcego", ref pctAnimal);
+
+                if (animal is Ornitorrinco)
+                    (animal as Animal).Movimentar("ornitorrinco", ref pctAnimal);
+
+                if (animal is Pato)
+                    (animal as Animal).Movimentar("pato", ref pctAnimal);
+
+                if (animal is Pinguim)
+                    (animal as Animal).Movimentar("pinguim", ref pctAnimal);
+
+                if (animal is Pombo)
+                    (animal as Animal).Movimentar("pombo", ref pctAnimal);
+
+                if (animal is Tartaruga)
+                    (animal as Animal).Movimentar("tartaruga", ref pctAnimal);
+            }
+        }
+
+        private void btnVoar_Click(object sender, EventArgs e)
+        {
+            Voar(RetornaAnimal());
+            btnMovimentar.Enabled = false;
+        }
+
+        private void btnAmamentar_Click(object sender, EventArgs e)
+        {
+            Lista lista = ArvoreBinaria.ListagemInterfixada();
+            Animal[] animais = lista.RetornaAnimais();
+
+            if (cmbAnimais.SelectedIndex == -1)
+            {
+                MessageBox.Show("Cadastre um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            foreach (var animal in animais)
+            {
+                if (animal is Baleia)
+                    (animal as Mamifero).Amamentar("baleia", ref pctAnimal, ref btnMovimentar);
+
+                if (animal is Cachorro)
+                    (animal as Mamifero).Amamentar("cachorro", ref pctAnimal, ref btnMovimentar);
+
+                if (animal is Elefante)
+                    (animal as Mamifero).Amamentar("elefante", ref pctAnimal, ref btnMovimentar);
+
+                if (animal is Gato)
+                    (animal as Mamifero).Amamentar("gato", ref pctAnimal, ref btnMovimentar);
+
+                if (animal is Leao)
+                    (animal as Mamifero).Amamentar("leao", ref pctAnimal, ref btnMovimentar);
+
+                if (animal is Morcego)
+                    (animal as Mamifero).Amamentar("morcego", ref pctAnimal, ref btnMovimentar);
+            }
+        }
+
+        private void btnComunicar_Click(object sender, EventArgs e)
+        {
+            Lista lista = ArvoreBinaria.ListagemInterfixada();
+            Animal[] animais = lista.RetornaAnimais();
+
+            if (cmbAnimais.SelectedIndex == -1)
+            {
+                MessageBox.Show("Cadastre um animal", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            foreach (var animal in animais)
+            {
+                if (animal is Baleia)
+                    (animal as Animal).Comunicar("baleia", ref lblComunica);
+
+                if (animal is Cachorro)
+                    (animal as Animal).Comunicar("cachorro", ref lblComunica);
+
+                if (animal is Coruja)
+                    (animal as Animal).Comunicar("coruja", ref lblComunica);
+
+                if (animal is Elefante)
+                    (animal as Animal).Comunicar("elefante", ref lblComunica);
+
+                if (animal is Galinha)
+                    (animal as Animal).Comunicar("galinha", ref lblComunica);
+
+                if (animal is Gato)
+                    (animal as Animal).Comunicar("gato", ref lblComunica);
+
+                if (animal is Gaviao)
+                    (animal as Animal).Comunicar("gaviao", ref lblComunica);
+
+                if (animal is Leao)
+                    (animal as Animal).Comunicar("leao", ref lblComunica);
+
+                if (animal is Morcego)
+                    (animal as Animal).Comunicar("morcego", ref lblComunica);
+
+                if (animal is Ornitorrinco)
+                    (animal as Animal).Comunicar("ornitorrinco", ref lblComunica);
+
+                if (animal is Pato)
+                    (animal as Animal).Comunicar("pato", ref lblComunica);
+
+                if (animal is Pinguim)
+                    (animal as Animal).Comunicar("pinguim", ref lblComunica);
+
+                if (animal is Pombo)
+                    (animal as Animal).Comunicar("pombo", ref lblComunica);
+
+                if (animal is Tartaruga)
+                    (animal as Animal).Comunicar("tartaruga", ref lblComunica);
+            }
+
+        }
+
+        private void btnCiscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChocar_Click(object sender, EventArgs e)
+        {
+            Chocar(RetornaAnimal());
+            btnMovimentar.Enabled = false;
+        }
+
+        private void btnBotar_Click(object sender, EventArgs e)
+        {
+            Botar(RetornaAnimal());
+            btnMovimentar.Enabled = false;
+        }
+        #endregion
 
         private string RetornaAnimal()
         {
@@ -880,276 +1138,7 @@ namespace N2___Animais
             }
             return "";
         }
-
-        private void Alimentacao(string tag)
-        {
-            
-            switch (tag)
-            {
-                case "baleia":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.praia;
-                    pctAnimal.BackgroundImage = Resources.Baleiacomendo;
-                    break;
-
-                case "cachorro":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.gramado;
-                    pctAnimal.BackgroundImage = Resources.Cachorrocomendo;
-                    break;
-
-                case "coruja":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.noite;
-                    pctAnimal.BackgroundImage = Resources.Corujacomendo;
-                    break;
-
-                case "elefante":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Elefantecomendo;
-                    break;
-
-                case "galinha":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Galinhacomendo;
-                    break;
-
-                case "gato":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.gramado;
-                    pctAnimal.BackgroundImage = Resources.Gatocomendo;
-                    break;
-
-                case "gaviao":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Gaviaocomendo;
-                    break;
-
-                case "leao":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Leaocomendo;
-                    break;
-
-                case "morcego":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.noite;
-                    pctAnimal.BackgroundImage = Resources.Morcegocomendo;
-                    break;
-
-                case "ornitorrinco":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Ornitorrincocomendo;
-                    break;
-
-                case "pato":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Patocomendo;
-                    break;
-
-                case "pinguim":
-                    ApagaImagens();
-
-                    pnlFundoAcao.BackgroundImage = Resources.gelo;
-                    pctAnimal.BackgroundImage = Resources.Pinguimcomendo;
-                    break;
-
-                case "pombo":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.lago;
-                    pctAnimal.BackgroundImage = Resources.Pombocomendo;
-                    break;
-
-                case "tartaruga":
-                    ApagaImagens();
-                    pnlFundoAcao.BackgroundImage = Resources.praia;
-                    pctAnimal.BackgroundImage = Resources.Tartarugacomendo;
-                    break;
-            }
-        }
-
-        //Método que faz a movimentação
-        private void Movimentacao(string tag)
-        {
-            switch (tag)
-            {
-                case "baleia":
-                    pctAnimal.Left = 129;
-                    if (pctAnimal.Left > 350)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(514, 178);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "cachorro":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-
-                case "coruja":
-                    if (pctAnimal.Left < 160)
-                    {
-                        pctAnimal.Left += 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(39, 221);
-                        pctAnimal.Left += 2;
-                    }
-                    break;
-
-                case "elefante":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "galinha":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "gato":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "gaviao":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "leao":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "morcego":
-                    if (pctAnimal.Left < 160)
-                    {
-                        pctAnimal.Left += 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(39, 221);
-                        pctAnimal.Left += 2;
-                    }
-                    break;
-
-                case "ornitorrinco":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "pato":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "pinguim":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "pombo":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-
-                case "tartaruga":
-                    if (pctAnimal.Left > 130)
-                    {
-                        pctAnimal.Left -= 2;
-                    }
-                    else
-                    {
-                        pctAnimal.Location = new Point(276, 286);
-                        pctAnimal.Left -= 2;
-                    }
-                    break;
-            }
-        }
-
+        
         private void Voar(string tag)
         {
             pctAnimal.BackgroundImage = null;
@@ -1187,31 +1176,11 @@ namespace N2___Animais
             }
 
         }
-
-        private void btnMovimentar_Click(object sender, EventArgs e)
-        {
-            if (RetornaAnimal() == "")
-            {
-                MessageBox.Show("Selecione um animal");
-                return;
-            }
-            else
-            {
-
-                Movimentacao(RetornaAnimal());
-            }
-        }
-
-        private void btnVoar_Click(object sender, EventArgs e)
-        {
-            Voar(RetornaAnimal());
-            btnMovimentar.Enabled = false;
-        }
-
+        
         private void cmbAnimais_SelectedIndexChanged(object sender, EventArgs e)
         {
             Animal animal = ArvoreBinaria.ListagemInterfixada().PesquisaAnimal(cmbAnimais.SelectedItem.ToString());
-            string texto = $"Nome: {animal.Nome}\t Data de nascimento: {animal.DataNascimento}\t Idade: {animal.Idade}\t Sexo: {animal.Sexo}";
+            string texto = $"Nome: {animal.Nome}\t Data de nascimento: {animal.DataNascimento.ToShortDateString()}\t Idade: {animal.Idade}\t Sexo: {animal.Sexo}";
 
             if (animal is Mamifero)
             {
@@ -1240,29 +1209,10 @@ namespace N2___Animais
             txtCarac.Text = texto;
 
 
-        }
 
-        private void btnAmamentar_Click(object sender, EventArgs e)
-        {
 
         }
-
-        private void btnComunicar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCiscar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnChocar_Click(object sender, EventArgs e)
-        {
-            Chocar(RetornaAnimal());
-            btnMovimentar.Enabled = false;
-        }
-
+        
         private void Chocar(string tag)
         {
             switch (tag)
@@ -1303,13 +1253,7 @@ namespace N2___Animais
                     break;
             }
         }
-
-        private void btnBotar_Click(object sender, EventArgs e)
-        {
-            Botar(RetornaAnimal());
-            btnMovimentar.Enabled = false;
-        }
-
+        
         private void Botar(string tag)
         {
             switch (tag)
@@ -1349,6 +1293,101 @@ namespace N2___Animais
                     pnlFundoAcao.BackgroundImage = Resources.gramado;
                     break;
             }
+        }
+
+        private void AnimalEscolhido(string tag)
+        {
+            switch (tag)
+            {
+                case "baleia":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.praia;
+                    pctAnimal.BackgroundImage = Resources.baleiaapagada;
+                    break;
+
+                case "cachorro":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    pctAnimal.BackgroundImage = Resources.cachorroapagado;
+                    break;
+
+                case "coruja":
+                    ApagaImagens();
+                    // pnlFundoAcao.BackgroundImage = Resources.noite;
+                    pctAnimal.BackgroundImage = Resources.corujaapagada;
+                    break;
+
+                case "elefante":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.elefanteapagado;
+                    break;
+
+                case "galinha":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.galinhaapagada;
+                    break;
+
+                case "gato":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    pctAnimal.BackgroundImage = Resources.gatoapagado;
+                    break;
+
+                case "gaviao":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.gaviaoapagado;
+                    break;
+
+                case "leao":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.leaoapagado;
+                    break;
+
+                case "morcego":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.noite;
+                    pctAnimal.BackgroundImage = Resources.morcegoapagado;
+                    break;
+
+                case "ornitorrinco":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.ornitorrincoapagado;
+                    break;
+
+                case "pato":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.patoapagado;
+                    break;
+
+                case "pinguim":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.gelo;
+                    pctAnimal.BackgroundImage = Resources.pinguimapagado;
+                    break;
+
+                case "pombo":
+                    ApagaImagens();
+                    //pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.pomboapagado;
+                    break;
+
+                case "tartaruga":
+                    ApagaImagens();
+                    // pnlFundoAcao.BackgroundImage = Resources.praia;
+                    pctAnimal.BackgroundImage = Resources.tartarugaapagada;
+                    break;
+            }
+        }
+
+        private void tmrApagalbl_Tick(object sender, EventArgs e)
+        {
+            lblComunica.Text = "";
         }
     }
 }
