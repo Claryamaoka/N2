@@ -281,6 +281,22 @@
     <None Include="Resources\praia.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tartarugaovo.png" />
+    <None Include="Resources\pomboovo.png" />
+    <None Include="Resources\pinguim ovo.png" />
+    <None Include="Resources\patoovo.png" />
+    <None Include="Resources\ornitorrincoovo.png" />
+    <None Include="Resources\pombochocando.png" />
+    <None Include="Resources\pinguimchocando.png" />
+    <None Include="Resources\patochocando.png" />
+    <None Include="Resources\ornitorrincochocando.png" />
+    <None Include="Resources\Tartarugacomendo.png" />
+    <None Include="Resources\Pombocomendo.png" />
+    <None Include="Resources\Pinguimcomendo.png" />
+    <None Include="Resources\Patocomendo.png" />
+    <None Include="Resources\Ornitorrincocomendo.png" />
+    <None Include="Resources\Morcegocomendo.png" />
+    <None Include="Resources\Leaocomendo.png" />
     <None Include="Resources\rato.png" />
     <None Include="Resources\peixe.png" />
     <None Include="Resources\Milho.png" />
@@ -294,7 +310,19 @@
     <None Include="Resources\amendoim.png" />
     <None Include="Resources\carne.png" />
     <None Include="Resources\fruta.png" />
-    <None Include="Resources\baleiacomendo.png" />
+    <None Include="Resources\Corujacomendo.png" />
+    <None Include="Resources\Baleiacomendo.png" />
+    <None Include="Resources\Cachorrocomendo.png" />
+    <None Include="Resources\Corujacomendo1.png" />
+    <None Include="Resources\Elefantecomendo.png" />
+    <None Include="Resources\Galinhacomendo.png" />
+    <None Include="Resources\Gatocomendo.png" />
+    <None Include="Resources\Gaviaocomendo.png" />
+    <None Include="Resources\corujachocando.png" />
+    <None Include="Resources\gaviaochocando.png" />
+    <None Include="Resources\corujaovo.png" />
+    <None Include="Resources\gaviaoovo.png" />
+    <None Include="Resources\Fundo form azul.jpg" />
     <Content Include="Resources\lago.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

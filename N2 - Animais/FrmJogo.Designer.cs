@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmJogo));
             this.btnCadastro = new System.Windows.Forms.Button();
             this.btnTartaruga = new System.Windows.Forms.Button();
             this.btnPombo = new System.Windows.Forms.Button();
@@ -54,17 +53,11 @@
             this.btnCiscar = new System.Windows.Forms.Button();
             this.btnAtaque = new System.Windows.Forms.Button();
             this.btnVoar = new System.Windows.Forms.Button();
-            this.pctArvore = new System.Windows.Forms.PictureBox();
-            this.pctChao = new System.Windows.Forms.PictureBox();
-            this.pctAgua = new System.Windows.Forms.PictureBox();
-            this.pctCeu = new System.Windows.Forms.PictureBox();
+            this.pctAnimal = new System.Windows.Forms.PictureBox();
             this.pnlFundoAcao = new System.Windows.Forms.Panel();
             this.txtCarac = new System.Windows.Forms.TextBox();
             this.cmbAnimais = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctChao)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAnimal)).BeginInit();
             this.pnlFundoAcao.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -366,6 +359,7 @@
             this.btnComunicar.Tag = "comunicar";
             this.btnComunicar.Text = "COMUNICAR";
             this.btnComunicar.UseVisualStyleBackColor = false;
+            this.btnComunicar.Click += new System.EventHandler(this.btnComunicar_Click);
             // 
             // btnAlimentar
             // 
@@ -396,6 +390,7 @@
             this.btnAmamentar.TabIndex = 20;
             this.btnAmamentar.Text = "AMAMENTAR";
             this.btnAmamentar.UseVisualStyleBackColor = false;
+            this.btnAmamentar.Click += new System.EventHandler(this.btnAmamentar_Click);
             // 
             // btnChocar
             // 
@@ -410,6 +405,7 @@
             this.btnChocar.TabIndex = 21;
             this.btnChocar.Text = "CHOCAR";
             this.btnChocar.UseVisualStyleBackColor = false;
+            this.btnChocar.Click += new System.EventHandler(this.btnChocar_Click);
             // 
             // btnBotar
             // 
@@ -424,6 +420,7 @@
             this.btnBotar.TabIndex = 22;
             this.btnBotar.Text = "BOTAR";
             this.btnBotar.UseVisualStyleBackColor = false;
+            this.btnBotar.Click += new System.EventHandler(this.btnBotar_Click);
             // 
             // btnCiscar
             // 
@@ -438,6 +435,7 @@
             this.btnCiscar.TabIndex = 23;
             this.btnCiscar.Text = "CISCAR";
             this.btnCiscar.UseVisualStyleBackColor = false;
+            this.btnCiscar.Click += new System.EventHandler(this.btnCiscar_Click);
             // 
             // btnAtaque
             // 
@@ -469,41 +467,14 @@
             this.btnVoar.UseVisualStyleBackColor = false;
             this.btnVoar.Click += new System.EventHandler(this.btnVoar_Click);
             // 
-            // pctArvore
+            // pctAnimal
             // 
-            this.pctArvore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctArvore.Location = new System.Drawing.Point(39, 221);
-            this.pctArvore.Name = "pctArvore";
-            this.pctArvore.Size = new System.Drawing.Size(120, 120);
-            this.pctArvore.TabIndex = 3;
-            this.pctArvore.TabStop = false;
-            // 
-            // pctChao
-            // 
-            this.pctChao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctChao.Location = new System.Drawing.Point(276, 286);
-            this.pctChao.Name = "pctChao";
-            this.pctChao.Size = new System.Drawing.Size(200, 200);
-            this.pctChao.TabIndex = 0;
-            this.pctChao.TabStop = false;
-            // 
-            // pctAgua
-            // 
-            this.pctAgua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctAgua.Location = new System.Drawing.Point(514, 178);
-            this.pctAgua.Name = "pctAgua";
-            this.pctAgua.Size = new System.Drawing.Size(200, 200);
-            this.pctAgua.TabIndex = 2;
-            this.pctAgua.TabStop = false;
-            // 
-            // pctCeu
-            // 
-            this.pctCeu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctCeu.Location = new System.Drawing.Point(212, 16);
-            this.pctCeu.Name = "pctCeu";
-            this.pctCeu.Size = new System.Drawing.Size(200, 200);
-            this.pctCeu.TabIndex = 1;
-            this.pctCeu.TabStop = false;
+            this.pctAnimal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pctAnimal.Location = new System.Drawing.Point(276, 286);
+            this.pctAnimal.Name = "pctAnimal";
+            this.pctAnimal.Size = new System.Drawing.Size(200, 200);
+            this.pctAnimal.TabIndex = 0;
+            this.pctAnimal.TabStop = false;
             // 
             // pnlFundoAcao
             // 
@@ -511,10 +482,7 @@
             this.pnlFundoAcao.BackgroundImage = global::N2___Animais.Properties.Resources.gramado;
             this.pnlFundoAcao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlFundoAcao.Controls.Add(this.txtCarac);
-            this.pnlFundoAcao.Controls.Add(this.pctArvore);
-            this.pnlFundoAcao.Controls.Add(this.pctAgua);
-            this.pnlFundoAcao.Controls.Add(this.pctCeu);
-            this.pnlFundoAcao.Controls.Add(this.pctChao);
+            this.pnlFundoAcao.Controls.Add(this.pctAnimal);
             this.pnlFundoAcao.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pnlFundoAcao.Location = new System.Drawing.Point(550, 9);
             this.pnlFundoAcao.Name = "pnlFundoAcao";
@@ -547,7 +515,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(151)))), ((int)(((byte)(236)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::N2___Animais.Properties.Resources.Fundo_form_azul;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1281, 833);
             this.Controls.Add(this.cmbAnimais);
@@ -577,6 +545,7 @@
             this.Controls.Add(this.btnCoruja);
             this.Controls.Add(this.btnCachorro);
             this.Controls.Add(this.btnBaleia);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -588,10 +557,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pctArvore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctChao)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctAgua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctCeu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctAnimal)).EndInit();
             this.pnlFundoAcao.ResumeLayout(false);
             this.pnlFundoAcao.PerformLayout();
             this.ResumeLayout(false);
@@ -625,10 +591,7 @@
         private System.Windows.Forms.Button btnCiscar;
         private System.Windows.Forms.Button btnAtaque;
         private System.Windows.Forms.Button btnVoar;
-        private System.Windows.Forms.PictureBox pctArvore;
-        private System.Windows.Forms.PictureBox pctChao;
-        private System.Windows.Forms.PictureBox pctAgua;
-        private System.Windows.Forms.PictureBox pctCeu;
+        private System.Windows.Forms.PictureBox pctAnimal;
         private System.Windows.Forms.Panel pnlFundoAcao;
         private System.Windows.Forms.TextBox txtCarac;
         private System.Windows.Forms.ComboBox cmbAnimais;

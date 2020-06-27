@@ -193,7 +193,7 @@ namespace N2___Animais
             btnBaleia.BackColor = Color.Orange;
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.praia;
-            pctAgua.BackgroundImage = Resources.baleiaapagada;
+            pctAnimal.BackgroundImage = Resources.baleiaapagada;
 
             //Botoes de ação 
             DesativaBotoes();
@@ -217,7 +217,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
-            pctChao.BackgroundImage = Resources.cachorroapagado;
+            pctAnimal.BackgroundImage = Resources.cachorroapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -241,7 +241,7 @@ namespace N2___Animais
             btnCoruja.BackColor = Color.Orange;
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.noite;
-            pctArvore.BackgroundImage = Resources.corujaapagada;
+            pctAnimal.BackgroundImage = Resources.corujaapagada;
 
             DesativaBotoes();
             btnBotar.Enabled = true;
@@ -265,11 +265,11 @@ namespace N2___Animais
             btnElefante.BackgroundImage = Resources.elefantelaranja;
             btnElefante.BackColor = Color.Orange;
             ApagaImagens();
-            pctChao.Width = 250;
-            pctChao.Height = 250;
-            pctChao.Location = new Point(254, 248);
+            pctAnimal.Width = 250;
+            pctAnimal.Height = 250;
+            pctAnimal.Location = new Point(254, 248);
             pnlFundoAcao.BackgroundImage = Resources.lago;
-            pctChao.BackgroundImage = Resources.elefanteapagado;
+            pctAnimal.BackgroundImage = Resources.elefanteapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -293,7 +293,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
-            pctChao.BackgroundImage = Resources.galinhaapagada;
+            pctAnimal.BackgroundImage = Resources.galinhaapagada;
 
             DesativaBotoes();
             btnCiscar.Enabled = true;
@@ -319,7 +319,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
-            pctChao.BackgroundImage = Resources.gatoapagado;
+            pctAnimal.BackgroundImage = Resources.gatoapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -343,11 +343,12 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
-            pctChao.BackgroundImage = Resources.gaviaoapagado;
+            pctAnimal.BackgroundImage = Resources.gaviaoapagado;
 
             DesativaBotoes();
             btnCiscar.Enabled = true;
             btnChocar.Enabled = true;
+            btnBotar.Enabled = true;
             btnVoar.Enabled = true;
             btnMovimentar.Enabled = true;
 
@@ -367,11 +368,11 @@ namespace N2___Animais
             btnLeao.BackgroundImage = Resources.leaolaranja;
             btnLeao.BackColor = Color.Orange;
             ApagaImagens();
-            pctChao.Width = 250;
-            pctChao.Height = 250;
-            pctChao.Location = new Point(254, 248);
+            pctAnimal.Width = 250;
+            pctAnimal.Height = 250;
+            pctAnimal.Location = new Point(254, 248);
             pnlFundoAcao.BackgroundImage = Resources.lago;
-            pctChao.BackgroundImage = Resources.leaoapagado;
+            pctAnimal.BackgroundImage = Resources.leaoapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -394,7 +395,7 @@ namespace N2___Animais
             btnMorcego.BackColor = Color.Orange;
             ApagaImagens();
             pnlFundoAcao.BackgroundImage = Resources.noite;
-            pctArvore.BackgroundImage = Resources.morcegoapagado;
+            pctAnimal.BackgroundImage = Resources.morcegoapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -419,7 +420,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
-            pctChao.BackgroundImage = Resources.ornitorrincoapagado;
+            pctAnimal.BackgroundImage = Resources.ornitorrincoapagado;
 
             DesativaBotoes();
             btnAmamentar.Enabled = true;
@@ -444,7 +445,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.lago;
-            pctChao.BackgroundImage = Resources.patoapagado;
+            pctAnimal.BackgroundImage = Resources.patoapagado;
 
             DesativaBotoes();
             btnCiscar.Enabled = true;
@@ -470,7 +471,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gelo;
-            pctChao.BackgroundImage = Resources.pinguimapagado;
+            pctAnimal.BackgroundImage = Resources.pinguimapagado;
 
             DesativaBotoes();
             btnCiscar.Enabled = true;
@@ -496,7 +497,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.gramado;
-            pctChao.BackgroundImage = Resources.pomboapagado;
+            pctAnimal.BackgroundImage = Resources.pomboapagado;
 
             DesativaBotoes();
             btnCiscar.Enabled = true;
@@ -523,7 +524,7 @@ namespace N2___Animais
             ApagaImagens();
             VoltaTamanho();
             pnlFundoAcao.BackgroundImage = Resources.praia;
-            pctChao.BackgroundImage = Resources.tartarugaapagada;
+            pctAnimal.BackgroundImage = Resources.tartarugaapagada;
 
             DesativaBotoes();
             btnBotar.Enabled = true;
@@ -800,18 +801,18 @@ namespace N2___Animais
         private void ApagaImagens()
         {
             pnlFundoAcao.BackgroundImage = null;
-            pctCeu.BackgroundImage = null;
-            pctArvore.BackgroundImage = null;
-            pctChao.BackgroundImage = null;
-            pctAgua.BackgroundImage = null;
+            pctAnimal.BackgroundImage = null;
+            pctAnimal.BackgroundImage = null;
+            pctAnimal.BackgroundImage = null;
+            pctAnimal.BackgroundImage = null;
         }
 
         //Volta ao tamanho padrão sem ser Leão e Elefante
         private void VoltaTamanho()
         {
-            pctChao.Width = 200;
-            pctChao.Height = 200;
-            pctChao.Location = new Point(276, 286);
+            pctAnimal.Width = 200;
+            pctAnimal.Height = 200;
+            pctAnimal.Location = new Point(276, 286);
         }
 
 
@@ -862,6 +863,7 @@ namespace N2___Animais
             else
             {
                 Alimentacao(RetornaAnimal());
+                btnMovimentar.Enabled = false;
             }
 
 
@@ -881,62 +883,92 @@ namespace N2___Animais
 
         private void Alimentacao(string tag)
         {
+            
             switch (tag)
             {
                 case "baleia":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.praia;
+                    pctAnimal.BackgroundImage = Resources.Baleiacomendo;
                     break;
 
                 case "cachorro":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    pctAnimal.BackgroundImage = Resources.Cachorrocomendo;
                     break;
 
                 case "coruja":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.noite;
+                    pctAnimal.BackgroundImage = Resources.Corujacomendo;
                     break;
 
                 case "elefante":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Elefantecomendo;
                     break;
 
                 case "galinha":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Galinhacomendo;
                     break;
 
                 case "gato":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    pctAnimal.BackgroundImage = Resources.Gatocomendo;
                     break;
 
                 case "gaviao":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Gaviaocomendo;
                     break;
 
                 case "leao":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Leaocomendo;
                     break;
 
                 case "morcego":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.noite;
+                    pctAnimal.BackgroundImage = Resources.Morcegocomendo;
                     break;
 
                 case "ornitorrinco":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Ornitorrincocomendo;
                     break;
 
                 case "pato":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Patocomendo;
                     break;
 
                 case "pinguim":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+
+                    pnlFundoAcao.BackgroundImage = Resources.gelo;
+                    pctAnimal.BackgroundImage = Resources.Pinguimcomendo;
                     break;
 
                 case "pombo":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    pctAnimal.BackgroundImage = Resources.Pombocomendo;
                     break;
 
                 case "tartaruga":
-                    pctAgua.BackgroundImage = Resources.baleiacomendo;
+                    ApagaImagens();
+                    pnlFundoAcao.BackgroundImage = Resources.praia;
+                    pctAnimal.BackgroundImage = Resources.Tartarugacomendo;
                     break;
             }
         }
@@ -947,172 +979,172 @@ namespace N2___Animais
             switch (tag)
             {
                 case "baleia":
-                    pctChao.Left = 129;
-                    if (pctAgua.Left > 350)
+                    pctAnimal.Left = 129;
+                    if (pctAnimal.Left > 350)
                     {
-                        pctAgua.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctAgua.Location = new Point(514, 178);
-                        pctAgua.Left -= 2;
+                        pctAnimal.Location = new Point(514, 178);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "cachorro":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
 
                 case "coruja":
-                    if (pctArvore.Left < 160)
+                    if (pctAnimal.Left < 160)
                     {
-                        pctArvore.Left += 2;
+                        pctAnimal.Left += 2;
                     }
                     else
                     {
-                        pctArvore.Location = new Point(39, 221);
-                        pctArvore.Left += 2;
+                        pctAnimal.Location = new Point(39, 221);
+                        pctAnimal.Left += 2;
                     }
                     break;
 
                 case "elefante":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "galinha":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "gato":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "gaviao":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "leao":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "morcego":
-                    if (pctArvore.Left < 160)
+                    if (pctAnimal.Left < 160)
                     {
-                        pctArvore.Left += 2;
+                        pctAnimal.Left += 2;
                     }
                     else
                     {
-                        pctArvore.Location = new Point(39, 221);
-                        pctArvore.Left += 2;
+                        pctAnimal.Location = new Point(39, 221);
+                        pctAnimal.Left += 2;
                     }
                     break;
 
                 case "ornitorrinco":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "pato":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "pinguim":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "pombo":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
 
                 case "tartaruga":
-                    if (pctChao.Left > 130)
+                    if (pctAnimal.Left > 130)
                     {
-                        pctChao.Left -= 2;
+                        pctAnimal.Left -= 2;
                     }
                     else
                     {
-                        pctChao.Location = new Point(276, 286);
-                        pctChao.Left -= 2;
+                        pctAnimal.Location = new Point(276, 286);
+                        pctAnimal.Left -= 2;
                     }
                     break;
             }
@@ -1120,36 +1152,36 @@ namespace N2___Animais
 
         private void Voar(string tag)
         {
-            pctChao.BackgroundImage = null;
+            pctAnimal.BackgroundImage = null;
             switch (tag)
             {
                 case "coruja":
                     ApagaImagens();
-                    pctCeu.BackgroundImage = Resources.corujaapagada;
+                    pctAnimal.BackgroundImage = Resources.corujaapagada;
                     pnlFundoAcao.BackgroundImage = Resources.noite;
                     break;
 
                 case "gaviao":
                     ApagaImagens();
-                    pctCeu.BackgroundImage = Resources.gaviaoapagado;
+                    pctAnimal.BackgroundImage = Resources.gaviaoapagado;
                     pnlFundoAcao.BackgroundImage = Resources.ceu;
                     break;
 
                 case "morcego":
                     ApagaImagens();
-                    pctCeu.BackgroundImage = Resources.morcegoapagado;
+                    pctAnimal.BackgroundImage = Resources.morcegoapagado;
                     pnlFundoAcao.BackgroundImage = Resources.noite;
                     break;
 
                 case "pato":
                     ApagaImagens();
-                    pctCeu.BackgroundImage = Resources.patoapagado;
+                    pctAnimal.BackgroundImage = Resources.patoapagado;
                     pnlFundoAcao.BackgroundImage = Resources.ceu;
                     break;
 
                 case "pombo":
                     ApagaImagens();
-                    pctCeu.BackgroundImage = Resources.pomboapagado;
+                    pctAnimal.BackgroundImage = Resources.pomboapagado;
                     pnlFundoAcao.BackgroundImage = Resources.ceu;
                     break;
             }
@@ -1208,6 +1240,115 @@ namespace N2___Animais
             txtCarac.Text = texto;
 
 
+        }
+
+        private void btnAmamentar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnComunicar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCiscar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnChocar_Click(object sender, EventArgs e)
+        {
+            Chocar(RetornaAnimal());
+            btnMovimentar.Enabled = false;
+        }
+
+        private void Chocar(string tag)
+        {
+            switch (tag)
+            {
+                case "coruja":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.corujachocando;
+                    pnlFundoAcao.BackgroundImage = Resources.noite;
+                    break;
+
+                case "galinha":
+                    ApagaImagens();
+                    //pctAnimal.BackgroundImage = Resources.galinha;
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    break;
+                case "gaviao":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.gaviaochocando;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    break;
+
+                case "pato":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.patochocando;
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    break;
+
+                case "pinguim":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.pinguimchocando;
+                    pnlFundoAcao.BackgroundImage = Resources.gelo;
+                    break;
+
+                case "pombo":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.pombochocando;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    break;
+            }
+        }
+
+        private void btnBotar_Click(object sender, EventArgs e)
+        {
+            Botar(RetornaAnimal());
+            btnMovimentar.Enabled = false;
+        }
+
+        private void Botar(string tag)
+        {
+            switch (tag)
+            {
+                case "coruja":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.corujaovo;
+                    pnlFundoAcao.BackgroundImage = Resources.noite;
+                    break;
+
+                case "galinha":
+                    ApagaImagens();
+                    //pctAnimal.BackgroundImage = Resources.galinha;
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    break;
+                case "gaviao":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.gaviaoovo;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    break;
+
+                case "pato":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.patoovo;
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
+                    break;
+
+                case "pinguim":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.pinguim_ovo;
+                    pnlFundoAcao.BackgroundImage = Resources.gelo;
+                    break;
+
+                case "pombo":
+                    ApagaImagens();
+                    pctAnimal.BackgroundImage = Resources.pomboovo;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
+                    break;
+            }
         }
     }
 }
