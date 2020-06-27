@@ -55,7 +55,6 @@ namespace N2___Animais
                     break;
 
                 case "gaviao":
-                    pctAnimal.BackgroundImage = Resources.Gaviaocomendo;
                     lblComunica.Text = "PIC PIC PIC PIC";
                     break;
 

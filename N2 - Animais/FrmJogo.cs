@@ -270,6 +270,7 @@ namespace N2___Animais
             pctAnimal.BackgroundImage = Resources.corujaapagada;
 
             DesativaBotoes();
+            btnCiscar.Enabled = true;
             btnBotar.Enabled = true;
             btnChocar.Enabled = true;
             btnVoar.Enabled = true;
@@ -1426,6 +1427,7 @@ namespace N2___Animais
                     pctAnimal.Location = new Point(278, 292);
                     pctAnimal.Size = new Size(200, 200);
                     pctAnimal.BackgroundImage = Resources.gaviaoapagado;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
                     break;
 
                 case "leao":
@@ -1452,6 +1454,7 @@ namespace N2___Animais
                     pctAnimal.Location = new Point(278, 292);
                     pctAnimal.Size = new Size(200, 200);
                     pctAnimal.BackgroundImage = Resources.patoapagado;
+                    pnlFundoAcao.BackgroundImage = Resources.lago;
                     break;
 
                 case "pinguim":
@@ -1466,6 +1469,7 @@ namespace N2___Animais
                     pctAnimal.Location = new Point(278, 292);
                     pctAnimal.Size = new Size(200, 200);
                     pctAnimal.BackgroundImage = Resources.pomboapagado;
+                    pnlFundoAcao.BackgroundImage = Resources.gramado;
                     break;
 
                 case "tartaruga":
