@@ -1,4 +1,4 @@
-﻿using N2___Animais.Properties;
+using N2___Animais.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,7 +50,7 @@ namespace N2___Animais.ANIMAIS
         #region MÉTODOS
         public void Botar(ref PictureBox pctAnimal )
         {
-            pctAnimal.BackgroundImage = Resources.GalinhaBotando;
+            pctAnimal.BackgroundImage = Resources.pinguim_ovo;
         }
 
         public void Chocar(ref PictureBox pctAnimal)
