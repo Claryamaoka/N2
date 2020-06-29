@@ -175,9 +175,7 @@
   <data name="noite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\noite.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rato" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rato.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="cachorroverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cachorroverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -223,9 +221,7 @@
   <data name="sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fundo form" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fundo form.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="pinguimapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pinguimapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,9 +258,7 @@
   <data name="Morcegocomendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Morcegocomendo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cadastro.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  
   <data name="pinguimlaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pinguimlaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -274,9 +268,7 @@
   <data name="gramado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gramado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carne" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="gatolaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gatolaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -286,12 +278,8 @@
   <data name="gaviaochocando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gaviaochocando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="amendoim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\amendoim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SPLASH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SPLASH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
+ 
   <data name="Elefantecomendo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Elefantecomendo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -385,9 +373,7 @@
   <data name="galinhaapagada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\galinhaapagada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fruta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fruta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="elefantelaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elefantelaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -400,9 +386,7 @@
   <data name="tartarugalarajna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tartarugalarajna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Corujacomendo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Corujacomendo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
   <data name="ornitorrincoapagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ornitorrincoapagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

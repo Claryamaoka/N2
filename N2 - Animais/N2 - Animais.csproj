@@ -118,18 +118,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -299,23 +299,15 @@
     <None Include="Resources\Ornitorrincocomendo.png" />
     <None Include="Resources\Morcegocomendo.png" />
     <None Include="Resources\Leaocomendo.png" />
-    <None Include="Resources\rato.png" />
     <None Include="Resources\peixe.png" />
     <None Include="Resources\Milho.png" />
     <None Include="Resources\mato.png" />
-    <None Include="Resources\SPLASH.png" />
     <None Include="Resources\sair.png" />
-    <None Include="Resources\Fundo form.jpg" />
-    <None Include="Resources\cadastro.jpg" />
     <None Include="Resources\cadastro2.jpg" />
     <None Include="Resources\inicio.png" />
-    <None Include="Resources\amendoim.png" />
-    <None Include="Resources\carne.png" />
-    <None Include="Resources\fruta.png" />
     <None Include="Resources\Corujacomendo.png" />
     <None Include="Resources\Baleiacomendo.png" />
     <None Include="Resources\Cachorrocomendo.png" />
-    <None Include="Resources\Corujacomendo1.png" />
     <None Include="Resources\Elefantecomendo.png" />
     <None Include="Resources\Galinhacomendo.png" />
     <None Include="Resources\Gatocomendo.png" />

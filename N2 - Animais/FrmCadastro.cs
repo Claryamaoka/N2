@@ -99,9 +99,9 @@ namespace N2___Animais
 
                 MessageBox.Show("Sucesso", "CONCLUÍDO");
             }
-            catch
+            catch (Exception erro)
             {
-                MessageBox.Show("Algum dado inválido");
+                MessageBox.Show(erro.Message);
                 return;
             }
 
@@ -143,8 +143,7 @@ namespace N2___Animais
             switch (animal)
             {
                 case "baleia":
-                    try
-                    {
+                 
                         Baleia baleia = new Baleia(false, true, false, false, true, false);
                         baleia.Nome = nome;
                         baleia.DataNascimento = nascimento;
@@ -154,16 +153,11 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(baleia);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                 
+
 
                 case "cachorro":
-                    try
-                    {
+                    
                         Cachorro cachorro = new Cachorro(true, false, true);
                         cachorro.Nome = nome;
                         cachorro.CorPelo = corpelo;
@@ -176,16 +170,10 @@ namespace N2___Animais
                         ArvoreBinaria.Insere(cachorro);
 
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                    
 
                 case "elefante":
-                    try
-                    {
+                    
                         Elefante elefante = new Elefante(false, false, true);
                         elefante.Nome = nome;
                         elefante.CorPelo = corpelo;
@@ -196,16 +184,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(elefante);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                   
 
                 case "gato":
-                    try
-                    {
+                   
                         Gato gato = new Gato(true, false, true);
                         gato.Nome = nome;
                         gato.CorPelo = corpelo;
@@ -216,16 +198,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(gato);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                   
 
                 case "leao":
-                    try
-                    {
+                  
                         Leao leao = new Leao(true, false, true);
                         leao.Nome = nome;
                         leao.CorPelo = corpelo;
@@ -236,16 +212,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(leao);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                    
 
                 case "morcego":
-                    try
-                    {
+                   
                         Morcego morcego = new Morcego(false, false, true);
                         morcego.Nome = nome;
                         morcego.CorPelo = corpelo;
@@ -256,16 +226,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(morcego);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                  
 
                 case "ornitorrinco":
-                    try
-                    {
+                   
                         Ornitorrinco ornitorrinco = new Ornitorrinco(true, false, true, true, true, true);
                         ornitorrinco.Nome = nome;
                         ornitorrinco.CorPelo = corpelo;
@@ -276,12 +240,7 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(ornitorrinco);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                   
             }
         }
 
@@ -300,8 +259,7 @@ namespace N2___Animais
             switch (animal)
             {
                 case "galinha":
-                    try
-                    {
+                   
                         Galinha galinha = new Galinha(false, false, false);
                         galinha.Nome = nome;
                         galinha.CorPena = corpena;
@@ -311,17 +269,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(galinha);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
-
+                  
 
                 case "coruja":
-                    try
-                    {
+                   
                         Coruja coruja = new Coruja(true, true, false);
                         coruja.Nome = nome;
                         coruja.CorPena = corpena;
@@ -333,16 +284,10 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(coruja);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                   
 
                 case "gaviao":
-                    try
-                    {
+                  
                         Gaviao gaviao = new Gaviao(true, true, false);
                         gaviao.Nome = nome;
                         gaviao.CorPena = corpena;
@@ -354,19 +299,13 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(gaviao);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                  
 
 
 
 
                 case "pato":
-                    try
-                    {
+                   
                         Pato pato = new Pato(false, false, false, true, true, true);
                         pato.Nome = nome;
                         pato.CorPena = corpena;
@@ -378,17 +317,11 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pato);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                
 
 
                 case "pinguim":
-                    try
-                    {
+                    
                         Pinguim pinguim = new Pinguim(true, false, false,true,true,false);
                         pinguim.Nome = nome;
                         pinguim.CorPena = corpena;
@@ -398,17 +331,11 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pinguim);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                 
 
 
                 case "pombo":
-                    try
-                    {
+                  
                         Pombo pombo = new Pombo(false, false, false);
                         pombo.Nome = nome;
                         pombo.CorPena = corpena;
@@ -420,12 +347,7 @@ namespace N2___Animais
                         //Adicionar na árvore
                         ArvoreBinaria.Insere(pombo);
                         break;
-                    }
-                    catch
-                    {
-                        MessageBox.Show("Algum dado inválido");
-                        break;
-                    }
+                   
 
             }
         }
@@ -439,21 +361,13 @@ namespace N2___Animais
         /// <param name="sexo"></param>
         public void InstanciaReptil(string animal, string nome, DateTime nascimento, char sexo)
         {
-            try
-            {
                 Tartaruga tartaruga = new Tartaruga(false, false, true, true, true, true, true);
                 tartaruga.Nome = nome;
                 tartaruga.DataNascimento = nascimento;
                 tartaruga.Sexo = sexo;
                 tartaruga.Idade = nascimento.Year;
                 //Adicionar na árvore
-                ArvoreBinaria.Insere(tartaruga);
-            }
-            catch(Exception erro)
-            {
-                MessageBox.Show(erro.Message);
-                MessageBox.Show("Algum dado inválido");
-            }
+                ArvoreBinaria.Insere(tartaruga);   
         }
         #endregion
 
@@ -462,6 +376,152 @@ namespace N2___Animais
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCadAll_Click(object sender, EventArgs e)
+        {
+            Baleia baleia = new Baleia(false, true, false, false, true, false);
+            baleia.Nome = "baleia";
+            baleia.DataNascimento = DateTime.Parse("01/02/2001");
+            baleia.Sexo = 'M';
+            baleia.QtdeMamas = 6;
+            baleia.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(baleia);
+
+            Cachorro cachorro = new Cachorro(true, false, true);
+            cachorro.Nome = "Cachorro";
+            cachorro.CorPelo = "Marrom";
+            cachorro.DataNascimento = DateTime.Parse("01/02/2001");
+            cachorro.Sexo = 'M';
+            cachorro.QtdeMamas = 6;
+            cachorro.Idade = 2001;
+            ArvoreBinaria.Insere(cachorro);
+
+
+            Elefante elefante = new Elefante(false, false, true);
+            elefante.Nome = "Elefante";
+            elefante.CorPelo = "Cinza";
+            elefante.DataNascimento = DateTime.Parse("01/02/2001");
+            elefante.Sexo = 'F';
+            elefante.QtdeMamas = 6;
+            elefante.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(elefante);
+
+            Gato gato = new Gato(true, false, true);
+            gato.Nome = "Gato";
+            gato.CorPelo = "Branco";
+            gato.DataNascimento = DateTime.Parse("01/02/2001");
+            gato.Sexo = 'M';
+            gato.QtdeMamas = 6;
+            gato.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(gato);
+
+            Leao leao = new Leao(true, false, true);
+            leao.Nome = "Leao";
+            leao.CorPelo = "Amarelo";
+            leao.DataNascimento = DateTime.Parse("01/02/2001");
+            leao.Sexo = 'M';
+            leao.QtdeMamas = 6;
+            leao.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(leao);
+
+            Morcego morcego = new Morcego(false, false, true);
+            morcego.Nome = "Morcego";
+            morcego.CorPelo = "Preto";
+            morcego.DataNascimento = DateTime.Parse("01/02/2001");
+            morcego.Sexo = 'M';
+            morcego.QtdeMamas = 6;
+            morcego.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(morcego);
+
+            Ornitorrinco ornitorrinco = new Ornitorrinco(true, false, true, true, true, true);
+            ornitorrinco.Nome = "Ornitorrinco";
+            ornitorrinco.CorPelo = "Marrom";
+            ornitorrinco.DataNascimento = DateTime.Parse("01/02/2001");
+            ornitorrinco.Sexo = 'M';
+            ornitorrinco.QtdeMamas = 6;
+            ornitorrinco.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(ornitorrinco);
+
+
+            Galinha galinha = new Galinha(false, false, false);
+            galinha.Nome = "Galinha";
+            galinha.CorPena =" Branco";
+            galinha.DataNascimento = DateTime.Parse("01/02/2001");
+            galinha.Sexo = 'F';
+            galinha.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(galinha);
+
+            Coruja coruja = new Coruja(true, true, false);
+            coruja.Nome = "Coruja";
+            coruja.CorPena = "marrom";
+            coruja.DataNascimento = DateTime.Parse("01/02/2001");
+            coruja.Sexo = 'M';
+            coruja.AlturaMaximaM = 56;
+            coruja.VelocidadeVoo = 89;
+            coruja.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(coruja);
+
+            Gaviao gaviao = new Gaviao(true, true, false);
+            gaviao.Nome = "Gaviao";
+            gaviao.CorPena = "branco";
+            gaviao.DataNascimento = DateTime.Parse("01/02/2001");
+            gaviao.Sexo = 'M';
+            gaviao.AlturaMaximaM = 100;
+            gaviao.VelocidadeVoo = 98;
+            gaviao.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(gaviao);
+
+            Pato pato = new Pato(false, false, false, true, true, true);
+            pato.Nome = "Pato";
+            pato.CorPena = "branco";
+            pato.DataNascimento = DateTime.Parse("01/02/2001");
+            pato.Sexo = 'M';
+            pato.AlturaMaximaM = 30;
+            pato.VelocidadeVoo = 60;
+            pato.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(pato);
+
+            Pinguim pinguim = new Pinguim(true, false, false, true, true, false);
+            pinguim.Nome = "Pinguim";
+            pinguim.CorPena = "preto";
+            pinguim.DataNascimento = DateTime.Parse("01/02/2001");
+            pinguim.Sexo = 'M';
+            pinguim.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(pinguim);
+
+            Pombo pombo = new Pombo(false, false, false);
+            pombo.Nome = "Pomba";
+            pombo.CorPena = "branco";
+            pombo.DataNascimento = DateTime.Parse("01/02/2001");
+            pombo.Sexo = 'M';
+            pombo.AlturaMaximaM = 100;
+            pombo.VelocidadeVoo = 80;
+            pombo.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(pombo);
+
+            Tartaruga tartaruga = new Tartaruga(false, false, true, true, true, true, true);
+            tartaruga.Nome = "Tartaruga";
+            tartaruga.DataNascimento = DateTime.Parse("01/02/2001");
+            tartaruga.Sexo = 'F';
+            tartaruga.Idade = 2001;
+            //Adicionar na árvore
+            ArvoreBinaria.Insere(tartaruga);
+
+            btnCadAll.Enabled = false;
+            MessageBox.Show("FEITO","CONCLUÍDO");
         }
     }
 }
